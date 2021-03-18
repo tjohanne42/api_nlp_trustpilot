@@ -1,0 +1,1892 @@
+name;link;level
+Aliments, boissons & tabac;food_beverages_tobacco;0
+Animaux;animals_pets;0
+Argent & assurance;money_insurance;0
+Beauté & bien-être;beauty_wellbeing;0
+Construction & fabrication;construction_manufactoring;0
+Éducation & formation;education_training;0
+Électronique & technologie;electronics_technology;0
+Événements & divertissement;events_entertainment;0
+Loisirs & artisanat;hobbies_crafts;0
+Maison & jardin;home_garden;0
+Médias & édition;media_publishing;0
+Restaurants & bars;restaurants_bars;0
+Santé & médecine;health_medical;0
+Services;utilities;0
+Services à domicile;home_services;0
+Services aux entreprises;business_services;0
+Services juridiques & administration;legal_services_government;0
+Services publics & locaux;public_local_services;0
+Shopping & mode;shopping_fashion;0
+Sport;sports;0
+Vacances & voyages;travel_vacation;0
+Véhicules & transport;vehicles_transportation;0
+Agriculture & production;food_beverages_tobacco/agriculture_produce;1
+Bière & vin;food_beverages_tobacco/beer_wine;1
+Boissons & alcool;food_beverages_tobacco/beverages_liquor;1
+Bonbons & chocolat;food_beverages_tobacco/candy_chocolate;1
+Boulangerie & pâtisserie;food_beverages_tobacco/bakery_pastry;1
+Café & thé;food_beverages_tobacco/coffee_tea;1
+Déjeuner & traiteur;food_beverages_tobacco/lunch_catering;1
+Épiceries & marchés;food_beverages_tobacco/grocery_stores_markets;1
+Épiceries asiatiques;food_beverages_tobacco/asian_grocery_stores;1
+Fruits & légumes;food_beverages_tobacco/fruits_vegetables;1
+Production alimentaire;food_beverages_tobacco/food_production;1
+Tabac & cigarettes;food_beverages_tobacco/smoking_tobacco;1
+Viande, fruits de mer & oeufs;food_beverages_tobacco/meat_seafood_eggs;1
+Animalerie;animals_pets/pet_stores;1
+Chats & chiens;animals_pets/cats_dogs;1
+Chevaux & équitation;animals_pets/horses_riding;1
+Parcs animaliers & zoos;animals_pets/animal_parks_zoo;1
+Santé animale;animals_pets/animal_health;1
+Services animaliers;animals_pets/pet_services;1
+Assurance;money_insurance/insurance;1
+Banque & argent;money_insurance/banking_money;1
+Comptabilité & taxes;money_insurance/accounting_tax;1
+Immobilier;money_insurance/real_estate;1
+Placements et patrimoine;money_insurance/investments_wealth;1
+Services d'endettement et de crédit;money_insurance/credit_debt_services;1
+Bien-être & spa;beauty_wellbeing/wellness_spa;1
+Hygiène personnelle;beauty_wellbeing/personal_care;1
+Produits de beauté & maquillage;beauty_wellbeing/cosmetics_makeup;1
+Salons & cliniques esthétiques;beauty_wellbeing/salons_clinics;1
+Soins capillaires & coiffure;beauty_wellbeing/hair_care_styling;1
+Tatouages & piercings;beauty_wellbeing/tattoos_piercings;1
+Yoga & méditation;beauty_wellbeing/yoga_meditation;1
+Architectes & ingénieurs;construction_manufactoring/architects_engineers;1
+Entrepreneurs & consultants;construction_manufactoring/contractors_consultants;1
+Équipement d'usine;construction_manufactoring/factory_equipment;1
+Fabrication industrielle;construction_manufactoring/manufacturing;1
+Fournitures industrielles;construction_manufactoring/industrial_supplies;1
+Jardin & paysagisme;construction_manufactoring/garden_landscaping;1
+Matériaux de construction;construction_manufactoring/building_materials;1
+Outils & équipement;construction_manufactoring/tools_equipment;1
+Produits chimiques & plastique;construction_manufactoring/chemicals_plastic;1
+Services de construction;construction_manufactoring/construction_services;1
+Services de production;construction_manufactoring/production_services;1
+Apprentissage des langues étrangères;education_training/language_learning;1
+Collèges & universités;education_training/colleges_universities;1
+Cours de musique et de théâtre;education_training/music_theater_classes;1
+École & lycée;education_training/school_high_school;1
+Établissements spécialisés;education_training/specials_schools;1
+Formation professionnelle;education_training/vocational_training;1
+Formations & cours;education_training/courses_classes;1
+Services éducatifs;education_training/education_services;1
+Appareils électroniques;electronics_technology/appliances_electronics;1
+Audiovisuel;electronics_technology/audio_visual;1
+Internet & logiciels;electronics_technology/internet_software;1
+Ordinateurs & téléphones;electronics_technology/computers_phones;1
+Services de réparation;electronics_technology/repair_services;1
+Discothèques & vie nocturne;events_entertainment/clubbing_nightlife;1
+Divertissement pour adultes;events_entertainment/adult_entertainment;1
+Divertissement pour enfants;events_entertainment/childrens_entertainment;1
+Jeux;events_entertainment/gaming;1
+Jeux d'argent;events_entertainment/gambling;1
+Lieux d'événements;events_entertainment/events_venues;1
+Mariage & fêtes;events_entertainment/wedding_party;1
+Musées & expositions;events_entertainment/museums_exibits;1
+Musique & films;events_entertainment/music_movies;1
+Théâtre & opéra;events_entertainment/theater_opera;1
+Activités extérieures;hobbies_crafts/outdoor_activities;1
+Art & artisanat;hobbies_crafts/art_handicraft;1
+Astrologie & numérologie;hobbies_crafts/astrology_numerology;1
+Chasse & pêche;hobbies_crafts/fishing_hunting;1
+Couture & tricot;hobbies_crafts/needlework_knitting;1
+Loisirs;hobbies_crafts/hobbies;1
+Musique & instruments;hobbies_crafts/music_instruments;1
+Peinture & papier;hobbies_crafts/painting_paper;1
+Travail du métal, de la pierre & du verre;hobbies_crafts/metal_stone_glass_work;1
+Amélioration de l'habitat;home_garden/home_improvements;1
+Décoration & design intérieur;home_garden/decoration_interior;1
+Énergie & chauffage;home_garden/energy_heating;1
+Jardin & paysagisme;home_garden/garden_pond;1
+Magasin d'équipement pour la maison;home_garden/home_goods_stores;1
+Magasins de meubles;home_garden/furniture_stores;1
+Produits culturels;home_garden/cultural_goods;1
+Salle de bains & cuisine;home_garden/bathroom_kitchen;1
+Services ménagers & jardinage;home_garden/home_garden_services;1
+Tissus & papeterie;home_garden/fabric_stationary;1
+Livres & magazines;media_publishing/books_magazines;1
+Médias & information;media_publishing/media_information;1
+Photographie;media_publishing/photography;1
+Vidéo & son;media_publishing/video_sound;1
+À emporter;restaurants_bars/takeaway;1
+Bars & cafés;restaurants_bars/bars_cafes;1
+Cuisine chinoise & coréene;restaurants_bars/chinese_korean_cuisine;1
+Cuisine d'Asie du Sud-Est;restaurants_bars/southeast_asian_cuisine;1
+Cuisine européenne;restaurants_bars/european_cuisine;1
+Cuisine japonaise;restaurants_bars/japanese_cuisine;1
+Cuisine méditerranéenne;restaurants_bars/mediterranean_cuisine;1
+Restaurants spécialisés;restaurants_bars/general_restaurants;1
+Végétarien & régime;restaurants_bars/vegetarian_diet;1
+Aides physiques;health_medical/physical_aids;1
+Cliniques;health_medical/clinics;1
+Diagnostic & tests;health_medical/diagnostics_testing;1
+Docteurs & chirurgiens;health_medical/doctors_surgeons;1
+Équipement médical;health_medical/health_equipment;1
+Hôpital & urgences;health_medical/hospital_emergency;1
+Maternité & enfants;health_medical/pregnancy_children;1
+Médecins spécialistes;health_medical/medical_specialists;1
+Pharmacie & médicaments;health_medical/pharmacy_medicine;1
+Santé mentale;health_medical/mental_health;1
+Services dentaires;health_medical/dental_services;1
+Thérapie & santé pour personnes âgées;health_medical/therapy_senior_health;1
+Vue & audition;health_medical/vision_hearing;1
+Énergie & électricité;utilities/energy_power;1
+Pétrole & carburant;utilities/oil_fuel;1
+Traitement des eaux;utilities/water_utilities;1
+Artisan;home_services/craftsman;1
+Déménagement & entreposage;home_services/moving_storage;1
+Gardiennage de maison et sécurité;home_services/house_sitting_security;1
+Plomberie & assainissement;home_services/plumbing_sanitation;1
+Prestataires de service de nettoyage;home_services/cleaning_service_providers;1
+Prestataires de services de réparation;home_services/repair_service_providers;1
+Services à domicile;home_services/house_services;1
+Administration & services;business_services/administration_services;1
+Associations & centres;business_services/associations_centers;1
+Commerce de gros;business_services/wholesale;1
+Import & export;business_services/import_export;1
+Impression & design graphique;business_services/print_graphic_design;1
+Impression & design graphique;business_services/research_development;1
+Informatique & communication;business_services/it_communication;1
+Locaux & fournitures de bureau;business_services/office_space_supplies;1
+Ressources humaines & recrutement;business_services/hr_recruiting;1
+Transport & logistique;business_services/shipping_logistics;1
+Ventes & marketing;business_services/sales_marketing;1
+Avocats & juristes;legal_services_government/lawyers_attorneys;1
+Bibliothèques & archives;legal_services_government/libraries_archives;1
+Département gouvernemental;legal_services_government/government_department;1
+Département municipal;legal_services_government/municipal_department;1
+Douane & péage;legal_services_government/customs_toll;1
+Maintien de l'ordre public;legal_services_government/law_enforcement;1
+Prestataires de services juridiques;legal_services_government/legal_service_providers;1
+Services d'enregistrement;legal_services_government/registration_services;1
+Emploi & carrière;public_local_services/employment_career;1
+Enfants & famille;public_local_services/kids_family;1
+Funérailles & mémorial;public_local_services/funeral_memorial;1
+Gestion des déchets;public_local_services/waste_management;1
+Militaire & ancien combattant;public_local_services/military_veteran;1
+Nature & environnement;public_local_services/nature_environment;1
+Organisations professionnelles;public_local_services/professional_organizations;1
+Refuges & centres d'accueil;public_local_services/shelters_homes;1
+Services publics et bien-être;public_local_services/public_services_welfare;1
+Sociétés de logement;public_local_services/housing_associations;1
+Accessoires;shopping_fashion/accessories;1
+Bijoux & montres;shopping_fashion/jewelry_watches;1
+Centres commerciaux & marchés;shopping_fashion/malls_marketplaces;1
+Costume & mariage;shopping_fashion/costume_wedding;1
+Location & Réparation de vêtements;shopping_fashion/clothing_rental_repair;1
+Vêtements & sous-vêtements;shopping_fashion/clothing_underwear;1
+Arts martiaux & lutte;sports/martial_arts_wrestling;1
+Danse & gymnastique;sports/dancing_gymnastics;1
+Équipement & associations sportives;sports/equipment_associations;1
+Fitness & haltérophilie;sports/fitness_weight_lifting;1
+Golf & utimate;sports/golf_ultimate;1
+Jeux de balle;sports/ball_games;1
+Natation & sports aquatiques;sports/swimming_water_sports;1
+Sports de tir & sports de cible;sports/shooting_target_sports;1
+Sports en extérieur & sports d'hiver;sports/outdoor_winter_sports;1
+Sports extrêmes;sports/extreme_sports;1
+Tennis & sports de raquette;sports/tennis_racquet_sports;1
+Activités & excursions;travel_vacation/activities_tours;1
+Agences de voyage;travel_vacation/travel_agencies;1
+Compagnies aériennes & aéroports;travel_vacation/airlines_air_travel;1
+Hébergements & logements de vacances;travel_vacation/accomodations_lodging;1
+Hôtels;travel_vacation/hotels;1
+Aéroports & parking;vehicles_transportation/airports_parking;1
+Autres véhicules & remorques;vehicles_transportation/other_vehicles_trailers;1
+Location de véhicules;vehicles_transportation/vehical_rental;1
+Motos & sports motorisés;vehicles_transportation/motorcycle_powersports;1
+Pièces automobiles détachées & roues;vehicles_transportation/auto_parts_wheels;1
+Réparation de véhicules & carburant;vehicles_transportation/vehicle_repair_fuel;1
+Taxis & transports publics;vehicles_transportation/taxis_public_transport;1
+Transport aérien & nautique;vehicles_transportation/air_water_transport;1
+Vélos;vehicles_transportation/bicycles;1
+Voitures & camions;vehicles_transportation/cars_trucks;1
+Agriculteur;food_beverages_tobacco/agriculture_produce/crop_grower;2
+Coopérative agricole;food_beverages_tobacco/agriculture_produce/agricultural_cooperative;2
+Ferme;food_beverages_tobacco/agriculture_produce/farm;2
+Fournisseur de services agricoles;food_beverages_tobacco/agriculture_produce/agricultural_service_supply_agency;2
+Grossiste de produits;food_beverages_tobacco/agriculture_produce/produce_wholesaler;2
+Magasin de produits de la ferme;food_beverages_tobacco/agriculture_produce/farm_shop;2
+Marché alimentaire;food_beverages_tobacco/agriculture_produce/produce_market;2
+Miellerie;food_beverages_tobacco/agriculture_produce/honey_farm;2
+Production agricole;food_beverages_tobacco/agriculture_produce/agricultural_production;2
+Produits laitiers;food_beverages_tobacco/agriculture_produce/dairy;2
+Service agricole;food_beverages_tobacco/agriculture_produce/agricultural_service;2
+Vignoble;food_beverages_tobacco/agriculture_produce/vineyard;2
+Bar à bières;food_beverages_tobacco/beer_wine/beer_hall;2
+Brasserie;food_beverages_tobacco/beer_wine/brewery;2
+Cave à vins;food_beverages_tobacco/beer_wine/wine_cellar;2
+Caviste;food_beverages_tobacco/beer_wine/wine_store;2
+Club d'œnologie;food_beverages_tobacco/beer_wine/wine_club;2
+Exploitation viticole;food_beverages_tobacco/beer_wine/winery;2
+Fournisseur de bières;food_beverages_tobacco/beer_wine/beer_distributor;2
+Grossiste en vins;food_beverages_tobacco/beer_wine/wine_wholesaler;2
+Microbrasserie;food_beverages_tobacco/beer_wine/brewpub;2
+Boutique de boissons non alcoolisées;food_beverages_tobacco/beverages_liquor/soft_drinks_shop;2
+Distillerie;food_beverages_tobacco/beverages_liquor/distillery;2
+Distributeur de boissons;food_beverages_tobacco/beverages_liquor/beverage_distributor;2
+Fabricant d'alcool;food_beverages_tobacco/beverages_liquor/alcohol_manufacturer;2
+Fontaine à eau potable;food_beverages_tobacco/beverages_liquor/drinking_water_fountain;2
+Grossiste en vins et spiritueux;food_beverages_tobacco/beverages_liquor/liquor_wholesaler;2
+Magasin d'alcool;food_beverages_tobacco/beverages_liquor/alcohol_store;2
+Magasin de liqueurs;food_beverages_tobacco/beverages_liquor/state_liquor_store;2
+Magasin de vins et spiritueux;food_beverages_tobacco/beverages_liquor/liquor_store;2
+Traiteur;food_beverages_tobacco/beverages_liquor/catering_food_and_drink_supplies;2
+Vente en gros d'eau minérale;food_beverages_tobacco/beverages_liquor/mineral_water_wholesale;2
+Artisan chocolatier;food_beverages_tobacco/candy_chocolate/chocolate_artisan;2
+Confiserie;food_beverages_tobacco/candy_chocolate/confectionery;2
+Magasin de bonbons;food_beverages_tobacco/candy_chocolate/candy_store;2
+Boulangerie;food_beverages_tobacco/bakery_pastry/bakery;2
+Grossiste en boulangerie;food_beverages_tobacco/bakery_pastry/wholesale_bakery;2
+Magasin de cookies;food_beverages_tobacco/bakery_pastry/cookie_shop;2
+Magasin de gâteaux;food_beverages_tobacco/bakery_pastry/cake_shop;2
+Magasin de matériel de décoration de gâteaux;food_beverages_tobacco/bakery_pastry/cake_decorating_equipment_shop;2
+Magasin de pâtisseries;food_beverages_tobacco/bakery_pastry/pastry_shop;2
+Pâtisserie;food_beverages_tobacco/bakery_pastry/patisserie;2
+Boutique de café;food_beverages_tobacco/coffee_tea/coffee_store;2
+Distributeur de café;food_beverages_tobacco/coffee_tea/coffee_vending_machine;2
+Fabricant de thé;food_beverages_tobacco/coffee_tea/tea_manufacturer;2
+Fournisseur de machine à café;food_beverages_tobacco/coffee_tea/coffee_machine_supplier;2
+Grossiste de thé;food_beverages_tobacco/coffee_tea/tea_wholesaler;2
+Magasin de café;food_beverages_tobacco/coffee_tea/coffee_shop;2
+Magasin de thé;food_beverages_tobacco/coffee_tea/tea_store;2
+Marchand de thé;food_beverages_tobacco/coffee_tea/tea_market_place;2
+Salon de thé;food_beverages_tobacco/coffee_tea/tea_house;2
+Salon de thé traditionnel;food_beverages_tobacco/coffee_tea/traditional_teahouse;2
+Torréfacteurs;food_beverages_tobacco/coffee_tea/coffee_roasters;2
+Fournisseur de paniers-repas;food_beverages_tobacco/lunch_catering/box_lunch_supplier;2
+Livraison de repas à domicile;food_beverages_tobacco/lunch_catering/meal_delivery;2
+Service de traiteur;food_beverages_tobacco/lunch_catering/catering_service;2
+Traiteur mobile;food_beverages_tobacco/lunch_catering/mobile_catering;2
+Boutique de produits diététiques;food_beverages_tobacco/grocery_stores_markets/health_food_store;2
+Épicerie;food_beverages_tobacco/grocery_stores_markets/grocery_store;2
+Épicerie fine;food_beverages_tobacco/grocery_stores_markets/deli;2
+Ferme bio;food_beverages_tobacco/grocery_stores_markets/organic_farm;2
+Kiosque;food_beverages_tobacco/grocery_stores_markets/kiosk;2
+Magasin bio;food_beverages_tobacco/grocery_stores_markets/organic_store;2
+Magasin d'alimentation bio;food_beverages_tobacco/grocery_stores_markets/organic_food_store;2
+Magasin d'alimentation naturelle;food_beverages_tobacco/grocery_stores_markets/natural_foods_store;2
+Magasin d'épices;food_beverages_tobacco/grocery_stores_markets/spice_store;2
+Magasin de produits gourmets;food_beverages_tobacco/grocery_stores_markets/gourmet_grocery_store;2
+Magasin de produits surgelés;food_beverages_tobacco/grocery_stores_markets/frozen_food_store;2
+Service de livraison des courses;food_beverages_tobacco/grocery_stores_markets/grocery_delivery_service;2
+Supérette;food_beverages_tobacco/grocery_stores_markets/convenience_store;2
+Supermarché;food_beverages_tobacco/grocery_stores_markets/supermarket;2
+Boutique de confiseries japonaises bon marché;food_beverages_tobacco/asian_grocery_stores/japanese_cheap_sweets_shop;2
+Épicerie asiatique;food_beverages_tobacco/asian_grocery_stores/asian_grocery_store;2
+Épicerie japonaise;food_beverages_tobacco/asian_grocery_stores/japanese_grocery_store;2
+Épicerie japonaise spécialisée;food_beverages_tobacco/asian_grocery_stores/japanese_delicatessen;2
+Magasin d'articles orientaux;food_beverages_tobacco/asian_grocery_stores/oriental_goods_store;2
+Magasin de fruits secs;food_beverages_tobacco/fruits_vegetables/dry_fruit_store;2
+Marchand de légumes;food_beverages_tobacco/fruits_vegetables/green_grocers;2
+Primeur;food_beverages_tobacco/fruits_vegetables/fruit_and_vegetable_store;2
+Conserverie;food_beverages_tobacco/food_production/cannery;2
+Consultant en aliments et boissons;food_beverages_tobacco/food_production/food_and_beverage_consultant;2
+Entreprise d'embouteillage d'huile d'olive;food_beverages_tobacco/food_production/olive_oil_bottling_company;2
+Entreprise de transformation alimentaire;food_beverages_tobacco/food_production/food_processing_company;2
+Équipement de transformation des aliments;food_beverages_tobacco/food_production/food_processing_equipment;2
+Fabricant d'huile d'olive;food_beverages_tobacco/food_production/olive_oil_manufacturer;2
+Fabricant de produits alimentaires;food_beverages_tobacco/food_production/food_manufacturer;2
+Fabricant de produits surgelés;food_beverages_tobacco/food_production/frozen_food_manufacturer;2
+Fabrication d'aliments;food_beverages_tobacco/food_production/food_manufacturing_supply;2
+Fournisseur d'engrais;food_beverages_tobacco/food_production/fertilizer_supplier;2
+Fournisseur de matériel agricole;food_beverages_tobacco/food_production/farm_equipment_supplier;2
+Fournisseur de produits alimentaires;food_beverages_tobacco/food_production/food_products_supplier;2
+Packaging d'aliments de base;food_beverages_tobacco/food_production/staple_food_package;2
+Producteur de produits alimentaires;food_beverages_tobacco/food_production/food_producer;2
+Boutique de cigares;food_beverages_tobacco/smoking_tobacco/cigar_shop;2
+Bureau de tabac;food_beverages_tobacco/smoking_tobacco/tobacco_shop;2
+Fournisseur de tabac;food_beverages_tobacco/smoking_tobacco/tobacco_supplier;2
+Magasin de cannabis;food_beverages_tobacco/smoking_tobacco/cannabis_store;2
+Magasin de cigarettes électroniques;food_beverages_tobacco/smoking_tobacco/electronic_cigarette_store;2
+Magasin de narguilés;food_beverages_tobacco/smoking_tobacco/hookah_store;2
+Magasin de vaporiseurs;food_beverages_tobacco/smoking_tobacco/vaporizer_store;2
+Boucherie;food_beverages_tobacco/meat_seafood_eggs/butcher_shop;2
+Boucherie-charcuterie;food_beverages_tobacco/meat_seafood_eggs/butcher_shop_deli;2
+Charcuterie;food_beverages_tobacco/meat_seafood_eggs/charcuterie;2
+Charcutier;food_beverages_tobacco/meat_seafood_eggs/ham_shop;2
+Ferme d'élevage;food_beverages_tobacco/meat_seafood_eggs/cattle_farm;2
+Fournisseur d'huîtres;food_beverages_tobacco/meat_seafood_eggs/oyster_supplier;2
+Magasin de fruits de mer séchés;food_beverages_tobacco/meat_seafood_eggs/dried_seafood_store;2
+Marché aux poissons et fruits de mer;food_beverages_tobacco/meat_seafood_eggs/seafood_market;2
+Mareyeur;food_beverages_tobacco/meat_seafood_eggs/seafood_wholesaler;2
+Poissonnerie;food_beverages_tobacco/meat_seafood_eggs/fish_store;2
+Transformateur de viande;food_beverages_tobacco/meat_seafood_eggs/meat_processor;2
+Vendeur de viande en gros;food_beverages_tobacco/meat_seafood_eggs/meat_wholesaler;2
+Animalerie;animals_pets/pet_stores/pet_store;2
+Magasin d'alimentation animale;animals_pets/pet_stores/feed_store;2
+Magasin d'aquariophilie;animals_pets/pet_stores/aquarium_shop;2
+Magasin d'articles pour animaux;animals_pets/pet_stores/pet_supply_store;2
+Oisellerie;animals_pets/pet_stores/bird_shop;2
+Café à chiens;animals_pets/cats_dogs/dog_cafe;2
+Dresseur de chiens;animals_pets/cats_dogs/dog_trainer;2
+Éleveur de chiens;animals_pets/cats_dogs/dog_breeder;2
+Hôtel pour chiens;animals_pets/cats_dogs/dog_hostel;2
+Pension pour chats;animals_pets/cats_dogs/cat_hostel;2
+Pension pour chiens;animals_pets/cats_dogs/dog_day_care_center;2
+Promeneur de chien;animals_pets/cats_dogs/dog_walker;2
+Centre de randonnée équestre;animals_pets/horses_riding/horseback_riding_service;2
+Club d'équitation;animals_pets/horses_riding/pony_club;2
+École d'équitation;animals_pets/horses_riding/horse_riding_school;2
+Éleveur de chevaux;animals_pets/horses_riding/horse_breeder;2
+Fournisseur de transports pour chevaux;animals_pets/horses_riding/horsebox_specialist;2
+Haras;animals_pets/horses_riding/horsestable_studfarm;2
+Maréchal-ferrant;animals_pets/horses_riding/horseshoe_smith;2
+Pension pour chevaux;animals_pets/horses_riding/horse_boarding_stable;2
+Sellerie-bourrellerie;animals_pets/horses_riding/saddlery;2
+Aquarium;animals_pets/animal_parks_zoo/aquarium;2
+Parc animalier;animals_pets/animal_parks_zoo/animal_park;2
+Parc animalier et safari;animals_pets/animal_parks_zoo/wildlife_and_safari_park;2
+Zoo;animals_pets/animal_parks_zoo/zoo;2
+Urgences vétérinaires;animals_pets/animal_health/emergency_veterinarian_service;2
+Vétérinaire;animals_pets/animal_health/veterinarian;2
+Dresseur d'animaux de compagnie;animals_pets/pet_services/pet_trainer;2
+Garde d'animaux de compagnie;animals_pets/pet_services/pet_sitter;2
+Service d'adoption d'animaux de compagnie;animals_pets/pet_services/pet_adoption_service;2
+Service d'assistance;animals_pets/pet_services/agistment_service;2
+Service de sauvetage d'animaux;animals_pets/pet_services/wildlife_rescue_service;2
+Toiletteur;animals_pets/pet_services/pet_groomer;2
+Agence d'assurance;money_insurance/insurance/insurance_agency;2
+Agence d'assurance dentaire;money_insurance/insurance/dental_insurance_agency;2
+Agence d'assurance pour locataires;money_insurance/insurance/renters_insurance_agency;2
+Assurance auto;money_insurance/insurance/auto_insurance_agency;2
+Compagnie d'assurance;money_insurance/insurance/insurance_company;2
+Compagnie d'assurance accidents;money_insurance/insurance/accident_insurance_company;2
+Compagnie d'assurance animaux;money_insurance/insurance/pet_insurance_company;2
+Compagnie d'assurance de mobilité;money_insurance/insurance/mobility_insurance_company;2
+Compagnie d'assurance de vélos;money_insurance/insurance/cycle_insurance_company;2
+Compagnie d'assurance étudiant;money_insurance/insurance/student_insurance_company;2
+Compagnie d'assurance funérailles;money_insurance/insurance/funeral_insurance_company;2
+Compagnie d'assurance habitation;money_insurance/insurance/home_insurance_agency;2
+Compagnie d'assurance personnelle;money_insurance/insurance/personal_insurance_company;2
+Compagnie d'assurance propriétaire;money_insurance/insurance/landlord_insurance_company;2
+Compagnie d'assurance sportive;money_insurance/insurance/sport_insurance_company;2
+Compagnie d'assurance vie;money_insurance/insurance/life_insurance_agency;2
+Compagnie d'assurance voyage;money_insurance/insurance/travel_insurance_company;2
+Courtier d'assurances;money_insurance/insurance/insurance_broker;2
+Mutuelle de santé;money_insurance/insurance/health_insurance_agency;2
+Agent Mobile Money;money_insurance/banking_money/mobile_money_agent;2
+Banque;money_insurance/banking_money/bank;2
+Banque d'épargne;money_insurance/banking_money/savings_bank;2
+Banque du secteur privé;money_insurance/banking_money/private_sector_bank;2
+Bureau de change;money_insurance/banking_money/currency_exchange_service;2
+Institution financière;money_insurance/banking_money/financial_institution;2
+Service de crypto-monnaie;money_insurance/banking_money/cryptocurrency_service;2
+Service de remise en espèces;money_insurance/banking_money/cashback_provider;2
+Service de transfert d'argent;money_insurance/banking_money/money_transfer_service;2
+Cabinet d'expertise comptable;money_insurance/accounting_tax/accounting_firm;2
+Comptable;money_insurance/accounting_tax/accountant;2
+Comptable agréé;money_insurance/accounting_tax/chartered_accountant;2
+Conseil en déclaration fiscale;money_insurance/accounting_tax/tax_preparation;2
+Conseiller fiscal;money_insurance/accounting_tax/tax_advisor;2
+Consultant fiscal;money_insurance/accounting_tax/tax_consultant;2
+Expert-comptable;money_insurance/accounting_tax/certified_public_accountant;2
+Logiciel de préparation de déclaration des taxes;money_insurance/accounting_tax/tax_preparation_software;2
+Service d'accompagnement des personnes surendettées et des entreprises en difficulté;money_insurance/accounting_tax/bankruptcy_service;2
+Service de paiement et de comptabilité;money_insurance/accounting_tax/bookkeeping_service;2
+Service de préparation des déclarations fiscales;money_insurance/accounting_tax/tax_preparation_service;2
+Administration immobilière;money_insurance/real_estate/property_administrator;2
+Agence de location d'appartements;money_insurance/real_estate/apartment_rental_agency;2
+Agence de location d'appartements courte durée;money_insurance/real_estate/short_term_apartment_rental_agency;2
+Agence de location immobilière;money_insurance/real_estate/real_estate_rental_agency;2
+Agence immobilière;money_insurance/real_estate/real_estate_agency;2
+Agents immobiliers;money_insurance/real_estate/real_estate_agents;2
+Consultant immobilier;money_insurance/real_estate/real_estate_consultant;2
+Évaluateur immobilier;money_insurance/real_estate/real_estate_appraiser;2
+Expert;money_insurance/real_estate/appraiser;2
+Immeuble d'habitation;money_insurance/real_estate/apartment_building;2
+Immeuble en copropriété;money_insurance/real_estate/condominium_complex;2
+Promoteur immobilier;money_insurance/real_estate/real_estate_developer;2
+Service d'achats groupés;money_insurance/real_estate/group_buying_service;2
+Société de gestion immobilière;money_insurance/real_estate/property_management_company;2
+Agence de revenus;money_insurance/investments_wealth/agenzia_entrate;2
+Audit financier;money_insurance/investments_wealth/financial_audit;2
+Bourse;money_insurance/investments_wealth/stock_exchange_building;2
+Conseil en investissement;money_insurance/investments_wealth/investment_service;2
+Conseiller financier;money_insurance/investments_wealth/financial_consultant;2
+Courtier en finances;money_insurance/investments_wealth/finance_broker;2
+Courtier en prêts hypothécaires;money_insurance/investments_wealth/mortgage_broker;2
+Entreprise de négoce de l'or et de l'argent;money_insurance/investments_wealth/gold_and_silver_trading_company;2
+Établissement de crédit;money_insurance/investments_wealth/loan_agency;2
+Expert immobilier;money_insurance/investments_wealth/estate_appraiser;2
+Gestion des biens;money_insurance/investments_wealth/asset_manager;2
+Investissements immobiliers;money_insurance/investments_wealth/property_investment;2
+Marchand d'or;money_insurance/investments_wealth/gold_dealer;2
+Planificateur financier;money_insurance/investments_wealth/financial_planner;2
+Prêteur hypothécaire;money_insurance/investments_wealth/mortgage_lender;2
+Service de finances alternatives;money_insurance/investments_wealth/alternate_finance_services;2
+Société d'investissement;money_insurance/investments_wealth/investment_company;2
+Société de portefeuille;money_insurance/investments_wealth/holding_company;2
+Société financière non banquière;money_insurance/investments_wealth/non_bank_finance;2
+Agence de crédit;money_insurance/credit_debt_services/credit_bureau;2
+Agence de recouvrement des dettes;money_insurance/credit_debt_services/debt_collection_agency;2
+Recouvrement de dettes;money_insurance/credit_debt_services/debt_collecting;2
+Service d'allégement de la dette;money_insurance/credit_debt_services/debt_relief_service;2
+Service de conseil en crédit;money_insurance/credit_debt_services/credit_counseling_service;2
+Centre de bien-être;beauty_wellbeing/wellness_spa/wellness_center;2
+Hammam;beauty_wellbeing/wellness_spa/hammam;2
+Institut de massages;beauty_wellbeing/wellness_spa/massage_spa;2
+Institut de soins du visage;beauty_wellbeing/wellness_spa/facial_spa;2
+Institut de spa et bien-être;beauty_wellbeing/wellness_spa/spa_and_health_club;2
+Magasin d'aromathérapie;beauty_wellbeing/wellness_spa/aromatherapy_supply_store;2
+Masseur;beauty_wellbeing/wellness_spa/massage_therapist;2
+Programme de bien-être;beauty_wellbeing/wellness_spa/wellness_program;2
+Salon de massage de pieds;beauty_wellbeing/wellness_spa/foot_massage_parlor;2
+Soin des pieds;beauty_wellbeing/wellness_spa/foot_care;2
+Spa;beauty_wellbeing/wellness_spa/spa;2
+Spa de jour;beauty_wellbeing/wellness_spa/day_spa;2
+Spa en extérieur;beauty_wellbeing/wellness_spa/spa_garden;2
+Boutique d'articles de toilette;beauty_wellbeing/personal_care/toiletries_store;2
+Centre d'amincissement;beauty_wellbeing/personal_care/weight_loss_service;2
+Clinique du sommeil;beauty_wellbeing/personal_care/sleep_clinic;2
+Herboriste;beauty_wellbeing/personal_care/herbalist;2
+Herboristerie;beauty_wellbeing/personal_care/herb_shop;2
+Magasin d'accessoires de massage;beauty_wellbeing/personal_care/massage_supply_store;2
+Magasin de vitamines et compléments alimentaires;beauty_wellbeing/personal_care/vitamin_and_supplements_store;2
+Salon de manucure;beauty_wellbeing/personal_care/nail_salon;2
+Service de fitness et nutrition;beauty_wellbeing/personal_care/fitness_and_nutrition_service;2
+Artiste du maquillage;beauty_wellbeing/cosmetics_makeup/makeup_artist;2
+Distributeur de produits de beauté;beauty_wellbeing/cosmetics_makeup/beauty_products_vending_machine;2
+Distributeur de produits pour la peau;beauty_wellbeing/cosmetics_makeup/skin_care_products_vending_machine;2
+Entreprise de cosmétique;beauty_wellbeing/cosmetics_makeup/cosmetic_products_manufacturer;2
+Fournisseur d'arômes et de parfums;beauty_wellbeing/cosmetics_makeup/flavours_fragrances_and_aroma_supplier;2
+Fournisseur de cosmétiques et de parfums;beauty_wellbeing/cosmetics_makeup/cosmetics_and_parfumes_supplier;2
+Fournisseur de produits de beauté;beauty_wellbeing/cosmetics_makeup/beauty_product_supplier;2
+Grossiste en produits cosmétiques;beauty_wellbeing/cosmetics_makeup/cosmetics_wholesaler;2
+Grossiste en produits de beauté;beauty_wellbeing/cosmetics_makeup/beauty_products_wholesaler;2
+Industrie cosmétique;beauty_wellbeing/cosmetics_makeup/cosmetics_industry;2
+Magasin de cosmétiques;beauty_wellbeing/cosmetics_makeup/cosmetics_store;2
+Magasin de produits de beauté;beauty_wellbeing/cosmetics_makeup/beauty_supply_store;2
+Parfumerie;beauty_wellbeing/cosmetics_makeup/perfume_store;2
+Boutique de santé et beauté;beauty_wellbeing/salons_clinics/health_and_beauty_shop;2
+Clinique dermatologique;beauty_wellbeing/salons_clinics/skin_care_clinic;2
+Institut de beauté;beauty_wellbeing/salons_clinics/beauty_salon;2
+Barbier;beauty_wellbeing/hair_care_styling/barber_shop;2
+Clinique de transplantation de cheveux;beauty_wellbeing/hair_care_styling/hair_transplantation_clinic;2
+Coiffeur;beauty_wellbeing/hair_care_styling/unisex_hairdresser;2
+Coiffeur à domicile;beauty_wellbeing/hair_care_styling/home_hairdresser;2
+Coiffeur mobile;beauty_wellbeing/hair_care_styling/mobile_hairdresser;2
+Fournisseur d'extension de cheveux;beauty_wellbeing/hair_care_styling/hair_extensions_supplier;2
+Magasin d'articles de coiffure pour hommes;beauty_wellbeing/hair_care_styling/barber_supply_store;2
+Magasin de produits capillaires;beauty_wellbeing/hair_care_styling/hair_product_store;2
+Salon d'épilation;beauty_wellbeing/hair_care_styling/hair_removal_service;2
+Salon de coiffure;beauty_wellbeing/hair_care_styling/hair_salon;2
+Service d'épilation à la cire;beauty_wellbeing/hair_care_styling/waxing_hair_removal_service;2
+Service d'implantations capillaires;beauty_wellbeing/hair_care_styling/hair_replacement_service;2
+Salon de piercing;beauty_wellbeing/tattoos_piercings/body_piercing_shop;2
+Salon de tatouage et piercing;beauty_wellbeing/tattoos_piercings/tattoo_and_piercing_shop;2
+Tatoueur;beauty_wellbeing/tattoos_piercings/tattoo_shop;2
+Centre de méditation;beauty_wellbeing/yoga_meditation/meditation_center;2
+Centre de yoga;beauty_wellbeing/yoga_meditation/yoga_retreat_center;2
+Cours de yoga;beauty_wellbeing/yoga_meditation/yoga_instructor;2
+Professeur de méditation;beauty_wellbeing/yoga_meditation/meditation_instructor;2
+Studio de yoga;beauty_wellbeing/yoga_meditation/yoga_studio;2
+Agence d'architecture;construction_manufactoring/architects_engineers/architecture_firm;2
+Architecte;construction_manufactoring/architects_engineers/architect;2
+Concepteur en architecture;construction_manufactoring/architects_engineers/architectural_designer;2
+Entreprise de conception des bâtiments;construction_manufactoring/architects_engineers/building_design_company;2
+Entreprise de topographie;construction_manufactoring/architects_engineers/topography_company;2
+Fabricant de modèles d'architecte et d'ingénierie;construction_manufactoring/architects_engineers/architectural_and_engineering_model_maker;2
+Ingénieur;construction_manufactoring/architects_engineers/engineer;2
+Ingénieur en mécanique;construction_manufactoring/architects_engineers/mechanical_engineer;2
+Ingénieur en textile;construction_manufactoring/architects_engineers/textile_engineer;2
+Ingénieur structures;construction_manufactoring/architects_engineers/structural_engineer;2
+Bureau de construction et d'entretien;construction_manufactoring/contractors_consultants/construction_and_maintenance_office;2
+Carreleur;construction_manufactoring/contractors_consultants/tile_contractor;2
+Chauffagiste;construction_manufactoring/contractors_consultants/heating_contractor;2
+Constructeur de garages;construction_manufactoring/contractors_consultants/garage_builder;2
+Constructeur de maisons modulaires;construction_manufactoring/contractors_consultants/modular_home_builder;2
+Constructeur de maisons personnalisées;construction_manufactoring/contractors_consultants/custom_home_builder;2
+Constructeur immobilier;construction_manufactoring/contractors_consultants/home_builder;2
+Consultant en acoustique;construction_manufactoring/contractors_consultants/acoustical_consultant;2
+Consultant en construction;construction_manufactoring/contractors_consultants/building_consultant;2
+Consultant en ingénierie;construction_manufactoring/contractors_consultants/engineering_consultant;2
+Consultant industriel;construction_manufactoring/contractors_consultants/industrial_consultant;2
+Entrepreneur;construction_manufactoring/contractors_consultants/contractor;2
+Entrepreneur en construction intérieure;construction_manufactoring/contractors_consultants/interior_construction_contractor;2
+Entrepreneur en éclairage;construction_manufactoring/contractors_consultants/lighting_contractor;2
+Entrepreneur en énergie solaire;construction_manufactoring/contractors_consultants/solar_energy_contractor;2
+Entrepreneur en maçonnerie;construction_manufactoring/contractors_consultants/masonry_contractor;2
+Entrepreneur en toiture;construction_manufactoring/contractors_consultants/roofing_contractor;2
+Entrepreneur spécialisé dans l'isolation;construction_manufactoring/contractors_consultants/insulation_contractor;2
+Entrepreneur spécialisé dans la décoration d'intérieur;construction_manufactoring/contractors_consultants/interior_fitting_contractor;2
+Entrepreneur spécialisé dans les systèmes de CVC;construction_manufactoring/contractors_consultants/hvac_contractor;2
+Entreprise de construction;construction_manufactoring/contractors_consultants/building_firm;2
+Fournisseur de systèmes de climatisation;construction_manufactoring/contractors_consultants/air_conditioning_contractor;2
+Géomètre-expert en bâtiment;construction_manufactoring/contractors_consultants/building_surveyor;2
+Inspecteur en bâtiment;construction_manufactoring/contractors_consultants/building_inspector;2
+Maintenance immobilière;construction_manufactoring/contractors_consultants/property_maintenance;2
+Menuisier;construction_manufactoring/contractors_consultants/joiner;2
+Métreur;construction_manufactoring/contractors_consultants/quantity_surveyor;2
+Société de construction;construction_manufactoring/contractors_consultants/construction_company;2
+Société de construction de piscines;construction_manufactoring/contractors_consultants/swimming_pool_contractor;2
+Société de fabrication d'escaliers;construction_manufactoring/contractors_consultants/stair_contractor;2
+Société de travaux publics;construction_manufactoring/contractors_consultants/road_construction_company;2
+Travaux généraux;construction_manufactoring/contractors_consultants/general_contractor;2
+Fournisseur d'équipement électrique;construction_manufactoring/factory_equipment/electrical_equipment_supplier;2
+Fournisseur d'équipement pour usine;construction_manufactoring/factory_equipment/factory_equipment_supplier;2
+Fournisseur d'équipements industriels;construction_manufactoring/factory_equipment/industrial_equipment_supplier;2
+Fournisseur de matériel de laboratoire;construction_manufactoring/factory_equipment/laboratory_equipment_supplier;2
+Fournisseur de traitement de l'eau;construction_manufactoring/factory_equipment/water_treatment_supplier;2
+Agence immobilière industrielle;construction_manufactoring/manufacturing/industrial_real_estate_agency;2
+Atelier de menuiserie;construction_manufactoring/manufacturing/millwork_shop;2
+Entreprise de conception de charpentes métalliques;construction_manufactoring/manufacturing/steelwork_design_company;2
+Fabricant;construction_manufactoring/manufacturing/manufacturer;2
+Fabricant d'électronique;construction_manufactoring/manufacturing/electronics_manufacturer;2
+Fabricant d'équipements de ventilation;construction_manufactoring/manufacturing/ventilating_equipment_manufacturer;2
+Fabricant d'outils;construction_manufactoring/manufacturing/tool_manufacturer;2
+Fabricant de batteries;construction_manufactoring/manufacturing/battery_manufacturer;2
+Fabricant de biens de grande consommation;construction_manufactoring/manufacturing/fmcg_manufacturer;2
+Fabricant de cheminée;construction_manufactoring/manufacturing/fireplace_manufacturer;2
+Fabricant de machines;construction_manufactoring/manufacturing/machining_manufacturer;2
+Fabricant de machines agricoles;construction_manufactoring/manufacturing/agricultural_machinery_manufacturer;2
+Fabricant de métal;construction_manufactoring/manufacturing/metal_fabricator;2
+Fabricant de nourriture pour animaux;construction_manufactoring/manufacturing/feed_manufacturer;2
+Fabricant de pièces de machinerie;construction_manufactoring/manufacturing/machinery_parts_manufacturer;2
+Fabricant de produits en céramique;construction_manufactoring/manufacturing/ceramic_manufacturer;2
+Fabricant de produits en tissu;construction_manufactoring/manufacturing/fabric_product_manufacturer;2
+Fabrique de textile;construction_manufactoring/manufacturing/clothes_and_fabric_manufacturer;2
+Prestataire de traitement et finition de surfaces métalliques;construction_manufactoring/manufacturing/metal_finisher;2
+Production d'électricité;construction_manufactoring/manufacturing/electric_utility_manufacturer;2
+Usine textile;construction_manufactoring/manufacturing/textile_mill;2
+Fournisseur d'autocollants;construction_manufactoring/industrial_supplies/decal_supplier;2
+Fournisseur d'encadrements industriels;construction_manufactoring/industrial_supplies/industrial_framework_supplier;2
+Fournisseur d'équipements d'adoucissement de l'eau;construction_manufactoring/industrial_supplies/water_softening_equipment_supplier;2
+Fournisseur d'équipements de chauffage;construction_manufactoring/industrial_supplies/heating_equipment_supplier;2
+Fournisseur de chauffe-eau;construction_manufactoring/industrial_supplies/hot_water_system_supplier;2
+Fournisseur de chauffe-eau solaires;construction_manufactoring/industrial_supplies/solar_hot_water_system_supplier;2
+Fournisseur de compresseurs d'air;construction_manufactoring/industrial_supplies/air_compressor_supplier;2
+Fournisseur de filtres à eau;construction_manufactoring/industrial_supplies/water_filter_supplier;2
+Fournisseur de matériel pour centrales électriques;construction_manufactoring/industrial_supplies/power_plant_equipment_supplier;2
+Fournisseur de produits en caoutchouc;construction_manufactoring/industrial_supplies/rubber_products_supplier;2
+Fournisseur de produits en plastique;construction_manufactoring/industrial_supplies/plastic_products_supplier;2
+Fournisseur de vêtements de protection;construction_manufactoring/industrial_supplies/protective_clothing_supplier;2
+Fournisseurs de produits en métal;construction_manufactoring/industrial_supplies/metal_industry_suppliers;2
+Magasin d'équipements et accessoires nautiques;construction_manufactoring/industrial_supplies/marine_supply_store;2
+Magasin de matériel de soudure;construction_manufactoring/industrial_supplies/welding_supply_store;2
+Magasin de matériel électrique;construction_manufactoring/industrial_supplies/electrical_supply_store;2
+Service de réparation de moteurs électriques;construction_manufactoring/industrial_supplies/electric_motor_repair_shop;2
+Architecte paysagiste;construction_manufactoring/garden_landscaping/landscape_architect;2
+Constructeur de kiosques/pavillons de jardin;construction_manufactoring/garden_landscaping/gazebo_builder;2
+Constructeur de terrasses;construction_manufactoring/garden_landscaping/deck_builder;2
+Designer Paysagiste;construction_manufactoring/garden_landscaping/landscape_designer;2
+Fabricant d'abris voiture et de pergolas;construction_manufactoring/garden_landscaping/carport_and_pergola_builder;2
+Fournisseur d'auvents;construction_manufactoring/garden_landscaping/awning_supplier;2
+Fournisseur de terre végétale;construction_manufactoring/garden_landscaping/topsoil_supplier;2
+Magasin d'articles pour l'aménagement paysager;construction_manufactoring/garden_landscaping/landscaping_supply_store;2
+Magasin de matériel pour piscines;construction_manufactoring/garden_landscaping/swimming_pool_supply_store;2
+Paysagiste;construction_manufactoring/garden_landscaping/landscaper;2
+Artisan du bois;construction_manufactoring/building_materials/woodworker;2
+Carrière;construction_manufactoring/building_materials/quarry;2
+Constructeur de structures en béton;construction_manufactoring/building_materials/concrete_contractor;2
+Distributeur d'acier;construction_manufactoring/building_materials/steel_distributor;2
+Fenêtre en aluminium;construction_manufactoring/building_materials/aluminum_window;2
+Fournisseur d'écorce;construction_manufactoring/building_materials/bark_supplier;2
+Fournisseur d'isolant;construction_manufactoring/building_materials/insulator_supplier;2
+Fournisseur de béton prêt-à-l'emploi;construction_manufactoring/building_materials/ready_mix_concrete_supplier;2
+Fournisseur de bois;construction_manufactoring/building_materials/wood_supplier;2
+Fournisseur de fenêtres;construction_manufactoring/building_materials/window_supplier;2
+Fournisseur de fenêtres PVC;construction_manufactoring/building_materials/pvc_windows_supplier;2
+Fournisseur de gazon;construction_manufactoring/building_materials/turf_supplier;2
+Fournisseur de marbre;construction_manufactoring/building_materials/marble_supplier;2
+Fournisseur de métal;construction_manufactoring/building_materials/metal_supplier;2
+Fournisseur de pierre concassée;construction_manufactoring/building_materials/crushed_stone_supplier;2
+Fournisseur de pierres;construction_manufactoring/building_materials/stone_supplier;2
+Fournisseur de sable et de gravier;construction_manufactoring/building_materials/sand_and_gravel_supplier;2
+Magasin de bois;construction_manufactoring/building_materials/lumber_store;2
+Magasin de fenêtres en PVC;construction_manufactoring/building_materials/plast_window_store;2
+Magasin de fournitures pour cloisons sèches;construction_manufactoring/building_materials/dry_wall_supply_store;2
+Magasin de matériaux d'isolation;construction_manufactoring/building_materials/insulation_materials_store;2
+Magasin de matériel de maçonnerie;construction_manufactoring/building_materials/masonry_supply_store;2
+Magasin de matériel pour le travail du bois;construction_manufactoring/building_materials/woodworking_supply_store;2
+Magasin de pierres naturelles;construction_manufactoring/building_materials/natural_stone_supplier;2
+Marchand de verre;construction_manufactoring/building_materials/glass_merchant;2
+Plafonnier;construction_manufactoring/building_materials/ceiling_supplier;2
+Société minière;construction_manufactoring/building_materials/mining_company;2
+Entreprise de matériel de manutention;construction_manufactoring/tools_equipment/material_handling_equipment_supplier;2
+Fournisseur d'échelles;construction_manufactoring/tools_equipment/ladder_supplier;2
+Fournisseur d'engins de chantier;construction_manufactoring/tools_equipment/construction_equipment_supplier;2
+Fournisseur d'équipement;construction_manufactoring/tools_equipment/equipment_supplier;2
+Fournisseur d'équipement de nettoyage et d'entretien;construction_manufactoring/tools_equipment/janitorial_equipment_supplier;2
+Fournisseur d'équipements de sécurité;construction_manufactoring/tools_equipment/safety_equipment_supplier;2
+Fournisseur d'outils pneumatiques;construction_manufactoring/tools_equipment/pneumatic_tools_supplier;2
+Fournisseur de flexibles;construction_manufactoring/tools_equipment/hose_supplier;2
+Fournisseur de matériaux de construction;construction_manufactoring/tools_equipment/building_materials_supplier;2
+Fournisseur de vis;construction_manufactoring/tools_equipment/screw_supplier;2
+Magasin d'équipement et de machines de construction;construction_manufactoring/tools_equipment/construction_machinery_and_equipment_store;2
+Magasin d'outillage;construction_manufactoring/tools_equipment/tool_store;2
+Magasin de materiaux de construction;construction_manufactoring/tools_equipment/building_materials_store;2
+Magasin de matériel de plomberie;construction_manufactoring/tools_equipment/plumbing_supply_store;2
+Magasin de vêtements de sécurité;construction_manufactoring/tools_equipment/safety_and_work_wear_store;2
+Marché de matériaux de construction;construction_manufactoring/tools_equipment/building_materials_market;2
+Service de location d'outils;construction_manufactoring/tools_equipment/tool_rental_service;2
+Vendeur de machines de construction;construction_manufactoring/tools_equipment/construction_machine_dealer;2
+Laboratoire de chimie;construction_manufactoring/chemicals_plastic/chemistry_lab;2
+Usine chimique;construction_manufactoring/chemicals_plastic/chemical_plant;2
+Graveur;construction_manufactoring/construction_services/engraver;2
+Maçon;construction_manufactoring/construction_services/stonemason;2
+Service d'installation des fenêtres;construction_manufactoring/construction_services/window_installation_service;2
+Service de découpe de verre;construction_manufactoring/construction_services/glass_cutting_service;2
+Service de marquage de ligne;construction_manufactoring/construction_services/line_marking_service;2
+Service de pose de parquet;construction_manufactoring/construction_services/wood_floor_installation_service;2
+Service de restauration de bâtiments;construction_manufactoring/construction_services/building_restoration_service;2
+Tailleur de pierre;construction_manufactoring/construction_services/stone_cutter;2
+Agence de location de matériel;construction_manufactoring/production_services/equipment_rental_agency;2
+Service de dessin industriel;construction_manufactoring/production_services/drafting_service;2
+Service de réparation hydraulique;construction_manufactoring/production_services/hydraulic_repair_service;2
+Cours d'anglais;education_training/language_learning/english_language_instructor;2
+École d'allemand;education_training/language_learning/german_language_school;2
+École d'anglais;education_training/language_learning/english_language_school;2
+École de chinois;education_training/language_learning/chinese_language_school;2
+École de français;education_training/language_learning/french_language_school;2
+École de langue;education_training/language_learning/language_school;2
+École de langues étrangères;education_training/language_learning/foreign_languages_program_school;2
+Fournisseur de cours de langues étrangères;education_training/language_learning/language_course_provider;2
+Professeur d'allemand;education_training/language_learning/german_language_instructor;2
+Séjour linguistique;education_training/language_learning/english_language_camp;2
+École de commerce;education_training/colleges_universities/business_school;2
+École de management;education_training/colleges_universities/management_school;2
+École de médecine;education_training/colleges_universities/medical_school;2
+Établissement d'enseignement supérieur;education_training/colleges_universities/college;2
+Faculté de pharmacie;education_training/colleges_universities/faculty_of_pharmacy;2
+Faculté des sciences;education_training/colleges_universities/faculty_of_science;2
+Institut de recherche;education_training/colleges_universities/research_institute;2
+Université;education_training/colleges_universities/university;2
+École d'art dramatique;education_training/music_theater_classes/drama_school;2
+École de musique;education_training/music_theater_classes/music_school;2
+Professeur de guitare;education_training/music_theater_classes/guitar_instructor;2
+Centre éducatif;education_training/school_high_school/school_center;2
+Classes préparatoires;education_training/school_high_school/preparatory_school;2
+Club de gym;education_training/school_high_school/gymnasium_school;2
+École;education_training/school_high_school/school;2
+École communautaire;education_training/school_high_school/community_school;2
+École de théâtre;education_training/school_high_school/play_school;2
+École primaire;education_training/school_high_school/primary_school;2
+Institut d'éducation préscolaire;education_training/school_high_school/preschool_program_institution;2
+Lycée;education_training/school_high_school/high_school;2
+Auto-école;education_training/specials_schools/drivers_license_training_school;2
+Boîte à bac;education_training/specials_schools/cramming_school;2
+Centre de formation;education_training/specials_schools/learning_center;2
+Centre de formation à distance;education_training/specials_schools/distance_learning_center;2
+Centre de formation pour adultes;education_training/specials_schools/adult_education_school;2
+École d'éducation spécialisée;education_training/specials_schools/special_education_school;2
+École de conduite;education_training/specials_schools/driving_school;2
+École de mathématiques;education_training/specials_schools/mathematics_school;2
+École pour sourds et malentendants;education_training/specials_schools/deaf_school;2
+Instruction à domicile;education_training/specials_schools/study_at_home_school;2
+Centre d'entrainement;education_training/vocational_training/training_school;2
+Centre de formation aux premiers secours;education_training/vocational_training/emergency_training_school;2
+Centre de formation d'apprentis;education_training/vocational_training/apprenticeship_center;2
+Créche;education_training/vocational_training/nursery_school;2
+École d'agronomie;education_training/vocational_training/farm_school;2
+École d'art;education_training/vocational_training/art_school;2
+École d'esthétique;education_training/vocational_training/beauty_school;2
+École de comptabilité;education_training/vocational_training/accounting_school;2
+École de massage;education_training/vocational_training/massage_school;2
+École de mode;education_training/vocational_training/fashion_design_school;2
+École de pilotage;education_training/vocational_training/flight_school;2
+École des métiers;education_training/vocational_training/trade_school;2
+École hôtelière;education_training/vocational_training/hotel_management_school;2
+École professionnelle;education_training/vocational_training/vocational_training_school;2
+École spécialisée dans l'immobilier;education_training/vocational_training/real_estate_school;2
+École technique;education_training/vocational_training/technical_school;2
+Formation en tourisme et hôtellerie;education_training/vocational_training/hospitality_and_tourism_school;2
+Institut de formation en matériel informatique;education_training/vocational_training/hardware_training_institute;2
+Institut de formation en soins infirmiers;education_training/vocational_training/nursing_school;2
+Institut du design;education_training/vocational_training/design_institute;2
+Lycée professionnel niveau 1;education_training/vocational_training/vocational_school_one;2
+Séminaire;education_training/vocational_training/seminary;2
+Cours;education_training/courses_classes/class;2
+Cours de cuisine;education_training/courses_classes/cooking_class;2
+Cours de dessin;education_training/courses_classes/drawing_lessons;2
+École culinaire;education_training/courses_classes/culinary_school;2
+École d'informatique;education_training/courses_classes/computer_training_school;2
+École de cuisine;education_training/courses_classes/cooking_school;2
+Institut de formation en logiciels;education_training/courses_classes/software_training_institute;2
+Centre d'éducation;education_training/education_services/education_center;2
+Centre d'études;education_training/education_services/studying_center;2
+Coach de vie;education_training/education_services/life_coach;2
+Conseiller d'orientation;education_training/education_services/career_coach;2
+Fournisseur de services d'éducation et d'orientation professionnelle;education_training/education_services/career_and_education_provider;2
+Institution éducative;education_training/education_services/educational_institution;2
+Magasin de fournitures scolaires et matériel pédagogique pour enseignants;education_training/education_services/educational_supply_store;2
+Professeur particulier;education_training/education_services/private_tutor;2
+Service d'évaluations pédagogiques;education_training/education_services/educational_testing_service;2
+Service de rédaction de CV;education_training/education_services/resume_service;2
+Cablô-opérateur;electronics_technology/appliances_electronics/cable_company;2
+Distributeur d'appareils électroniques;electronics_technology/appliances_electronics/electronics_vending_machine;2
+Entreprise d'électronique;electronics_technology/appliances_electronics/electronics_company;2
+Fournisseur de composants électroniques;electronics_technology/appliances_electronics/electronic_parts_supplier;2
+Location de matériel électronique;electronics_technology/appliances_electronics/electronics_hire_shop;2
+Magasin d'aspirateurs;electronics_technology/appliances_electronics/vacuum_cleaner_store;2
+Magasin d'électroménager;electronics_technology/appliances_electronics/appliance_store;2
+Magasin d'électroménager d'occasion;electronics_technology/appliances_electronics/used_appliance_store;2
+Magasin d'électronique;electronics_technology/appliances_electronics/electronics_store;2
+Magasin de batteries;electronics_technology/appliances_electronics/battery_store;2
+Magasin de lave-linges et sèche-linges;electronics_technology/appliances_electronics/washer_and_dryer_store;2
+Magasin de pièces détachées pour appareils électroménagers;electronics_technology/appliances_electronics/appliance_parts_supplier;2
+Magasin de pièces et de composants électroniques détachés;electronics_technology/appliances_electronics/electronic_spare_parts_and_component_store;2
+Laboratoire photo;electronics_technology/audio_visual/photo_lab;2
+Magasin d'écrans;electronics_technology/audio_visual/screen_store;2
+Magasin de jumelles;electronics_technology/audio_visual/binocular_store;2
+Magasin de matériel de photographie;electronics_technology/audio_visual/photo_shop;2
+Magasin de matériel Hi-Fi;electronics_technology/audio_visual/stereo_store;2
+Magasin de matériel home cinéma;electronics_technology/audio_visual/home_theater_store;2
+Magasin de photo;electronics_technology/audio_visual/camera_store;2
+Magasin de télévisions;electronics_technology/audio_visual/tv_store;2
+Magasin Hi-Fi;electronics_technology/audio_visual/hi-fi_shop;2
+Service de location d'équipement audiovisuel;electronics_technology/audio_visual/audio_visual_equipment_rental_service;2
+Service de restauration de photos;electronics_technology/audio_visual/photo_restoration_service;2
+Télévision en circuit fermé;electronics_technology/audio_visual/closed_circuit_television;2
+Boutique de logiciels;electronics_technology/internet_software/computer_software_store;2
+Entrepreneur spécialisé dans les télécommunications;electronics_technology/internet_software/telecommunications_contractor;2
+Entreprise de logiciels;electronics_technology/internet_software/software_company;2
+Espace Internet;electronics_technology/internet_software/internet_shop;2
+Fournisseur d'accès Internet;electronics_technology/internet_software/internet_service_provider;2
+Fournisseur de connexion internet;electronics_technology/internet_software/internet_provider;2
+Fournisseur de DNS;electronics_technology/internet_software/dns_provider;2
+Fournisseur de logiciels;electronics_technology/internet_software/software_vendor;2
+Fournisseur de service de courriel;electronics_technology/internet_software/email_service_provider;2
+Institut universitaire professionnalisé;electronics_technology/internet_software/iup;2
+Moteur de recherche;electronics_technology/internet_software/search_engine;2
+Opérateur de réseau mobile;electronics_technology/internet_software/mobile_network_operator;2
+Plateforme de collaboration en ligne;electronics_technology/internet_software/web_collaboration_platform;2
+Point Wi-Fi;electronics_technology/internet_software/wi_fi_spot;2
+Serveur de traitement;electronics_technology/internet_software/process_server;2
+Service d'hébergement de sites web;electronics_technology/internet_software/web_hosting_service;2
+Service internet et téléphone;electronics_technology/internet_software/phone_and_internet_service;2
+Service VPN;electronics_technology/internet_software/vpn_service;2
+Centre d'opérations du réseau;electronics_technology/computers_phones/computer_networking_center;2
+Entreprise de télécommunications;electronics_technology/computers_phones/telecommunications_service_provider;2
+Fabricant de matériel informatique;electronics_technology/computers_phones/computer_hardware_manufacturer;2
+Fournisseur d'équipements de télécommunications;electronics_technology/computers_phones/telecommunications_equipment_supplier;2
+Magasin d'accessoires informatiques;electronics_technology/computers_phones/computer_accessories_store;2
+Magasin d'accessoires pour téléphones mobiles;electronics_technology/computers_phones/cell_phone_accessory_store;2
+Magasin d'informatique;electronics_technology/computers_phones/computer_store;2
+Magasin d'ordinateur de bureau;electronics_technology/computers_phones/computer_desk_store;2
+Magasin d'ordinateurs d'occasion;electronics_technology/computers_phones/used_computer_store;2
+Magasin de téléphonie mobile;electronics_technology/computers_phones/cell_phone_store;2
+Opérateur téléphonique;electronics_technology/computers_phones/telephone_company;2
+Ordinateur et accessoires;electronics_technology/computers_phones/computer_and_accessories;2
+Service informatique;electronics_technology/computers_phones/computer_service;2
+Assistance et services informatiques;electronics_technology/repair_services/computer_support_and_services;2
+Atelier de réparation de téléphones mobiles;electronics_technology/repair_services/mobile_phone_repair_shop;2
+Service client dédié à l'électroménager;electronics_technology/repair_services/appliances_customer_service;2
+Service de déblocage de téléphones;electronics_technology/repair_services/cell_phone_unlocking_service;2
+Service de débloquage et de recyclage de téléphones;electronics_technology/repair_services/cell_phone_recycling_and_unlocking_service;2
+Service de réparation d'appareils électroménagers;electronics_technology/repair_services/appliance_repair_service;2
+Service de réparation d'équipement audiovisuel;electronics_technology/repair_services/audio_visual_equipment_repair_service;2
+Service de réparation d'ordinateurs;electronics_technology/repair_services/computer_repair_service;2
+Service de réparation de chaudières;electronics_technology/repair_services/furnace_repair_service;2
+Service de réparation de matériel électrique;electronics_technology/repair_services/electrical_repair_shop;2
+Service de réparation de matériel électronique;electronics_technology/repair_services/electronics_repair_shop;2
+Service de réparation de téléphones;electronics_technology/repair_services/phone_repair_service;2
+Service de réparation du petit électroménager;electronics_technology/repair_services/small_appliance_repair_service;2
+Service technique;electronics_technology/repair_services/technical_service;2
+Discothèque mobile;events_entertainment/clubbing_nightlife/mobile_disco;2
+Service de location d'équipement pour karaoké;events_entertainment/clubbing_nightlife/karaoke_equipment_rental_service;2
+Armurerie;events_entertainment/adult_entertainment/gun_shop;2
+Boutique érotique;events_entertainment/adult_entertainment/adult_entertainment_store;2
+Club de divertissement pour adultes;events_entertainment/adult_entertainment/adult_entertainment_club;2
+Magasin d'articles d'airsoft;events_entertainment/adult_entertainment/airsoft_gun_shop;2
+Magasin de sex-toy;events_entertainment/adult_entertainment/sex_toy_store;2
+Magasin de vêtements érotiques;events_entertainment/adult_entertainment/erotic_clothing_store;2
+Service de rencontre pour adultes;events_entertainment/adult_entertainment/adult_dating_service;2
+Service de rencontres;events_entertainment/adult_entertainment/dating_service;2
+Club pour enfants;events_entertainment/childrens_entertainment/childrens_club;2
+Fabricant de jouets;events_entertainment/childrens_entertainment/toy_manufacturer;2
+Fabricant de jouets et de jeux;events_entertainment/childrens_entertainment/toy_and_game_manufacturer;2
+Magasin de jouets;events_entertainment/childrens_entertainment/toy_store;2
+Magasin de jouets pour enfants;events_entertainment/childrens_entertainment/childrens_toy_store;2
+Magasin pour enfants;events_entertainment/childrens_entertainment/childrens_store;2
+Service de fête pour enfants;events_entertainment/childrens_entertainment/childrens_party_service;2
+Borne de location de jeux vidéo;events_entertainment/gaming/video_game_rental_kiosk;2
+Club d'échecs et de jeux de cartes;events_entertainment/gaming/chess_and_card_club;2
+Fournisseur de service de jeux;events_entertainment/gaming/gaming_service_provider;2
+Magasin de jeux;events_entertainment/gaming/game_store;2
+Magasin de jeux d'occasion;events_entertainment/gaming/used_game_store;2
+Magasin de jeux vidéo;events_entertainment/gaming/video_game_store;2
+Salle de jeux video;events_entertainment/gaming/video_arcade;2
+Agence de paris;events_entertainment/gambling/betting_agency;2
+Casino;events_entertainment/gambling/casino;2
+Casino en ligne;events_entertainment/gambling/online_casino_or_bookmaker;2
+Fournisseur de loterie;events_entertainment/gambling/lottery_vendor;2
+Instructeur de jeux d'argent;events_entertainment/gambling/gambling_instructor;2
+Maison de jeux;events_entertainment/gambling/gambling_house;2
+Paris sportifs en ligne;events_entertainment/gambling/online_sports_betting;2
+Service de jeux d'argent;events_entertainment/gambling/gambling_service;2
+Agence de divertissement;events_entertainment/events_venues/entertainment_agency;2
+Animateur de soirées et d'événements;events_entertainment/events_venues/entertainer;2
+Bain en extérieur;events_entertainment/events_venues/outdoor_bath;2
+Billetterie de spectacles;events_entertainment/events_venues/event_ticket_seller;2
+Centre d'escape game;events_entertainment/events_venues/escape_room_center;2
+Cybercafé;events_entertainment/events_venues/internet_cafe;2
+Festival;events_entertainment/events_venues/festival;2
+Organisateur d'événements;events_entertainment/events_venues/event_planner;2
+Parc de loisirs;events_entertainment/events_venues/amusement_center;2
+Scène;events_entertainment/events_venues/stage;2
+Service technologique pour l'organisation d'événements;events_entertainment/events_venues/event_technology_service;2
+Services de voyance;events_entertainment/events_venues/fortune_telling_services;2
+Société d'événementiel;events_entertainment/events_venues/event_management_company;2
+Agence spécialisée dans l'organisation de fêtes;events_entertainment/wedding_party/party_planner;2
+Boutique d'articles de mariages;events_entertainment/wedding_party/wedding_store;2
+Boutique d'emballages cadeaux;events_entertainment/wedding_party/gift_wrap_store;2
+Boutique de cadeaux;events_entertainment/wedding_party/gift_shop;2
+Boutique de souvenirs pour mariages;events_entertainment/wedding_party/wedding_souvenir_shop;2
+Célébrant de mariage;events_entertainment/wedding_party/marriage_celebrant;2
+Lieu de mariage;events_entertainment/wedding_party/wedding_venue;2
+Location de château gonflable;events_entertainment/wedding_party/bouncy_castle_hire;2
+Magasin d'articles de fête;events_entertainment/wedding_party/balloon_store;2
+Magasin de fête;events_entertainment/wedding_party/party_store;2
+Organisateur de mariages;events_entertainment/wedding_party/wedding_planner;2
+Photographe de mariage;events_entertainment/wedding_party/wedding_photographer;2
+Prestataire de mariage;events_entertainment/wedding_party/wedding_service;2
+Sculpteur de ballons;events_entertainment/wedding_party/balloon_artist;2
+Service d'impression de cartons d'invitation;events_entertainment/wedding_party/invitation_printing_service;2
+Service de location de matériel de soirée;events_entertainment/wedding_party/party_equipment_rental_service;2
+Service de location de tentes;events_entertainment/wedding_party/tent_rental_service;2
+Exposition;events_entertainment/museums_exibits/exhibit;2
+Galerie d'art;events_entertainment/museums_exibits/art_gallery;2
+Galerie d'art aborigène;events_entertainment/museums_exibits/aboriginal_art_gallery;2
+Musée;events_entertainment/museums_exibits/museum;2
+Cinéma;events_entertainment/music_movies/movie_theater;2
+Disc-jockey;events_entertainment/music_movies/dj;2
+Magasin de location de films;events_entertainment/music_movies/movie_rental_store;2
+Magasin de matériel pour DJ;events_entertainment/music_movies/dj_supply_store;2
+Service de streaming de films;events_entertainment/music_movies/movie_streaming_service;2
+Ballet-Théâtre;events_entertainment/theater_opera/ballet_theater;2
+Opéra;events_entertainment/theater_opera/opera_house;2
+Production théâtrale;events_entertainment/theater_opera/theater_production;2
+Salle de concert;events_entertainment/theater_opera/concert_hall;2
+Salle de spectacles;events_entertainment/theater_opera/performing_arts_theater;2
+Théâtre dramatique;events_entertainment/theater_opera/drama_theater;2
+Camping;hobbies_crafts/outdoor_activities/campground;2
+Centre récréatif;hobbies_crafts/outdoor_activities/recreation_center;2
+Circuit de randonnée;hobbies_crafts/outdoor_activities/hiking_area;2
+Magasin de matériel de camping;hobbies_crafts/outdoor_activities/camping_store;2
+Organisateur d'activités en plein air;hobbies_crafts/outdoor_activities/outdoor_activity_organizer;2
+Piscine extérieure;hobbies_crafts/outdoor_activities/outdoor_swimming_pool;2
+Promenade;hobbies_crafts/outdoor_activities/promenade;2
+Service de plongée;hobbies_crafts/outdoor_activities/diving_service;2
+Service de promenades en traîneau à chiens;hobbies_crafts/outdoor_activities/dogsled_ride_service;2
+Site de camping;hobbies_crafts/outdoor_activities/camp_site;2
+Art & antiquités;hobbies_crafts/art_handicraft/art_antiques;2
+Artisanat;hobbies_crafts/art_handicraft/handicraft;2
+Artisanat d'art;hobbies_crafts/art_handicraft/art_handcraft;2
+Artiste;hobbies_crafts/art_handicraft/artist;2
+Boutique de loisirs créatifs;hobbies_crafts/art_handicraft/craft_store;2
+Magasin de matériel artistique;hobbies_crafts/art_handicraft/art_supply_store;2
+Marchand d'art;hobbies_crafts/art_handicraft/art_dealer;2
+Salon d'artisanat;hobbies_crafts/art_handicraft/handicraft_fair;2
+Service de découpe au laser;hobbies_crafts/art_handicraft/laser_cutting_service;2
+Société de flocage;hobbies_crafts/art_handicraft/societe_de_flocage;2
+Astrologue;hobbies_crafts/astrology_numerology/astrologer;2
+Magasin d'articles spirituels;hobbies_crafts/astrology_numerology/metaphysical_supply_store;2
+Médium;hobbies_crafts/astrology_numerology/psychic;2
+Naturopathe;hobbies_crafts/astrology_numerology/naturopathic_practitioner;2
+Numérologue;hobbies_crafts/astrology_numerology/numerologist;2
+Magasin de chasse;hobbies_crafts/fishing_hunting/hunting_store;2
+Magasin de pêche;hobbies_crafts/fishing_hunting/fishing_store;2
+Magasin de pêche et de chasse;hobbies_crafts/fishing_hunting/hunting_and_fishing_store;2
+Atelier de couture;hobbies_crafts/needlework_knitting/sewing_shop;2
+Boutique de laine;hobbies_crafts/needlework_knitting/yarn_store;2
+Cours de couture;hobbies_crafts/needlework_knitting/stitching_class;2
+Entreprise de confection;hobbies_crafts/needlework_knitting/sewing_company;2
+Fabricant de maroquinerie;hobbies_crafts/needlework_knitting/leather_goods_manufacturer;2
+Fournisseur de fils;hobbies_crafts/needlework_knitting/thread_supplier;2
+Grossiste en mercerie;hobbies_crafts/needlework_knitting/threads_and_yarns_wholesaler;2
+Grossiste textile;hobbies_crafts/needlework_knitting/clothes_and_fabric_wholesaler;2
+Magasin de broderie;hobbies_crafts/needlework_knitting/embroidery_shop;2
+Magasin de couture et de broderie;hobbies_crafts/needlework_knitting/needlework_shop;2
+Magasin de laine;hobbies_crafts/needlework_knitting/wool_store;2
+Magasin de machines à coudre;hobbies_crafts/needlework_knitting/sewing_machine_store;2
+Magasin de tissus;hobbies_crafts/needlework_knitting/fabric_store;2
+Mercerie métallique et plastique;hobbies_crafts/needlework_knitting/haberdashery;2
+Service de broderie;hobbies_crafts/needlework_knitting/embroidery_service;2
+Styliste de mode;hobbies_crafts/needlework_knitting/fashion_designer;2
+Vendeur de tissus en gros;hobbies_crafts/needlework_knitting/fabric_wholesaler;2
+Atelier de jeu;hobbies_crafts/hobbies/playgroup;2
+Boutique d'aéromodélisme;hobbies_crafts/hobbies/aeromodel_shop;2
+Boutique d'objets à collectionner;hobbies_crafts/hobbies/collectibles_store;2
+Boutique de figurines;hobbies_crafts/hobbies/figurine_shop;2
+Centre de loisirs;hobbies_crafts/hobbies/leisurecentre;2
+Club d'informatique;hobbies_crafts/hobbies/computer_club;2
+Club de collectionneurs de timbres;hobbies_crafts/hobbies/stamp_collectors_club;2
+Entreprise de design moderne;hobbies_crafts/hobbies/model_design_company;2
+Magasin d'accessoires de magie;hobbies_crafts/hobbies/magic_store;2
+Magasin d'articles de loisirs;hobbies_crafts/hobbies/hobby_store;2
+Magasin de cartes de collection;hobbies_crafts/hobbies/trading_card_store;2
+Magasin de modélisme;hobbies_crafts/hobbies/scale_model_shop;2
+Magasin de modélisme ferroviaire;hobbies_crafts/hobbies/model_train_store;2
+Magasin de poupées;hobbies_crafts/hobbies/doll_store;2
+Magicien;hobbies_crafts/hobbies/magician;2
+Vendeur de pièces de monnaie de collection;hobbies_crafts/hobbies/coin_dealer;2
+Chorale;hobbies_crafts/music_instruments/choir;2
+Magasin d'instruments de musique;hobbies_crafts/music_instruments/musical_instrument_store;2
+Magasin de guitares;hobbies_crafts/music_instruments/guitar_store;2
+Magasin de partitions de musique;hobbies_crafts/music_instruments/sheet_music_store;2
+Magasin de violons;hobbies_crafts/music_instruments/violin_shop;2
+Musicien;hobbies_crafts/music_instruments/musician;2
+Professeur de musique;hobbies_crafts/music_instruments/music_instructor;2
+Professeur de piano;hobbies_crafts/music_instruments/piano_instructor;2
+Cours de peinture;hobbies_crafts/painting_paper/painting_lessons;2
+Distributeur de papier;hobbies_crafts/painting_paper/paper_distributor;2
+Magasin de peinture;hobbies_crafts/painting_paper/paint_store;2
+Magasin de peintures;hobbies_crafts/painting_paper/paintings_store;2
+Magasin de stylos;hobbies_crafts/painting_paper/pen_store;2
+Tableau;hobbies_crafts/painting_paper/painting;2
+Art plastique;hobbies_crafts/metal_stone_glass_work/statuary;2
+Atelier de métallerie;hobbies_crafts/metal_stone_glass_work/metal_workshop;2
+Boutique de perles;hobbies_crafts/metal_stone_glass_work/bead_store;2
+Boutique de vitrerie et miroiterie;hobbies_crafts/metal_stone_glass_work/glass_and_mirror_shop;2
+Magasin de trophées;hobbies_crafts/metal_stone_glass_work/trophy_shop;2
+Menuiserie;hobbies_crafts/metal_stone_glass_work/turnery;2
+Sculpteur;hobbies_crafts/metal_stone_glass_work/sculptor;2
+Service de gravure sur verre;hobbies_crafts/metal_stone_glass_work/glass_etching_service;2
+Vitrier;hobbies_crafts/metal_stone_glass_work/glazier;2
+Atelier de réparation de meubles;home_garden/home_improvements/furniture_repair_shop;2
+Fournisseur de portes de garage;home_garden/home_improvements/garage_door_supplier;2
+Magasin d'équipement de sécurité;home_garden/home_improvements/security_equipment_store;2
+Magasin de garnitures de portes et fenêtres;home_garden/home_improvements/window_treatment_store;2
+Magasin de matériel de surveillance;home_garden/home_improvements/burglar_alarm_store;2
+Magasin de rénovation;home_garden/home_improvements/home_improvement_store;2
+Magasin de revêtements de sol;home_garden/home_improvements/flooring_store;2
+Service de nettoyage du cuir;home_garden/home_improvements/leather_cleaning_service;2
+Service de réparation d'articles en cuir;home_garden/home_improvements/leather_repair_service;2
+Service de réparation de luminaires;home_garden/home_improvements/lamp_repair_service;2
+Boutique d'affiches;home_garden/decoration_interior/poster_store;2
+Cheministe;home_garden/decoration_interior/fireplace_store;2
+Fabricant de portes;home_garden/decoration_interior/door_manufacturer;2
+Fabricant de poteries;home_garden/decoration_interior/pottery_manufacturer;2
+Fournisseur d'abat-jour;home_garden/decoration_interior/lamp_shade_supplier;2
+Fournisseur de chauffage;home_garden/decoration_interior/heating_supplier;2
+Fournisseur et fabricant de rideaux;home_garden/decoration_interior/curtain_supplier_and_maker;2
+Grossiste en céramiques;home_garden/decoration_interior/ceramics_wholesaler;2
+Magasin d'encadrement;home_garden/decoration_interior/picture_frame_shop;2
+Magasin de carrelage;home_garden/decoration_interior/tile_store;2
+Magasin de design et de décor intérieur;home_garden/decoration_interior/decoration_and_interior_design_store;2
+Magasin de literie;home_garden/decoration_interior/bedding_store;2
+Magasin de matelas;home_garden/decoration_interior/mattress_store;2
+Magasin de papiers peints;home_garden/decoration_interior/wallpaper_store;2
+Magasin de portes;home_garden/decoration_interior/door_shop;2
+Magasin de rideaux et stores;home_garden/decoration_interior/blinds_shop;2
+Magasin de tapis;home_garden/decoration_interior/rug_store;2
+Miroiterie;home_garden/decoration_interior/mirror_shop;2
+Porte intérieure;home_garden/decoration_interior/interior_door;2
+Tapissier décorateur;home_garden/decoration_interior/upholstery_shop;2
+Chaudronnerie;home_garden/energy_heating/boiler_manufacturer;2
+Fournisseur d'équipements d'énergie solaire;home_garden/energy_heating/solar_energy_equipment_supplier;2
+Fournisseur de bois de chauffage;home_garden/energy_heating/firewood_supplier;2
+Fournisseur de chaudières;home_garden/energy_heating/boiler_supplier;2
+Fournisseur de climatisation;home_garden/energy_heating/air_conditioning_system_supplier;2
+Magasin de chaudières;home_garden/energy_heating/furnace_store;2
+Magasin de poêles à bois;home_garden/energy_heating/wood_stove_shop;2
+Magasin de produits à gaz;home_garden/energy_heating/gas_shop;2
+Magasin de radiateurs;home_garden/energy_heating/radiator_shop;2
+Magasin de systèmes de climatisation;home_garden/energy_heating/air_conditioning_store;2
+Service d'installation du gaz;home_garden/energy_heating/gas_installation_service;2
+Service de réparation de systèmes de climatisation;home_garden/energy_heating/air_conditioning_repair_service;2
+Arboriste;home_garden/garden_pond/arborist_and_tree_surgeon;2
+Boutique de minéraux;home_garden/garden_pond/rock_shop;2
+Fleuriste;home_garden/garden_pond/florist;2
+Fourisseur de construction de jardin;home_garden/garden_pond/garden_building_retail;2
+Fournisseur d'équipement d'irrigation du terrain;home_garden/garden_pond/lawn_irrigation_equipment_supplier;2
+Fournisseur de bonsaïs;home_garden/garden_pond/bonsai_plant_supplier;2
+Fournisseur de semences;home_garden/garden_pond/seed_supplier;2
+Jardinerie;home_garden/garden_pond/garden_center;2
+Jardinier;home_garden/garden_pond/gardener;2
+Magasin d'articles d'aménagement aquatique du jardin;home_garden/garden_pond/pond_supply_store;2
+Magasin d'articles de barbecue;home_garden/garden_pond/grill_store;2
+Magasin de fleurs séchées;home_garden/garden_pond/dried_flower_shop;2
+Magasin de matériel de motoculture;home_garden/garden_pond/lawn_mower_store;2
+Magasin de matériel pour clôtures;home_garden/garden_pond/fence_supply_store;2
+Magasin de plantes artificielles;home_garden/garden_pond/silk_plant_shop;2
+Marché aux fleurs;home_garden/garden_pond/flower_market;2
+Pépiniériste en gros;home_garden/garden_pond/wholesale_plant_nursery;2
+Service d'élagage;home_garden/garden_pond/tree_service;2
+Service de location de matériel de motoculture;home_garden/garden_pond/lawn_equipment_rental_service;2
+Service de réparation de piscines;home_garden/garden_pond/swimming_pool_repair_service;2
+Vendeur de plantes artistiques;home_garden/garden_pond/plant_art_dealer;2
+Antiquaire;home_garden/home_goods_stores/antique_store;2
+Boutique d'articles de mode;home_garden/home_goods_stores/boutique;2
+Boutique de porcelaine;home_garden/home_goods_stores/chinaware_store;2
+Dépôt-vente;home_garden/home_goods_stores/consignment_shop;2
+Fabrication de couteaux;home_garden/home_goods_stores/knife_manufacturing;2
+Fournisseur d'ampoules;home_garden/home_goods_stores/light_bulb_supplier;2
+Fournisseur de boîte aux lettres;home_garden/home_goods_stores/mailbox_supplier;2
+Fournisseur de produits chimiques ménagers;home_garden/home_goods_stores/household_chemicals_supplier;2
+Fournisseur de produits de nettoyage;home_garden/home_goods_stores/cleaning_products_supplier;2
+Magasin;home_garden/home_goods_stores/store;2
+Magasin d'accessoires hardware;home_garden/home_goods_stores/hardware_accessories_store;2
+Magasin d'ameublement et de décoration;home_garden/home_goods_stores/home_goods_store;2
+Magasin d'articles en verre;home_garden/home_goods_stores/glassware_store;2
+Magasin de bougies;home_garden/home_goods_stores/candle_store;2
+Magasin de bricolage;home_garden/home_goods_stores/do_it_yourself_store;2
+Magasin de luminaires;home_garden/home_goods_stores/lighting_store;2
+Magasin de nouveautés;home_garden/home_goods_stores/novelty_store;2
+Magasin général;home_garden/home_goods_stores/general_store;2
+Mercerie;home_garden/home_goods_stores/notions_store;2
+Quincaillerie;home_garden/home_goods_stores/hardware_store;2
+Smart shop;home_garden/home_goods_stores/smart_shop;2
+Accessoires de meubles;home_garden/furniture_stores/furniture_accessories;2
+Cuisiniste;home_garden/furniture_stores/cabinet_store;2
+Fabricant de meubles;home_garden/furniture_stores/furniture_manufacturer;2
+Fournisseur d'accessoires de meubles;home_garden/furniture_stores/furniture_accessories_supplier;2
+Magasin d'ameublement d'extérieur;home_garden/furniture_stores/outdoor_furniture_store;2
+Magasin d'équipement et de meubles pour bars et restaurants;home_garden/furniture_stores/bar_restaurant_furniture_store;2
+Magasin d'étagères;home_garden/furniture_stores/shelving_store;2
+Magasin de canapés;home_garden/furniture_stores/sofa_store;2
+Magasin de lits;home_garden/furniture_stores/bed_shop;2
+Magasin de meubles;home_garden/furniture_stores/furniture_store;2
+Magasin de meubles d'occasion;home_garden/furniture_stores/used_furniture_store;2
+Magasin de meubles de chambre à coucher;home_garden/furniture_stores/bedroom_furniture_store;2
+Magasin de meubles de salon;home_garden/furniture_stores/living_room_furniture_store;2
+Magasin de meubles pour enfants;home_garden/furniture_stores/childrens_furniture_store;2
+Magasin de mobilier ancien;home_garden/furniture_stores/antique_furniture_store;2
+Magasin de mobilier de jardin;home_garden/furniture_stores/garden_furniture_store;2
+Magasin de mobilier en rotin;home_garden/furniture_stores/cane_furniture_store;2
+Service de location de meubles;home_garden/furniture_stores/furniture_rental_service;2
+Boutique d'articles Feng Shui;home_garden/cultural_goods/feng_shui_shop;2
+Magasin d'articles amérindiens;home_garden/cultural_goods/native_american_goods_store;2
+Magasin d'articles de maison asiatiques;home_garden/cultural_goods/asian_household_goods_store;2
+Magasin d'articles irlandais;home_garden/cultural_goods/irish_goods_store;2
+Magasin de décorations de Noël;home_garden/cultural_goods/christmas_store;2
+Magasin de tapis d'Orient;home_garden/cultural_goods/oriental_rug_store;2
+Coutellerie;home_garden/bathroom_kitchen/cutlery_store;2
+Fournisseur d'encens;home_garden/bathroom_kitchen/incense_supplier;2
+Grossiste en vaisselle jetable;home_garden/bathroom_kitchen/disposable_tableware_supplier;2
+Magasin d'articles de salle de bains;home_garden/bathroom_kitchen/bathroom_supply_store;2
+Magasin de couteaux;home_garden/bathroom_kitchen/knife_store;2
+Magasin de jacuzzi;home_garden/bathroom_kitchen/hot_tub_store;2
+Magasin de linge de maison;home_garden/bathroom_kitchen/linens_store;2
+Magasin de matériel de cuisine;home_garden/bathroom_kitchen/kitchen_supply_store;2
+Magasin de portes de douche;home_garden/bathroom_kitchen/shower_door_shop;2
+Magasin de réfrigérateurs;home_garden/bathroom_kitchen/refrigerator_store;2
+Prestataire de réaménagement de cuisine;home_garden/bathroom_kitchen/kitchen_remodeler;2
+Rénovateur de salle de bains;home_garden/bathroom_kitchen/bathroom_remodeler;2
+Vendeur d'articles en métal;home_garden/bathroom_kitchen/metalware_dealer;2
+Artisan créateur de meubles;home_garden/home_garden_services/furniture_maker;2
+Cabinet d'architecte d'intérieur;home_garden/home_garden_services/interior_architect_office;2
+Décorateur d'intérieur;home_garden/home_garden_services/interior_designer;2
+Livraison de fleurs;home_garden/home_garden_services/flower_delivery;2
+Pépinière;home_garden/home_garden_services/plant_nursery;2
+Service de décoration florale;home_garden/home_garden_services/flower_designer;2
+Service de plantes d'intérieur;home_garden/home_garden_services/interior_plant_service;2
+Société domotique;home_garden/home_garden_services/home_automation_company;2
+Magasin d'articles en soie;home_garden/fabric_stationary/silk_store;2
+Magasin de maroquinerie;home_garden/fabric_stationary/leather_goods_store;2
+Boutique spécialisée dans la vente de magazines;media_publishing/books_magazines/magazine_store;2
+Éditeur;media_publishing/books_magazines/publisher;2
+Éditeur de livre multimédia et électronique;media_publishing/books_magazines/multimedia_and_electronic_book_publisher;2
+Grossistes en livres;media_publishing/books_magazines/books_wholesaler;2
+Librairie;media_publishing/books_magazines/book_store;2
+Librairie de bandes dessinées;media_publishing/books_magazines/comic_book_store;2
+Librairie de livres rares;media_publishing/books_magazines/rare_book_store;2
+Librairie religieuse;media_publishing/books_magazines/religious_book_store;2
+Maison d'édition;media_publishing/books_magazines/book_publisher;2
+Relieur;media_publishing/books_magazines/bookbinder;2
+Agence de communication pour les réseaux sociaux;media_publishing/media_information/social_media_agency;2
+Agence de presse et de marketing;media_publishing/media_information/media_and_marketing_agency;2
+Blogger;media_publishing/media_information/blogger;2
+Cabinet de relations publiques;media_publishing/media_information/public_relations_firm;2
+Centre de communications;media_publishing/media_information/communications_central;2
+Chaîne de télévision;media_publishing/media_information/television_station;2
+Éditeur de presse;media_publishing/media_information/newspaper_publisher;2
+Marchand de journaux;media_publishing/media_information/newsstand;2
+Régie publicitaire;media_publishing/media_information/media_house;2
+Service d'informations;media_publishing/media_information/news_service;2
+Service publicité presse;media_publishing/media_information/newspaper_advertising_department;2
+Société de presse;media_publishing/media_information/media_company;2
+Station de radio;media_publishing/media_information/radio_broadcaster;2
+Agence de photos;media_publishing/photography/photo_agency;2
+Fournisseur de photocopieurs;media_publishing/photography/photocopiers_supplier;2
+Photographe;media_publishing/photography/photographer;2
+Photographe aérien;media_publishing/photography/aerial_photographer;2
+Prestataire spécialisé dans le tirage de photos de passeport;media_publishing/photography/passport_photo_processor;2
+Service d'impression de photos;media_publishing/photography/photo_printing_service;2
+Service de photographie;media_publishing/photography/photography_service;2
+Studio de création de books photographiques pour modèles;media_publishing/photography/model_portfolio_studio;2
+Studio de photographie;media_publishing/photography/photography_studio;2
+Studio de photographie;media_publishing/photography/portrait_studio;2
+Consultant en audiovisuel;media_publishing/video_sound/audio_visual_consultant;2
+Fournisseur d'équipements de visioconférence;media_publishing/video_sound/video_conferencing_equipment_supplier;2
+Fournisseur de matériel audiovisuel;media_publishing/video_sound/audio_visual_equipment_supplier;2
+Installation de home cinéma;media_publishing/video_sound/home_cinema_installation;2
+Label de musique;media_publishing/video_sound/music_publisher;2
+Magasin de DVD;media_publishing/video_sound/dvd_store;2
+Magasin de musique;media_publishing/video_sound/music_store;2
+Producteur de film et vidéo;media_publishing/video_sound/film_and_video_producer;2
+Producteur de musique;media_publishing/video_sound/music_producer;2
+Service de duplication vidéo;media_publishing/video_sound/video_duplication_service;2
+Service de montage vidéo;media_publishing/video_sound/video_editing_service;2
+Société de production de films;media_publishing/video_sound/film_production_company;2
+Société de production vidéo;media_publishing/video_sound/video_production_service;2
+Studio cinématographique;media_publishing/video_sound/movie_studio;2
+Studio d'animation;media_publishing/video_sound/animation_studio;2
+Studio d'enregistrement;media_publishing/video_sound/recording_studio;2
+Livraison de pizzas;restaurants_bars/takeaway/pizza_delivery_service;2
+Pizzas à emporter;restaurants_bars/takeaway/pizzatakeaway;2
+Restaurant de hamburgers;restaurants_bars/takeaway/hamburger_restaurant;2
+Restaurant de plats à emporter;restaurants_bars/takeaway/meal_takeaway;2
+Restauration rapide;restaurants_bars/takeaway/fast_food_restaurant;2
+Service à emporter;restaurants_bars/takeaway/take_away_service;2
+Service de commande de repas en ligne;restaurants_bars/takeaway/online_food_ordering_service;2
+Bar;restaurants_bars/bars_cafes/bar;2
+Bar à cocktails;restaurants_bars/bars_cafes/cocktail_bar;2
+Bar à tapas;restaurants_bars/bars_cafes/tapas_bar;2
+Bar à vin;restaurants_bars/bars_cafes/wine_bar;2
+Bar avec musique live;restaurants_bars/bars_cafes/live_music_bar;2
+Restaurant coréen;restaurants_bars/chinese_korean_cuisine/korean_restaurant;2
+Restaurant asiatique;restaurants_bars/southeast_asian_cuisine/asian_restaurant;2
+Cuisine européenne;restaurants_bars/european_cuisine/european_restaurant;2
+Restaurant français;restaurants_bars/european_cuisine/french_restaurant;2
+Restaurant de sushis;restaurants_bars/japanese_cuisine/sushi_restaurant;2
+Restaurant de yakitori;restaurants_bars/japanese_cuisine/yakitori_restaurant;2
+Restaurant japonais;restaurants_bars/japanese_cuisine/japanese_restaurant;2
+Sushi à emporter;restaurants_bars/japanese_cuisine/sushi_takeaway;2
+Cuisine française moderne;restaurants_bars/mediterranean_cuisine/modern_french_restaurant;2
+Pizzeria;restaurants_bars/mediterranean_cuisine/pizza_restaurant;2
+Cuisine française moderne;restaurants_bars/general_restaurants/modern_french_restaurant;2
+Pizzeria;restaurants_bars/general_restaurants/pizza_restaurant;2
+Restaurant diététique;restaurants_bars/vegetarian_diet/health_food_restaurant;2
+Restaurant sans gluten;restaurants_bars/vegetarian_diet/gluten_free_restaurant;2
+Restaurant végétalien;restaurants_bars/vegetarian_diet/vegan_restaurant;2
+Restaurant végétarien;restaurants_bars/vegetarian_diet/vegetarian_restaurant;2
+Fournisseur d'équipement de mobilité;health_medical/physical_aids/mobility_equipment_supplier;2
+Fournisseur d'équipement de physiothérapie;health_medical/physical_aids/physiotherapy_equip_supplier;2
+Organisme de soutien et de services aux personnes handicapées;health_medical/physical_aids/disability_services_and_support_organization;2
+Prothèses;health_medical/physical_aids/prosthetics;2
+Service de prothèse et orthèses;health_medical/physical_aids/orthotics_and_prosthetics_service;2
+Clinique;health_medical/clinics/medical_clinic;2
+Clinique de médecine orientale;health_medical/clinics/oriental_medicine_clinic;2
+Clinique spécialisée;health_medical/clinics/specialized_clinic;2
+Praticien de médecine alternative;health_medical/clinics/alternative_medicine_practitioner;2
+Praticien en médecine holistique;health_medical/clinics/holistic_medicine_practitioner;2
+Centre de diagnostic;health_medical/diagnostics_testing/diagnostic_center;2
+Laboratoire d'analyse médicale;health_medical/diagnostics_testing/medical_lab;2
+Chirurgien;health_medical/doctors_surgeons/surgeon;2
+Clinique chirurgicale;health_medical/doctors_surgeons/surgical_center;2
+Clinique de chirurgie plastique;health_medical/doctors_surgeons/plastic_surgery_clinic;2
+Fournisseur de matériel médical et chirurgical;health_medical/doctors_surgeons/surgical_products_wholesaler;2
+Médecin;health_medical/doctors_surgeons/doctor;2
+Médecin généraliste;health_medical/doctors_surgeons/general_practitioner;2
+Service de référencement de médecins;health_medical/doctors_surgeons/physician_referral_service;2
+Fabricant de matériel médical;health_medical/health_equipment/medical_equipment_manufacturer;2
+Fabricant de technologies médicales;health_medical/health_equipment/medical_technology_manufacturer;2
+Fournisseur d'équipements de traitement du diabète;health_medical/health_equipment/diabetes_equipment_supplier;2
+Fournisseur d'équpement médical;health_medical/health_equipment/medical_equipment_supplier;2
+Grossiste en articles d'hygiène;health_medical/health_equipment/hygiene_articles_wholesaler;2
+Magasin de matériel médical;health_medical/health_equipment/medical_supply_store;2
+Matériel et équipement d'hôpital;health_medical/health_equipment/hospital_and_equipment_supplies;2
+Service de facturation des soins médicaux;health_medical/health_equipment/medical_billing_service;2
+Borne sanitaire en libre-service;health_medical/hospital_emergency/self_service_health_station;2
+Centre de santé;health_medical/hospital_emergency/health_resort;2
+Conseiller santé;health_medical/hospital_emergency/health_consultant;2
+Hôpital privé;health_medical/hospital_emergency/private_hospital;2
+Poste de secours;health_medical/hospital_emergency/first_aid;2
+Sécurité et santé au travail;health_medical/hospital_emergency/occupational_safety_and_health;2
+Service ambulancier;health_medical/hospital_emergency/ambulance_service;2
+Service d'aide médicale d'urgence;health_medical/hospital_emergency/emergency_care_service;2
+Service de soins à domicile;health_medical/hospital_emergency/home_health_care_service;2
+Urgences;health_medical/hospital_emergency/emergency_room;2
+Urgentiste;health_medical/hospital_emergency/emergency_care_physician;2
+Assistance à la jeunesse;health_medical/pregnancy_children/youth_care;2
+Assistante maternelle;health_medical/pregnancy_children/assistante_maternelle;2
+Centre de services familiaux;health_medical/pregnancy_children/family_service_center;2
+Centre de soins prénatals;health_medical/pregnancy_children/pregnancy_care_center;2
+Clinique de santé reproductive;health_medical/pregnancy_children/reproductive_health_clinic;2
+Conseiller familial;health_medical/pregnancy_children/family_counselor;2
+Médecin spécialiste de la fertilité;health_medical/pregnancy_children/fertility_physician;2
+Service de garde d'enfants à domicile;health_medical/pregnancy_children/family_day_care_service;2
+Service de test de paternité;health_medical/pregnancy_children/paternity_testing_service;2
+Acupuncteur;health_medical/medical_specialists/acupuncturist;2
+Audiologiste;health_medical/medical_specialists/audiologist;2
+Cabinet d'ostéopathie;health_medical/medical_specialists/bonesetting_house;2
+Cabinet médical;health_medical/medical_specialists/medical_office;2
+Chiropracteur;health_medical/medical_specialists/chiropractor;2
+Infirmier général autorisé;health_medical/medical_specialists/registered_general_nurse;2
+Kinésiologue;health_medical/medical_specialists/kinesiologist;2
+Médecin spécialiste de la gestion de la douleur;health_medical/medical_specialists/pain_management_physician;2
+Nutritionniste;health_medical/medical_specialists/nutritionist;2
+Ophtalmologiste;health_medical/medical_specialists/ophthalmologist;2
+Optométriste;health_medical/medical_specialists/optometrist;2
+Orthodontiste;health_medical/medical_specialists/orthodontist;2
+Ostéopathe;health_medical/medical_specialists/osteopath;2
+Podologue;health_medical/medical_specialists/podiatrist;2
+Réflexologue;health_medical/medical_specialists/reflexologist;2
+Boutique d'herbes médicinales;health_medical/pharmacy_medicine/herbal_medicine_store;2
+Entreprise pharmaceutique;health_medical/pharmacy_medicine/pharmaceutical_company;2
+Laboratoire pharmaceutique;health_medical/pharmacy_medicine/pharmaceutical_lab;2
+Magasin de médecine chinoise;health_medical/pharmacy_medicine/chinese_medicine_store;2
+Magasin de médecine orientale;health_medical/pharmacy_medicine/oriental_medicine_store;2
+Magasin de médicaments;health_medical/pharmacy_medicine/drugstore;2
+Pharmacie;health_medical/pharmacy_medicine/pharmacy;2
+Pharmacie en ligne;health_medical/pharmacy_medicine/online_pharmacy;2
+Prescription de médicaments en ligne;health_medical/pharmacy_medicine/online_prescription_medication_vendor;2
+Clinique de santé mentale;health_medical/mental_health/mental_health_clinic;2
+Psychanalyste;health_medical/mental_health/psychoanalyst;2
+Psychologue;health_medical/mental_health/psychologist;2
+Psychologue pour enfants;health_medical/mental_health/child_psychologist;2
+Psychothérapeute;health_medical/mental_health/psychotherapist;2
+Service de santé mentale;health_medical/mental_health/mental_health_service;2
+Cabinet dentaire;health_medical/dental_services/dental_clinic;2
+Dentiste;health_medical/dental_services/dentist;2
+Dentiste cosmétique;health_medical/dental_services/cosmetic_dentist;2
+Hygiéniste dentaire;health_medical/dental_services/dental_hygienist;2
+Laboratoire dentaire;health_medical/dental_services/dental_lab;2
+Magasin d'articles dentaires;health_medical/dental_services/dental_supply_store;2
+Service de blanchiment des dents;health_medical/dental_services/teeth_whitening_service;2
+Agence de services d'aide à domicile;health_medical/therapy_senior_health/home_help_service_agency;2
+Aide à domicile;health_medical/therapy_senior_health/home_help;2
+Cabinet infirmier;health_medical/therapy_senior_health/nursing_agency;2
+Ergothérapeute;health_medical/therapy_senior_health/occupational_therapist;2
+Kinésithérapeute;health_medical/therapy_senior_health/physiotherapist;2
+Masseur asiatique;health_medical/therapy_senior_health/asian_massage_therapist;2
+Massothérapeute du sport;health_medical/therapy_senior_health/sports_massage_therapist;2
+Résidences pour personnes âgées;health_medical/therapy_senior_health/assisted_living_facility;2
+Service d'hypnothérapie;health_medical/therapy_senior_health/hypnotherapy_service;2
+Sexologue;health_medical/therapy_senior_health/sexologist;2
+Thérapeute Reiki;health_medical/therapy_senior_health/reiki_therapist;2
+Thérapie craniosacrale;health_medical/therapy_senior_health/craniosacral_therapy;2
+Centre d'ophtalmologie;health_medical/vision_hearing/eye_care_center;2
+Fournisseur de lentilles de contact;health_medical/vision_hearing/contact_lenses_supplier;2
+Grossiste en lunettes;health_medical/vision_hearing/glasses_wholesaler;2
+Magasin d'appareils auditifs;health_medical/vision_hearing/hearing_aid_store;2
+Opticien;health_medical/vision_hearing/optician;2
+Service pour les malentendants;health_medical/vision_hearing/deaf_service;2
+Centrale électrique;utilities/energy_power/power_plant;2
+Compagnie gazière;utilities/energy_power/gas_company;2
+Entreprise d'énergie thermique;utilities/energy_power/thermal_energy_company;2
+Entreprise d'équipements collectifs ménagers;utilities/energy_power/housing_utility_company;2
+Entreprise de Voirie et Réseau Divers;utilities/energy_power/utility_contractor;2
+Fournisseur d'électricité;utilities/energy_power/electric_utility_company;2
+Fournisseur d'énergie;utilities/energy_power/energy_supplier;2
+Fournisseur d'énergie verte;utilities/energy_power/green_energy_supplier;2
+Poste électrique;utilities/energy_power/electrical_substation;2
+Société d'énergie solaire;utilities/energy_power/solar_energy_company;2
+Solutions et équipement énergétiques;utilities/energy_power/energy_equipment_and_solutions;2
+Magasin d'huile;utilities/oil_fuel/oil_store;2
+Compagnie des eaux;utilities/water_utilities/water_utility_company;2
+Entreprise de traitement de l'eau;utilities/water_utilities/water_purification_company;2
+Charpentier;home_services/craftsman/carpenter;2
+Électricien;home_services/craftsman/electrician;2
+Entrepreneur spécialisé dans les revêtements de sol;home_services/craftsman/flooring_contractor;2
+Entreprise d'étanchéité;home_services/craftsman/waterproofing_company;2
+Homme à tout faire;home_services/craftsman/handyman;2
+Maçon;home_services/craftsman/bricklayer;2
+Peintre;home_services/craftsman/painter;2
+Poseur de moquette;home_services/craftsman/carpet_installer;2
+Serrurier;home_services/craftsman/locksmith;2
+Service d'installation électrique;home_services/craftsman/electrical_installation_service;2
+Service de maintenance d'ascenseurs;home_services/craftsman/elevator_service;2
+Service de reproduction de clés;home_services/craftsman/key_duplication_service;2
+Service de restauration des planchers;home_services/craftsman/floor_refinishing_service;2
+Service de serrurerie d'urgence;home_services/craftsman/emergency_locksmith_service;2
+Centre de stockage;home_services/moving_storage/storage_facility;2
+Déménageur;home_services/moving_storage/moving_company;2
+Garde-meubles en libre-service;home_services/moving_storage/self_storage_facility;2
+Magasin d'articles de déménagement;home_services/moving_storage/moving_supply_store;2
+Service de déménagement de pianos;home_services/moving_storage/piano_moving_service;2
+Services de déménagement et de stockage;home_services/moving_storage/moving_and_storage_service;2
+Agence de gardiennage de maison;home_services/house_sitting_security/house_sitter_agency;2
+Agence de sécurité;home_services/house_sitting_security/security_service;2
+Consultant en protection contre les incendies;home_services/house_sitting_security/fire_protection_consultant;2
+Fournisseur de systèmes de sécurité;home_services/house_sitting_security/security_system_supplier;2
+Gardien de maison;home_services/house_sitting_security/house_sitter;2
+Inspecteur immobilier;home_services/house_sitting_security/home_inspector;2
+Installateur de systèmes de sécurité;home_services/house_sitting_security/security_system_installer;2
+Service de nettoyage et d'entretien;home_services/house_sitting_security/janitorial_service;2
+Service de protection contre les incendies;home_services/house_sitting_security/fire_protection_service;2
+Inspection sanitaire;home_services/plumbing_sanitation/sanitary_inspection;2
+Plombier;home_services/plumbing_sanitation/plumber;2
+Service d'entretien des gouttières;home_services/plumbing_sanitation/gutter_cleaning_service;2
+Service d'entretien et de réparation de fosses septiques;home_services/plumbing_sanitation/septic_system_service;2
+Service d'extermination des nuisibles;home_services/plumbing_sanitation/pest_control_service;2
+Entreprise de nettoyage de vitres;home_services/cleaning_service_providers/window_cleaning_service;2
+Ramoneur;home_services/cleaning_service_providers/chimney_sweep;2
+Service d'enlèvement de graffitis;home_services/cleaning_service_providers/graffiti_removal_service;2
+Service de ménage;home_services/cleaning_service_providers/cleaning_service;2
+Service de ménage à domicile;home_services/cleaning_service_providers/house_cleaning_service;2
+Service de nettoyage;home_services/cleaning_service_providers/render_cleaning_service;2
+Service de nettoyage de conduits de ventilation;home_services/cleaning_service_providers/air_duct_cleaning_service;2
+Service de nettoyage de moquettes;home_services/cleaning_service_providers/carpet_cleaning_service;2
+Service de nettoyage de piscines;home_services/cleaning_service_providers/pool_cleaning_service;2
+Services de maintenance des cheminées;home_services/cleaning_service_providers/chimney_services;2
+Services de nettoyage;home_services/cleaning_service_providers/cleaners;2
+Atelier de réparation du verre;home_services/repair_service_providers/glass_repair_service;2
+Service de réparation;home_services/repair_service_providers/repair_service;2
+Service de réparation de radiateurs;home_services/repair_service_providers/radiator_repair_service;2
+Entrepreneur spécialisé dans la remise en état après dégât des eaux;home_services/house_services/water_damage_restoration_service;2
+Installateur de double vitrage;home_services/house_services/double_glazing_supplier;2
+Service d'entretien à domicile;home_services/house_services/homekill_service;2
+Service d'entretien de pelouse;home_services/house_services/lawn_care_service;2
+Service de contrôle des oiseaux;home_services/house_services/bird_control_service;2
+Service de débarras de maison;home_services/house_services/house_clearance_service;2
+Service de détection d'amiante;home_services/house_services/asbestos_testing_service;2
+Agent commercial;business_services/administration_services/commercial_agent;2
+Cabinet de recrutement de cadres;business_services/administration_services/executive_search_firm;2
+Commissaire aux comptes;business_services/administration_services/auditor;2
+Conseiller en gestion des affaires;business_services/administration_services/business_management_consultant;2
+Consultant;business_services/administration_services/consultant;2
+Courtier d'affaires;business_services/administration_services/business_broker;2
+Entreprise BPO;business_services/administration_services/bpo_company;2
+Fournisseur d'équipement pour magasin;business_services/administration_services/store_equipment_supplier;2
+Fournisseur d'équipements Eftpos;business_services/administration_services/eftpos_equipment_supplier;2
+Fournisseur de cadeaux d'entreprise;business_services/administration_services/corporate_gift_supplier;2
+Professionnel de l'organisation;business_services/administration_services/professional_organizer;2
+Service d'administration des entreprises;business_services/administration_services/business_administration_service;2
+Service d'agents de sécurité;business_services/administration_services/security_guard_service;2
+Service de cartographie;business_services/administration_services/mapping_service;2
+Service de dactylographie;business_services/administration_services/typing_service;2
+Service de débarras des déchets;business_services/administration_services/debris_removal_service;2
+Service de divertissement en entreprise;business_services/administration_services/corporate_entertainment_service;2
+Service de paiement;business_services/administration_services/payment_service;2
+Service de paiement par carte de crédit;business_services/administration_services/card_processing_service;2
+Services aux entreprises;business_services/administration_services/business_to_business_service;2
+Centre d'affaires;business_services/associations_centers/business_center;2
+Entreprise de réseautage commercial;business_services/associations_centers/business_networking_company;2
+Salle de réception / de fonction;business_services/associations_centers/function_room_facility;2
+Fournisseur de tabourets de bar;business_services/wholesale/bar_stool_supplier;2
+Grossiste;business_services/wholesale/wholesaler;2
+Grossiste en accessoires de sport;business_services/wholesale/sports_accessories_wholesaler;2
+Grossiste en accessoires électroniques;business_services/wholesale/electronics_accessories_wholesaler;2
+Grossiste en appareils électriques;business_services/wholesale/electrical_appliance_wholesaler;2
+Grossiste en articles de fêtes;business_services/wholesale/novelties_wholesaler;2
+Grossiste en articles ménagers;business_services/wholesale/household_goods_wholesaler;2
+Grossiste en éclairage;business_services/wholesale/lighting_wholesaler;2
+Grossiste en matériel de construction;business_services/wholesale/construction_material_wholesaler;2
+Grossiste en ordinateur;business_services/wholesale/computer_wholesaler;2
+Grossiste en outils;business_services/wholesale/tool_wholesaler;2
+Grossiste en sacs en plastiques;business_services/wholesale/plastic_bags_wholesaler;2
+Grossiste en vêtements;business_services/wholesale/clothing_wholesaler;2
+Libre-service de gros;business_services/wholesale/cash_and_carry_wholesaler;2
+Marché de gros;business_services/wholesale/wholesale_market;2
+Vendeur de bijoux en gros;business_services/wholesale/wholesale_jeweler;2
+Consultant en commerce extérieur;business_services/import_export/foreign_trade_consultant;2
+Consultant en commerce international;business_services/import_export/international_trade_consultant;2
+Importateur;business_services/import_export/importer;2
+Importateur d'équipements;business_services/import_export/equipment_importer;2
+Société d'import-export;business_services/import_export/import_export_company;2
+Atelier de sérigraphie;business_services/print_graphic_design/screen_printing_shop;2
+Boutique de cartes de vœux;business_services/print_graphic_design/greeting_card_shop;2
+Boutique de recharge d'encre pour imprimante;business_services/print_graphic_design/printer_ink_refill_store;2
+Boutique de sceaux et tampons;business_services/print_graphic_design/seal_shop;2
+Boutique de tampons en caoutchouc;business_services/print_graphic_design/rubber_stamp_store;2
+Équipement et fourniture d'impression;business_services/print_graphic_design/printing_equipment_and_supplies;2
+Fabricant d'autocollants;business_services/print_graphic_design/sticker_manufacturer;2
+Fournisseur d'équipement d'impression;business_services/print_graphic_design/printing_equipment_supplier;2
+Fournisseur de cartouches d'encre;business_services/print_graphic_design/toner_cartridge_supplier;2
+Graphiste;business_services/print_graphic_design/graphic_designer;2
+Imprimeur;business_services/print_graphic_design/print_shop;2
+Imprimeur d'étiquettes personnalisées;business_services/print_graphic_design/custom_label_printer;2
+Imprimeur en sérigraphie;business_services/print_graphic_design/screen_printer;2
+Imprimeur numérique;business_services/print_graphic_design/digital_printer;2
+Magasin d'enseignes;business_services/print_graphic_design/sign_shop;2
+Magasin d'impressions et de signalisation;business_services/print_graphic_design/print_and_signs_store;2
+Magasin d'imprimantes et de scanners;business_services/print_graphic_design/printer_and_scanner_store;2
+Service d'impression numérique;business_services/print_graphic_design/digital_printing_service;2
+Agence de design;business_services/research_development/design_agency;2
+Entreprise de conception industrielle;business_services/research_development/industrial_design_company;2
+Laboratoire;business_services/research_development/laboratory;2
+Prestataire spécialisé en études de marché;business_services/research_development/market_researcher;2
+Recherche et développement de produits;business_services/research_development/research_and_product_development;2
+Agence de consultants commerciaux et informatiques;business_services/it_communication/business_and_it_consulting_agency;2
+Agence e-commerce;business_services/it_communication/e_commerce_agency;2
+Concepteur de sites web;business_services/it_communication/website_designer;2
+Consultant en image;business_services/it_communication/image_consultant;2
+Consultant en informatique;business_services/it_communication/computer_consultant;2
+Designer web;business_services/it_communication/web_designer;2
+Entreprise d'automatisme;business_services/it_communication/automation_company;2
+Entreprise de gestion des données;business_services/it_communication/database_management_company;2
+Entreprise de logiciels de comptabilité;business_services/it_communication/accounting_software_company;2
+Fournisseur de solution e-commerce;business_services/it_communication/e-commerce_solution_provider;2
+Location de bureau virtuel;business_services/it_communication/virtual_office_rental;2
+Service de cloud computing;business_services/it_communication/cloud_computing_service;2
+Service de fax;business_services/it_communication/fax_service;2
+Service de radiocommunication;business_services/it_communication/tower_communication_service;2
+Service de récupération de données;business_services/it_communication/data_recovery_service;2
+Service de saisie de données;business_services/it_communication/data_entry_service;2
+Service de sécurité informatique;business_services/it_communication/computer_security_service;2
+Service de stockage en nuage;business_services/it_communication/cloud_storage_service;2
+Service de stockage et de disques durs;business_services/it_communication/drives_and_storage_service;2
+Service de transcription;business_services/it_communication/transcription_service;2
+Service de transcription audio;business_services/it_communication/audio_transcription_service;2
+Service de visioconférence;business_services/it_communication/video_conferencing_service;2
+Service e-commerce;business_services/it_communication/e_commerce_service;2
+Service postal;business_services/it_communication/mailing_service;2
+Traducteur;business_services/it_communication/translator;2
+Agence de location d'espaces commerciaux;business_services/office_space_supplies/retail_space_rental_agency;2
+Agence de location de bureaux;business_services/office_space_supplies/office_space_rental_agency;2
+Agence de location de grands bureaux;business_services/office_space_supplies/executive_suite_rental_agency;2
+Agence immobilière d'entreprise;business_services/office_space_supplies/commercial_real_estate_agency;2
+Agenceur de magasin;business_services/office_space_supplies/shopfitter;2
+Casier à pièce;business_services/office_space_supplies/coin_operated_locker;2
+Espace de coworking;business_services/office_space_supplies/coworking_space;2
+Fabricant d'articles de papeterie;business_services/office_space_supplies/stationery_manufacturer;2
+Fournisseur d'enveloppes;business_services/office_space_supplies/envelope_supplier;2
+Fournisseur de matériel de bureau;business_services/office_space_supplies/office_equipment_supplier;2
+Grossiste en fournitures de bureau;business_services/office_space_supplies/office_supply_wholesaler;2
+Grossiste en papeterie;business_services/office_space_supplies/stationery_wholesaler;2
+Imprimerie commerciale;business_services/office_space_supplies/commercial_printer;2
+Magasin de fournitures de bureau;business_services/office_space_supplies/office_supply_store;2
+Magasin de matériel de bureau;business_services/office_space_supplies/office%20supplies_store;2
+Magasin de meubles de bureau;business_services/office_space_supplies/office_furniture_store;2
+Papeterie;business_services/office_space_supplies/stationery_store;2
+Service de location de boîtes aux lettres;business_services/office_space_supplies/mailbox_rental_service;2
+Service de location de matériel de bureau;business_services/office_space_supplies/office_equipment_rental_service;2
+Service de location de salles de réunion et de conférence;business_services/office_space_supplies/conference_and_meeting_room_organizer;2
+Service de rénovation de bureaux;business_services/office_space_supplies/office_refurbishment_service;2
+Siège social;business_services/office_space_supplies/corporate_office;2
+Site d'entreprise;business_services/office_space_supplies/corporate_campus;2
+Agence d'intérim;business_services/hr_recruiting/temp_agency;2
+Agence de talents;business_services/hr_recruiting/talent_agency;2
+Conseiller pédagogique;business_services/hr_recruiting/educational_consultant;2
+Consultant en ressources humaines;business_services/hr_recruiting/human_ressource_consulting;2
+Consultant pour l'emploi;business_services/hr_recruiting/employment_consultant;2
+Recruteur;business_services/hr_recruiting/recruiter;2
+Service de comptabilité;business_services/hr_recruiting/payroll_service;2
+Service de recrutement;business_services/hr_recruiting/recruitment_service;2
+Système de suivi des candidatures;business_services/hr_recruiting/applicant_tracking_system;2
+Agent d'expédition de véhicules;business_services/shipping_logistics/vehicle_shipping_agent;2
+Coursier;business_services/shipping_logistics/courier_service;2
+Entrepôt;business_services/shipping_logistics/warehouse;2
+Entreprise de livraison;business_services/shipping_logistics/shipping_company;2
+Entreprise de packaging;business_services/shipping_logistics/packaging_company;2
+Machine d'emballage;business_services/shipping_logistics/packaging_machinery;2
+Magasin d'articles d'emballage;business_services/shipping_logistics/packaging_supply_store;2
+Magasin d'emballages;business_services/shipping_logistics/packaging_store;2
+Service d'envoi;business_services/shipping_logistics/shipping_service;2
+Service d'expédition et de livraison;business_services/shipping_logistics/shipping_and_mailing_service;2
+Service de courrier et de livraison;business_services/shipping_logistics/courier_and_delivery_service;2
+Service de livraison;business_services/shipping_logistics/delivery_service;2
+Service de transport réfrigéré;business_services/shipping_logistics/refrigerated_transport_service;2
+Service logistique;business_services/shipping_logistics/logistics_service;2
+Société de transport international de marchandises;business_services/shipping_logistics/freight_forwarding_service;2
+Agence de communication;business_services/sales_marketing/advertising_agency;2
+Agence de marketing;business_services/sales_marketing/marketing_agency;2
+Agence de marketing en ligne;business_services/sales_marketing/online_marketing_agency;2
+Centre d'appel;business_services/sales_marketing/call_center;2
+Consultant en marketing;business_services/sales_marketing/marketing_consultant;2
+Consultant média;business_services/sales_marketing/media_consultant;2
+Fournisseur de CRM;business_services/sales_marketing/crm_provider;2
+Fournisseur de produits promotionnels;business_services/sales_marketing/promotional_products_supplier;2
+Magasin d'articles promotionnels;business_services/sales_marketing/promotional_items_store;2
+Photographe publicitaire;business_services/sales_marketing/advertising_photographer;2
+Publipostage;business_services/sales_marketing/direct_mail_advertising;2
+Service d'organisation d'événements professionnels;business_services/sales_marketing/meeting_planning_service;2
+Service de développement des affaires;business_services/sales_marketing/business_development_service;2
+Service de marketing affilié;business_services/sales_marketing/affiliate_marketing_service;2
+Service de marketing Internet;business_services/sales_marketing/internet_marketing_service;2
+Service de télémarketing;business_services/sales_marketing/telemarketing_service;2
+Service SEO;business_services/sales_marketing/seo_service;2
+Avocat;legal_services_government/lawyers_attorneys/lawyer;2
+Avocat fiscaliste;legal_services_government/lawyers_attorneys/tax_attorney;2
+Avocat généraliste;legal_services_government/lawyers_attorneys/general_practice_attorney;2
+Avocat pénaliste;legal_services_government/lawyers_attorneys/criminal_law_attorney;2
+Avocat plaidant;legal_services_government/lawyers_attorneys/barrister;2
+Avocat spécialisé dans les divorces;legal_services_government/lawyers_attorneys/divorce_attorney;2
+Avocat spécialisé en dommages corporels;legal_services_government/lawyers_attorneys/personal_injury_lawyer;2
+Avocat spécialisé en droit du travail;legal_services_government/lawyers_attorneys/employment_attorney;2
+Cabinet d'avocats;legal_services_government/lawyers_attorneys/law_firm;2
+Procureur;legal_services_government/lawyers_attorneys/trial_attorney;2
+Service de référencement d'avocats;legal_services_government/lawyers_attorneys/attorney_referral_service;2
+Bibliothèque spécialisée en droit;legal_services_government/libraries_archives/law_library;2
+Administration;legal_services_government/government_department/government_office;2
+Administration gouvernementale;legal_services_government/government_department/federal_government_office;2
+Administration locale;legal_services_government/municipal_department/local_government_office;2
+Conseil;legal_services_government/municipal_department/council;2
+Conseiller;legal_services_government/municipal_department/counselor;2
+Mairie;legal_services_government/municipal_department/city_hall;2
+Office du tourisme;legal_services_government/municipal_department/municipal_department_of_tourism;2
+Courtier en douane;legal_services_government/customs_toll/customs_broker;2
+Péage;legal_services_government/customs_toll/toll_station;2
+Détective;legal_services_government/law_enforcement/detective;2
+Détective privé;legal_services_government/law_enforcement/private_investigator;2
+Service d'aide aux victimes de crime;legal_services_government/law_enforcement/crime_victim_service;2
+Bureau d'aide juridique;legal_services_government/legal_service_providers/legal_aid_office;2
+Bureau de l'état civil;legal_services_government/legal_service_providers/office_of_vital_records;2
+Bureau des affaires juridiques;legal_services_government/legal_service_providers/legal_affairs_bureau;2
+Fournisseur de services parajuridiques;legal_services_government/legal_service_providers/paralegal_services_provider;2
+Huissier;legal_services_government/legal_service_providers/huissier;2
+Notaire;legal_services_government/legal_service_providers/notary_public;2
+Régisseur;legal_services_government/legal_service_providers/bailiff;2
+Service d'assistance au règlement des petits litiges;legal_services_government/legal_service_providers/small_claims_assistance_service;2
+Service de médiation;legal_services_government/legal_service_providers/mediation_service;2
+Service de saisie immobilière;legal_services_government/legal_service_providers/foreclosure_service;2
+Service juridique de gestion des divorces;legal_services_government/legal_service_providers/divorce_service;2
+Services juridiques;legal_services_government/legal_service_providers/legal_services;2
+Agence d'immatriculation;legal_services_government/registration_services/tag_agency;2
+Agence de permis de conduire et d'immatriculation;legal_services_government/registration_services/driver_vehicle_licensing_agency;2
+Bureau d'immatriculation;legal_services_government/registration_services/license_bureau;2
+Bureau des permis de conduire;legal_services_government/registration_services/drivers_license_office;2
+Registre d'état civil;legal_services_government/registration_services/civil_registry;2
+Service de l'état civil;legal_services_government/registration_services/general_register_office;2
+Agence de recrutement;public_local_services/employment_career/employment_agency;2
+Centre de coaching;public_local_services/employment_career/coaching_center;2
+Service de soutien scolaire;public_local_services/employment_career/tutoring_service;2
+Travailleur social;public_local_services/employment_career/social_worker;2
+Baby-sitter;public_local_services/kids_family/babysitter;2
+Généalogiste;public_local_services/kids_family/genealogist;2
+Service de garde d'enfants;public_local_services/kids_family/child_care_agency;2
+Cimetière;public_local_services/funeral_memorial/cemetery;2
+Directeur funéraire;public_local_services/funeral_memorial/funeral_director;2
+Entreprise de pompes funèbres;public_local_services/funeral_memorial/funeral_home;2
+Centre de recyclage;public_local_services/waste_management/recycling_center;2
+Service de gestion des déchets;public_local_services/waste_management/waste_management_service;2
+Guardia Civil;public_local_services/military_veteran/guardia_civil;2
+Consultant en environnement;public_local_services/nature_environment/environmental_consultant;2
+Environnement et ressources naturelles renouvelables;public_local_services/nature_environment/environment_renewable_natural_resources;2
+Jardin;public_local_services/nature_environment/garden;2
+Association artistique;public_local_services/professional_organizations/arts_organization;2
+Association bénévole;public_local_services/professional_organizations/volunteer_organization;2
+Association culturelle;public_local_services/professional_organizations/cultural_association;2
+Association d'architectes;public_local_services/professional_organizations/architects_association;2
+Association ou organisation;public_local_services/professional_organizations/association_or_organization;2
+Organisation non gouvernementale;public_local_services/professional_organizations/non_governmental_organization;2
+Syndicat;public_local_services/professional_organizations/labor_union;2
+Soins aux personnes âgées;public_local_services/shelters_homes/senior_citizens_care_service;2
+Bureau d'information;public_local_services/public_services_welfare/information_bureau;2
+Bureau de poste;public_local_services/public_services_welfare/post_office;2
+Centre communautaire;public_local_services/public_services_welfare/community_center;2
+Centre d'aide sociale;public_local_services/public_services_welfare/social_welfare_center;2
+Centre de conseil aux consommateurs;public_local_services/public_services_welfare/consumer_advice_center;2
+Conseils citoyens;public_local_services/public_services_welfare/citizens_advice_bureau;2
+Organisme des services sociaux;public_local_services/public_services_welfare/social_services_organization;2
+Parking public;public_local_services/public_services_welfare/public_parking_space;2
+Services d'information;public_local_services/public_services_welfare/information_services;2
+Association de construction et de gestion de logements sociaux;public_local_services/housing_associations/housing_association;2
+Office public du logement;public_local_services/housing_associations/housing_authority;2
+Société de crédit foncier;public_local_services/housing_associations/building_society;2
+Société immobilière;public_local_services/housing_associations/housing_society;2
+Syndicat de copropriété;public_local_services/housing_associations/homeowners_association;2
+Boutique d'accessoires de mode;shopping_fashion/accessories/fashion_accessories_store;2
+Boutique de ceintures;shopping_fashion/accessories/belt_shop;2
+Boutique de sacs à main;shopping_fashion/accessories/handbags_shop;2
+Chapellerie;shopping_fashion/accessories/hat_shop;2
+Magasin de chapeaux et couvre-chefs;shopping_fashion/accessories/headwear_store;2
+Magasin de lunettes de soleil;shopping_fashion/accessories/sunglasses_store;2
+Magasin de sacs;shopping_fashion/accessories/bag_shop;2
+Magasin de sacs et bagages;shopping_fashion/accessories/luggage_store;2
+Magasin de sacs et de valises;shopping_fashion/accessories/bags_and_luggage_store;2
+Magasin de tricot;shopping_fashion/accessories/knit_shop;2
+Acheteur de diamants;shopping_fashion/jewelry_watches/diamond_buyer;2
+Bijouterie;shopping_fashion/jewelry_watches/jewelry_store;2
+Bijouterie fantaisie;shopping_fashion/jewelry_watches/costume_jewelry_shop;2
+Bijoutier;shopping_fashion/jewelry_watches/jeweler;2
+Diamantaire;shopping_fashion/jewelry_watches/diamond_dealer;2
+Expert en bijoux;shopping_fashion/jewelry_watches/jewelry_appraiser;2
+Fabricant de bijoux;shopping_fashion/jewelry_watches/jewelry_manufacturer;2
+Fabricant de montres;shopping_fashion/jewelry_watches/clock_watch_maker;2
+Graveur sur bijoux;shopping_fashion/jewelry_watches/jewelry_engraver;2
+Horlogerie;shopping_fashion/jewelry_watches/watch_store;2
+Joaillier;shopping_fashion/jewelry_watches/jewelry_designer;2
+Service de rachat de bijoux;shopping_fashion/jewelry_watches/jewelry_buyer;2
+Service de réparation de bijoux;shopping_fashion/jewelry_watches/jewelry_repair_service;2
+Société d'horlogerie;shopping_fashion/jewelry_watches/watch_manufacturer;2
+Bazar;shopping_fashion/malls_marketplaces/bazar;2
+Boutique de souvenirs;shopping_fashion/malls_marketplaces/souvenir_store;2
+Centre commercial;shopping_fashion/malls_marketplaces/shopping_center;2
+Centre de magasins d'usine;shopping_fashion/malls_marketplaces/outlet_mall;2
+Enchères en ligne;shopping_fashion/malls_marketplaces/online_auction;2
+Grand magasin;shopping_fashion/malls_marketplaces/department_store;2
+Hypermarché;shopping_fashion/malls_marketplaces/hypermarket;2
+Magasin de gros;shopping_fashion/malls_marketplaces/warehouse_club;2
+Magasin discount;shopping_fashion/malls_marketplaces/discount_store;2
+Magasin entrepôt;shopping_fashion/malls_marketplaces/warehouse_store;2
+Marché aux puces;shopping_fashion/malls_marketplaces/flea_market;2
+Marché de textile;shopping_fashion/malls_marketplaces/clothes_market;2
+Marché en ligne;shopping_fashion/malls_marketplaces/online_marketplace;2
+Marché traditionnel;shopping_fashion/malls_marketplaces/traditional_market;2
+Service de coupons d'achat;shopping_fashion/malls_marketplaces/coupon_service;2
+Site d'avis;shopping_fashion/malls_marketplaces/review_site;2
+Site de comparaison de prix;shopping_fashion/malls_marketplaces/price_comparison_site;2
+Boutique de mariage;shopping_fashion/costume_wedding/bridal_shop;2
+Boutique de robes;shopping_fashion/costume_wedding/dress_shop;2
+Couturier;shopping_fashion/costume_wedding/dressmaker;2
+Location de robe de mariée;shopping_fashion/costume_wedding/wedding_dress_rental_service;2
+Magasin de déguisements;shopping_fashion/costume_wedding/costume_store;2
+Magasin de surplus militaire;shopping_fashion/costume_wedding/army_and_navy_store;2
+Service de location de robes;shopping_fashion/costume_wedding/full_dress_rental_service;2
+Service de location de robes de soirée;shopping_fashion/costume_wedding/evening_dress_rental_service;2
+Service de location de tenues de soirée;shopping_fashion/costume_wedding/dress_and_tuxedo_rental_service;2
+Blanchisserie;shopping_fashion/clothing_rental_repair/laundry;2
+Cordonnier;shopping_fashion/clothing_rental_repair/shoe_repair_shop;2
+Laverie automatique;shopping_fashion/clothing_rental_repair/laundromat;2
+Pressing;shopping_fashion/clothing_rental_repair/dry_cleaner;2
+Service de retouche de vêtements;shopping_fashion/clothing_rental_repair/clothing_alteration_service;2
+Tailleur;shopping_fashion/clothing_rental_repair/tailor;2
+Boutique de lingerie;shopping_fashion/clothing_underwear/lingerie_store;2
+Boutique de t-shirts personnalisés;shopping_fashion/clothing_underwear/custom_t_shirt_store;2
+Fabricant de lingerie;shopping_fashion/clothing_underwear/lingerie_manufacturer;2
+Fabricant de vêtements de sport;shopping_fashion/clothing_underwear/sportwear_manufacturer;2
+Fabrique de chaussures;shopping_fashion/clothing_underwear/shoe_factory;2
+Fournisseur de textile;shopping_fashion/clothing_underwear/clothing_supplier;2
+Friperie;shopping_fashion/clothing_underwear/used_clothing_store;2
+Magasin d'articles d'occasion;shopping_fashion/clothing_underwear/thrift_store;2
+Magasin de bottes;shopping_fashion/clothing_underwear/boot_store;2
+Magasin de chaussures;shopping_fashion/clothing_underwear/shoe_store;2
+Magasin de couture;shopping_fashion/clothing_underwear/couture_store;2
+Magasin de jeans;shopping_fashion/clothing_underwear/denim_wear_store;2
+Magasin de maillots de bain;shopping_fashion/clothing_underwear/swimwear_store;2
+Magasin de manteaux en cuir;shopping_fashion/clothing_underwear/leather_coats_store;2
+Magasin de puériculture;shopping_fashion/clothing_underwear/baby_store;2
+Magasin de sous-vêtements;shopping_fashion/clothing_underwear/underwear_store;2
+Magasin de streetwear;shopping_fashion/clothing_underwear/streetwear_store;2
+Magasin de t-shirts;shopping_fashion/clothing_underwear/t_shirt_store;2
+Magasin de vêtements;shopping_fashion/clothing_underwear/clothing_store;2
+Magasin de vêtements d'hiver;shopping_fashion/clothing_underwear/winterwear_store;2
+Magasin de vêtements de plage;shopping_fashion/clothing_underwear/beach_clothing_store;2
+Magasin de vêtements de plein air;shopping_fashion/clothing_underwear/outerwear_store;2
+Magasin de vêtements de sport;shopping_fashion/clothing_underwear/sportswear_store;2
+Magasin de vêtements de sport;shopping_fashion/clothing_underwear/activewear_store;2
+Magasin de vêtements et d'articles de plein air;shopping_fashion/clothing_underwear/outdoor_clothing_and_equipment_shop;2
+Magasin de vêtements grandes tailles;shopping_fashion/clothing_underwear/plus_size_clothing_store;2
+Magasin de vêtements imprimés;shopping_fashion/clothing_underwear/printed_clothing_store;2
+Magasin de vêtements pour bébés;shopping_fashion/clothing_underwear/baby_clothing_store;2
+Magasin de vêtements pour enfants;shopping_fashion/clothing_underwear/childrens_clothing_store;2
+Magasin de vêtements pour femmes;shopping_fashion/clothing_underwear/womens_clothing_store;2
+Magasin de vêtements pour hommes;shopping_fashion/clothing_underwear/mens_clothing_store;2
+Magasin de vêtements pour jeunes;shopping_fashion/clothing_underwear/youth_clothing_store;2
+Magasin de vêtements professionnels;shopping_fashion/clothing_underwear/work_clothes_store;2
+Magasin de vêtements vintage;shopping_fashion/clothing_underwear/vintage_clothing_store;2
+Magasin pour femmes enceintes;shopping_fashion/clothing_underwear/maternity_store;2
+Maison de haute couture;shopping_fashion/clothing_underwear/haute_couture_fashion_house;2
+Tailleur pour hommes;shopping_fashion/clothing_underwear/mens_tailor;2
+Tailleur sur mesure;shopping_fashion/clothing_underwear/custom_tailor;2
+Club d'arts martiaux mixtes;sports/martial_arts_wrestling/mma_club;2
+Club de boxe;sports/martial_arts_wrestling/boxing_club;2
+Magasin d'accessoires pour arts martiaux;sports/martial_arts_wrestling/martial_arts_supply_store;2
+Compagnie de danse;sports/dancing_gymnastics/dance_company;2
+École de danse;sports/dancing_gymnastics/dance_school;2
+Magasin d'articles de danse;sports/dancing_gymnastics/dance_store;2
+Boutique de produits de nutrition sportive;sports/equipment_associations/sports_nutrition_store;2
+Club de sport;sports/equipment_associations/sports_club;2
+Complexe sportif;sports/equipment_associations/sports_complex;2
+École de sport;sports/equipment_associations/sports_school;2
+Magasin d'articles de sports;sports/equipment_associations/sporting_goods_store;2
+Magasin de souvenirs sportifs;sports/equipment_associations/sports_memorabilia_store;2
+Centre de fitness;sports/fitness_weight_lifting/fitness_center;2
+Classe de fitness;sports/fitness_weight_lifting/fitness_class;2
+Coach particulier;sports/fitness_weight_lifting/personal_trainer;2
+Magasins d'appareils de fitness;sports/fitness_weight_lifting/fitness_equipment_store;2
+Programme d'entraînement physique;sports/fitness_weight_lifting/physical_fitness_program;2
+Vente d'équipement de fitness en gros;sports/fitness_weight_lifting/fitness_equipment_wholesaler;2
+Club de golf;sports/golf_ultimate/golf_club;2
+Magasin de golf;sports/golf_ultimate/golf_shop;2
+Moniteur de golf;sports/golf_ultimate/golf_instructor;2
+Club de football;sports/ball_games/soccer_club;2
+Club de handball;sports/ball_games/handball_club;2
+Magasin d'articles de football;sports/ball_games/soccer_store;2
+Magasin d'articles de rugby;sports/ball_games/rugby_store;2
+Club de voile;sports/swimming_water_sports/sailing_club;2
+Magasin de voile;sports/swimming_water_sports/sailing_store;2
+Moniteur de plongée;sports/swimming_water_sports/scuba_instructor;2
+Piscine;sports/swimming_water_sports/swimming_pool;2
+Service de location d'équipements de sports nautiques;sports/swimming_water_sports/water_sports_equipment_rental_service;2
+Club de paintball;sports/shooting_target_sports/paintball_club;2
+Club de tir à l'arc;sports/shooting_target_sports/archery_club;2
+Magasin d'articles de paintball;sports/shooting_target_sports/paintball_store;2
+Centre équestre;sports/outdoor_winter_sports/equestrian_facility;2
+Club d'athlétisme;sports/outdoor_winter_sports/athletic_club;2
+Club de triathlon;sports/outdoor_winter_sports/triathlon_club;2
+Club équestre;sports/outdoor_winter_sports/equestrian_club;2
+Clud d'escalade;sports/outdoor_winter_sports/climbing_club;2
+Cyclisme sur route;sports/outdoor_winter_sports/road_cycling;2
+Escalade;sports/outdoor_winter_sports/rock_climbing;2
+Magasin d'articles de course à pied;sports/outdoor_winter_sports/running_store;2
+Magasin d'équipements sportifs d'extérieur;sports/outdoor_winter_sports/outdoor_sports_store;2
+Magasin d'équitation;sports/outdoor_winter_sports/equestrian_store;2
+Magasin de skis;sports/outdoor_winter_sports/ski_store;2
+Magasin de sports d'hiver;sports/outdoor_winter_sports/winter_sports_store;2
+Terrain de sport;sports/outdoor_winter_sports/athletic_field;2
+Vélo d'intérieur;sports/outdoor_winter_sports/indoor_cycling;2
+Vélodrome;sports/outdoor_winter_sports/velodrome;2
+Centre de plongée;sports/extreme_sports/diving_center;2
+Centre de sports d'aventure;sports/extreme_sports/adventure_sports_center;2
+Centre sportif aérien;sports/extreme_sports/aerial_sports_center;2
+Club de canoë-kayak;sports/extreme_sports/canoe_and_kayak_club;2
+Club de parachutisme;sports/extreme_sports/parachuting_club;2
+École de parachutisme;sports/extreme_sports/skydiving_center;2
+Magasin d'accessoires pour planches à voile;sports/extreme_sports/windsurfing_store;2
+Magasin d'articles de snowboard;sports/extreme_sports/snowboard_shop;2
+Magasin d'articles de sports mécaniques;sports/extreme_sports/motorsports_store;2
+Magasin de cerfs-volants;sports/extreme_sports/kite_shop;2
+Magasin de matériel de plongée;sports/extreme_sports/dive_shop;2
+Magasin de patins;sports/extreme_sports/skate_shop;2
+Magasin de skateboards;sports/extreme_sports/skateboard_shop;2
+Magasin de surf;sports/extreme_sports/surf_shop;2
+Magasins d'articles de canoë-kayak;sports/extreme_sports/canoe_and_kayak_store;2
+Service de location de canoës-kayaks;sports/extreme_sports/canoe_and_kayak_rental_service;2
+Service de vols en deltaplane;sports/extreme_sports/hang_gliding_center;2
+Sports d'aventure;sports/extreme_sports/adventure_sports;2
+Magasin d'articles de tennis de table;sports/tennis_racquet_sports/table_tennis_supply_store;2
+Magasin de tennis;sports/tennis_racquet_sports/tennis_store;2
+Agence d'excursions;travel_vacation/activities_tours/tour_agency;2
+Agence d'excursions en plongée sous-marine;travel_vacation/activities_tours/scuba_tour_agency;2
+Agence de location d'hélicoptères;travel_vacation/activities_tours/helicopter_tour_agency;2
+Agence de tourisme sportif;travel_vacation/activities_tours/sport_tour_agency;2
+Agence de visites touristiques;travel_vacation/activities_tours/sightseeing_tour_agency;2
+Agence de visites touristiques en canoë-kayak;travel_vacation/activities_tours/canoe_and_kayak_tour_agency;2
+Agence de voyages;travel_vacation/activities_tours/travel_agency;2
+Agrégateur de voyages;travel_vacation/activities_tours/ski_holiday_organizer;2
+Camps de vacances et de divertissement;travel_vacation/activities_tours/recreational_and_vacation_camps;2
+Entreprise de navire de croisière;travel_vacation/activities_tours/cruise_line;2
+Fournisseur d'excursions culturelles;travel_vacation/activities_tours/cultural_tours_provider;2
+Organiseur de vacances au ski;travel_vacation/activities_tours/travel_aggregator;2
+Visite de fermes;travel_vacation/activities_tours/farm_household_tour;2
+Voyagiste;travel_vacation/activities_tours/tour_operator;2
+Agence d'excursions en bateau;travel_vacation/travel_agencies/boat_tour_agency;2
+Agence de croisières;travel_vacation/travel_agencies/cruise_agency;2
+Agence de réservation de billets d'avion;travel_vacation/travel_agencies/airline_ticket_agency;2
+Agence de visites touristiques en bus;travel_vacation/travel_agencies/bus_tour_agency;2
+Agence de vols touristiques en montgolfière;travel_vacation/travel_agencies/balloon_ride_tour_agency;2
+Agence de voyages en bateaux de croisière;travel_vacation/travel_agencies/cruise_travel_agency;2
+Attraction touristique;travel_vacation/travel_agencies/tourist_attraction;2
+Consultant visa;travel_vacation/travel_agencies/visa_consultant;2
+Office de tourisme;travel_vacation/travel_agencies/tourist_information_center;2
+Service des visas et passeports;travel_vacation/travel_agencies/visa_and_passport_office;2
+Aéroport international;travel_vacation/airlines_air_travel/international_airport;2
+Compagnie aérienne;travel_vacation/airlines_air_travel/airline;2
+Service de navette aéroport;travel_vacation/airlines_air_travel/airport_shuttle_service;2
+Site de recherche de vols;travel_vacation/airlines_air_travel/flights_search_site;2
+Agence de location de bungalows;travel_vacation/accomodations_lodging/cottage_rental;2
+Agence de location de chalets;travel_vacation/accomodations_lodging/cabin_rental_agency;2
+Agence de location de maisons de vacances;travel_vacation/accomodations_lodging/vacation_home_rental_agency;2
+Agence de multipropriété;travel_vacation/accomodations_lodging/timeshare_agency;2
+Appartement de location de vacances;travel_vacation/accomodations_lodging/holiday_apartment_rental;2
+Appartement de vacances;travel_vacation/accomodations_lodging/vacation_appartment;2
+Chalet;travel_vacation/accomodations_lodging/chalet;2
+Chambre d'hôtes;travel_vacation/accomodations_lodging/bed_and_breakfast;2
+Cottage;travel_vacation/accomodations_lodging/cottage;2
+Gîte;travel_vacation/accomodations_lodging/lodge;2
+Gîte de montagne;travel_vacation/accomodations_lodging/mountain_hut;2
+Hébergement;travel_vacation/accomodations_lodging/lodging;2
+Hébergement acceptant les animaux;travel_vacation/accomodations_lodging/pet_friendly_accommodation;2
+Hébergement de groupes;travel_vacation/accomodations_lodging/group_accommodation;2
+Location de vacances;travel_vacation/accomodations_lodging/vacation_rental;2
+Logement indépendant avec services;travel_vacation/accomodations_lodging/serviced_accommodation;2
+Logement meublé;travel_vacation/accomodations_lodging/self_catering_accommodation;2
+Maison d'hôtes;travel_vacation/accomodations_lodging/guest_house;2
+Maison de vacances;travel_vacation/accomodations_lodging/holiday_home;2
+Maison de vacances non-fumeurs;travel_vacation/accomodations_lodging/non_smoking_holiday_home;2
+Séjour chez l'habitant;travel_vacation/accomodations_lodging/private_guest_room;2
+Service d'hébergement de vacances;travel_vacation/accomodations_lodging/holiday_accommodation_service;2
+Village cottage;travel_vacation/accomodations_lodging/cottage_village;2
+Château-Hôtel;travel_vacation/hotels/castle_hotel;2
+Hôtel;travel_vacation/hotels/hotel;2
+Hôtel à petit budget;travel_vacation/hotels/budget_hotel;2
+Hôtel bien-être;travel_vacation/hotels/wellness_hotel;2
+Hôtel Business;travel_vacation/hotels/business_hotel;2
+Hôtel familial;travel_vacation/hotels/family_hotel;2
+Hôtel-boutique;travel_vacation/hotels/boutique_hotel;2
+Espace de parking;vehicles_transportation/airports_parking/parking_lot;2
+Parking couvert payant;vehicles_transportation/airports_parking/parking_garage;2
+Parking pour motos;vehicles_transportation/airports_parking/parking_lot_for_motorcycle;2
+Service de voiturier;vehicles_transportation/airports_parking/valet_parking_service;2
+Bureau d'examen des véhicules;vehicles_transportation/other_vehicles_trailers/vehicle_examination_office;2
+Concessionnaire de quads;vehicles_transportation/other_vehicles_trailers/atv_dealer;2
+Exportateur de véhicules;vehicles_transportation/other_vehicles_trailers/vehicle_exporter;2
+Inspection de véhicule;vehicles_transportation/other_vehicles_trailers/vehicle_inspection;2
+Magasin d'articles pour camping-cars;vehicles_transportation/other_vehicles_trailers/rv_supply_store;2
+Vendeur de motoneiges;vehicles_transportation/other_vehicles_trailers/snowmobile_dealer;2
+Agence de location de camping-cars;vehicles_transportation/vehical_rental/rv_rental_agency;2
+Agence de location de fourgonnettes;vehicles_transportation/vehical_rental/van_rental_agency;2
+Agence de location de motos;vehicles_transportation/vehical_rental/motorcycle_rental_agency;2
+Agence de location de voitures;vehicles_transportation/vehical_rental/car_rental_agency;2
+Covoiturage;vehicles_transportation/vehical_rental/carpool;2
+Service de leasing automobile;vehicles_transportation/vehical_rental/car_leasing_service;2
+Service de location;vehicles_transportation/vehical_rental/leasing_service;2
+Service de location de bateaux;vehicles_transportation/vehical_rental/boat_rental_service;2
+Service de location de remorques;vehicles_transportation/vehical_rental/trailer_rental_service;2
+Service de location de scooters;vehicles_transportation/vehical_rental/scooter_rental_service;2
+Club automobile;vehicles_transportation/motorcycle_powersports/motoring_club;2
+Concessionnaire cyclomoteurs;vehicles_transportation/motorcycle_powersports/moped_dealer;2
+Concessionnaire de motos;vehicles_transportation/motorcycle_powersports/motorcycle_dealer;2
+Concessionnaire de scooters;vehicles_transportation/motorcycle_powersports/motor_scooter_dealer;2
+Concessionnaire moto BMW;vehicles_transportation/motorcycle_powersports/bmw_motorcycle_dealer;2
+Magasin d'équipement et d'accessoires pour motos;vehicles_transportation/motorcycle_powersports/motorcycle_eqiupment_and_accessories_store;2
+Magasin de motos;vehicles_transportation/motorcycle_powersports/motorcycle_shop;2
+Moto-école;vehicles_transportation/motorcycle_powersports/motorcycle_driving_school;2
+Service du permis de conduire et des papiers du véhicule;vehicles_transportation/motorcycle_powersports/department_of_motor_vehicles;2
+Accessoires pour voitures;vehicles_transportation/auto_parts_wheels/car_equipment_accessories;2
+Agence d'immatriculation automobile;vehicles_transportation/auto_parts_wheels/auto_tag_agency;2
+Atelier de carrosserie automobile;vehicles_transportation/auto_parts_wheels/auto_body_shop;2
+Atelier de mécanique automobile;vehicles_transportation/auto_parts_wheels/auto_machine_shop;2
+Casse automobile;vehicles_transportation/auto_parts_wheels/auto_wrecker;2
+Centre de contrôle technique;vehicles_transportation/auto_parts_wheels/car_inspection_station;2
+Électricien automobile;vehicles_transportation/auto_parts_wheels/auto_electrical_service;2
+Fabricant de pièces automobiles;vehicles_transportation/auto_parts_wheels/auto_parts_manufacturer;2
+Fournisseur de cadres pour plaques d'immatriculation;vehicles_transportation/auto_parts_wheels/license_plate_frames_supplier;2
+Fournisseur de pièces détachées de camion;vehicles_transportation/auto_parts_wheels/truck_parts_supplier;2
+Magasin d'accessoires automobiles;vehicles_transportation/auto_parts_wheels/car_accessories_store;2
+Magasin de batteries pour voitures;vehicles_transportation/auto_parts_wheels/car_battery_store;2
+Magasin de pièces auto d'occasion;vehicles_transportation/auto_parts_wheels/used_auto_parts_store;2
+Magasin de pièces détachées automobiles;vehicles_transportation/auto_parts_wheels/auto_parts_store;2
+Magasin de pièces et d'accessoires pour motos;vehicles_transportation/auto_parts_wheels/motorcycle_parts_store;2
+Magasin de pneus;vehicles_transportation/auto_parts_wheels/tire_shop;2
+Magasin de roues;vehicles_transportation/auto_parts_wheels/wheel_store;2
+Marché de pièces automobiles;vehicles_transportation/auto_parts_wheels/auto_parts_market;2
+Prestataire de transport automobile privé;vehicles_transportation/auto_parts_wheels/car_service;2
+Prestataire spécialisé dans le garnissage et la sellerie automobile;vehicles_transportation/auto_parts_wheels/auto_upholsterer;2
+Service d'esthétique automobile;vehicles_transportation/auto_parts_wheels/car_detailing_service;2
+Service de restauration d'automobiles;vehicles_transportation/auto_parts_wheels/auto_restoration_service;2
+Station de lavage automobile;vehicles_transportation/auto_parts_wheels/car_wash;2
+Ventes d'accessoires automobiles;vehicles_transportation/auto_parts_wheels/auto_accessories_wholesaler;2
+Atelier de réparation automobile;vehicles_transportation/vehicle_repair_fuel/auto_repair_shop;2
+Atelier de réparation de trottinettes;vehicles_transportation/vehicle_repair_fuel/scooter_repair_shop;2
+Atelier de réparation pour motos;vehicles_transportation/vehicle_repair_fuel/motorcycle_repair_shop;2
+Entretien des voitures;vehicles_transportation/vehicle_repair_fuel/tune_up_supplier;2
+Équipement de réparation automobile;vehicles_transportation/vehicle_repair_fuel/automotive_repair_equipment_wholesaler;2
+Fournisseur de GPS;vehicles_transportation/vehicle_repair_fuel/gps_supplier;2
+Garage automobile;vehicles_transportation/vehicle_repair_fuel/car_repair;2
+Lavage de voiture en libre-service;vehicles_transportation/vehicle_repair_fuel/self_service_car_wash;2
+Mécanicien;vehicles_transportation/vehicle_repair_fuel/mechanic;2
+Préparateur automobile;vehicles_transportation/vehicle_repair_fuel/tuning_automobile;2
+Service de remorquage;vehicles_transportation/vehicle_repair_fuel/towing_service;2
+Services télématiques;vehicles_transportation/vehicle_repair_fuel/telematics_service;2
+Agence de billets de train;vehicles_transportation/taxis_public_transport/train_ticket_agency;2
+Agence de vente de tickets de bus;vehicles_transportation/taxis_public_transport/bus_ticket_agency;2
+Compagnie d'autobus;vehicles_transportation/taxis_public_transport/bus_company;2
+Guichet de billets de train;vehicles_transportation/taxis_public_transport/train_ticket_counter;2
+Service de chauffeur particulier;vehicles_transportation/taxis_public_transport/limousine_service;2
+Service de location d'autobus;vehicles_transportation/taxis_public_transport/bus_charter;2
+Service de sécurité routière;vehicles_transportation/taxis_public_transport/road_safety_town;2
+Service de taxi;vehicles_transportation/taxis_public_transport/taxi_service;2
+Service de taxi minibus;vehicles_transportation/taxis_public_transport/minibus_taxi_service;2
+Service de transport;vehicles_transportation/taxis_public_transport/transportation_service;2
+Service de transport et d'accompagnement;vehicles_transportation/taxis_public_transport/transportation_escort_service;2
+Service de transport pour handicapés;vehicles_transportation/taxis_public_transport/handicapped_transportation_service;2
+Société de transport en bus et autocar;vehicles_transportation/taxis_public_transport/bus_and_coach_company;2
+Station de taxis;vehicles_transportation/taxis_public_transport/taxi_stand;2
+Compagnie de ferry;vehicles_transportation/air_water_transport/ferry_service;2
+Concessionnaire de bateaux;vehicles_transportation/air_water_transport/boat_dealer;2
+Constructeurs de bateaux;vehicles_transportation/air_water_transport/boat_builder;2
+Consultant en aviation;vehicles_transportation/air_water_transport/aviation_consultant;2
+Courtier en bateaux;vehicles_transportation/air_water_transport/yacht_broker;2
+Fournisseur d'accessoires de bateau;vehicles_transportation/air_water_transport/boat_accessories_supplier;2
+Location d'hélicoptères;vehicles_transportation/air_water_transport/helicopter_charter;2
+Magasin d'articles aéronautiques;vehicles_transportation/air_water_transport/aircraft_supply_store;2
+Service de location d'avions;vehicles_transportation/air_water_transport/aircraft_rental_service;2
+Taxi aérien;vehicles_transportation/air_water_transport/air_taxi;2
+Magasin d'accessoires de vélo;vehicles_transportation/bicycles/bike_accessories_store;2
+Magasin de réparation de vélos;vehicles_transportation/bicycles/bicycle_repair_shop;2
+Magasin de vélos;vehicles_transportation/bicycles/bicycle_store;2
+Magasin de vélos d'occasion;vehicles_transportation/bicycles/used_bicycle_shop;2
+Porte-vélos;vehicles_transportation/bicycles/bicycle_rack;2
+Service de location de vélo;vehicles_transportation/bicycles/bicycle_rental_service;2
+Vente en gros de vélos;vehicles_transportation/bicycles/bicycle_wholesale;2
+Concessionnaire Aston Martin;vehicles_transportation/cars_trucks/aston_martin_dealer;2
+Concessionnaire automobile;vehicles_transportation/cars_trucks/car_dealer;2
+Concessionnaire Bentley;vehicles_transportation/cars_trucks/bentley_dealer;2
+Concessionnaire BMW;vehicles_transportation/cars_trucks/bmw_dealer;2
+Concessionnaire Ferrari;vehicles_transportation/cars_trucks/ferrari_dealer;2
+Concessionnaire Jaguar;vehicles_transportation/cars_trucks/jaguar_dealer;2
+Concessionnaire Lamborghini;vehicles_transportation/cars_trucks/lamborghini_dealer;2
+Concessionnaire Mercedes-Benz;vehicles_transportation/cars_trucks/mercedes_benz_dealer;2
+Courtier automobile;vehicles_transportation/cars_trucks/auto_broker;2
+Marchand de pièces détachées;vehicles_transportation/cars_trucks/salvage_dealer;2
+Marché automobile;vehicles_transportation/cars_trucks/auto_market;2
+Société de transport routier;vehicles_transportation/cars_trucks/trucking_company;2
+Vendeur de voitures d'occasion;vehicles_transportation/cars_trucks/used_car_dealer;2
