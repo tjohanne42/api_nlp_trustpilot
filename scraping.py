@@ -196,6 +196,8 @@ def scrap_companies_from_category_link(category_link, location=False, numberofre
 		
 	soup = get_soup_from_url(url + str(page), max_req, delay_min, delay_max)
 
+	done = False
+	while not done:
 		company_count_on_page = 0
 		
 		# possibly 2 blocks of companies (most rated and all)

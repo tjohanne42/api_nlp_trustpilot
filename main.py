@@ -85,6 +85,16 @@ class Company(BaseModel):
             }
         }
 
+def scrap_category(category):
+    category += " hello world"
+    return df
+
+@app.get("/scrap/{category}")
+def scrap(category, **kwargs):
+    json = get_json_from_category_link(category, **kwargs)
+    return JSONResponse(content=df)
+    
+
 @app.get(PATH_ROOT+"get_status")
 def get_status():
     return JSONResponse(content=random.randint(0, 100))
