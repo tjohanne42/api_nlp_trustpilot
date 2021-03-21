@@ -16,8 +16,8 @@ def get_soup_from_url(url, max_req, delay_min, delay_max):
 				soup = BeautifulSoup(req.text, "lxml")
 			except:
 				soup = BeautifulSoup(req.text, "html.parser")
-			if soup != None:
-				req_done = True
+            if soup != None:
+                req_done = True
 		except:
 			nb_try += 1
 			if max_req > 0 and nb_try >= max_req:
@@ -124,12 +124,12 @@ def scrap_company(company_link, max_reviews=-1, delay_min=0.5, delay_max=1.5, ma
 	soup = get_soup_from_url(url + str(page), max_req, delay_min, delay_max)
 	
 	dict_reviews = {"date_published": [], "title_review": [], "content_review": [], "stars": [], "company_link": []}
-	
-	# get script content from soup
-	try:
-		script = json.loads(soup.find('script', type='application/ld+json').string)[0]
-	except:
-		return None, None
+    
+    # get script content from soup
+    try:
+        script = json.loads(soup.find('script', type='application/ld+json').string)[0]
+    except:
+        return None, None
 
 	# scrap infos of company
 	dict_company = get_dict_company(script, company_link)
@@ -312,7 +312,7 @@ def scrap_category(category_link, location=False, numberofreviews=0, status="all
 		# 	i += 1
 		# 	continue
 		new_dict_company, new_dict_reviews = scrap_company(companies["link"][i], max_reviews=max_reviews, delay_min=delay_min,
-															delay_max=delay_max, max_req=max_req)
+		 													delay_max=delay_max, max_req=max_req)
 
 		for key, value in dict_reviews.items():
 			dict_reviews[key] += new_dict_reviews[key]
