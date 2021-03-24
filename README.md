@@ -10,8 +10,11 @@ Renvoi des avis complets ? Renvoi de l'ensemble des mots significatifs pour un Ã
 
 # API
 python main.py
+
 running on http://your_address_ip:8000
+
 docs on http://your_address_ip:8000/docs
+
 redoc on http://your_address_ip:8000/redoc
 
 # HTML
