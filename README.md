@@ -8,5 +8,15 @@ Cette API se branchera à un nouveau tableau de bord développé en parallèle p
 Pour cela, il vous faudra proposer des réflexions sur la présentation des données, et des résultats obtenus par votre modèle et plus largement votre API.
 Renvoi des avis complets ? Renvoi de l'ensemble des mots significatifs pour un établissement et un sentiment donné ? Renvoi de chaque sentiment, d'une proportion ? Différentiation des avis globaux et et des avis récents pour observer les tendances ? C'est à vous de mener la réflexion en amont de la production de l'API. Vous pouvez dans ces réflexions, solliciter la hiérarchie.
 
-## Google Slide Présentation:
+# API
+python main.py
+running on http://your_address_ip:8000
+docs on http://your_address_ip:8000/docs
+redoc on http://your_address_ip:8000/redoc
+
+# HTML
+exemple for API :
+dashboard/index.html
+
+# Google Slide Présentation:
 https://docs.google.com/presentation/d/1tsIEEuKiDR2vOQaUG5Oazvn6uXRaXvwiZYiJpYfuzq8/edit#slide=id.p
