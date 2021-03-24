@@ -29,6 +29,7 @@ You can obtain more informations on specific company:
 ![img](images_readme/companies.png)
 ## This API use CamemBert, a french model of NLP
 We used transfer learning on this model with our dataset  
-Data are based on TrustPilot  
+Data are based on TrustPilot 
+## Google Slide for this project: https://docs.google.com/presentation/d/1tsIEEuKiDR2vOQaUG5Oazvn6uXRaXvwiZYiJpYfuzq8/edit?usp=sharing
 # Contibutors:
 ## Jean-Marie, David, Théo
