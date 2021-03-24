@@ -256,6 +256,11 @@ task_progress_max = 100
 
 progress_task = ProgressTask()
 
+# # test progress_task
+# json = progress_task.start_get_json_from_category_link(df_categories[df_categories["name"] == "Animaux"]["link"][1], max_companies=21, max_reviews=21)
+# print("\n", "json".center(6, " ").center(100, "-"), "\n")
+# print(json)
+
 @app.get(PATH_ROOT+"dashboard/summary/status/{uid}",
          tags=["Dashboard"],
          response_model=Job,
@@ -288,7 +293,7 @@ async def launch_nlp_from_category(background_tasks: BackgroundTasks, category_i
     jobs[new_task.uid] = new_task # Sauvegarde de la tâche en cours
     category_link = df_categories['link'][category_id]
     category_link = category_link.split("/")[-1]
-    progress_task.start_get_json_from_category_link(category_link,  max_companies=21, max_reviews=5)
+    progress_task.start_get_json_from_category_link(category_link,  max_companies=21, max_reviews=21)
     return new_task
 
 

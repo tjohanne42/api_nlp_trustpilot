@@ -39,6 +39,7 @@ class ProgressTask(object):
 		self.task_label = ""
 		self.task_result = ""
 		self.json = ""
+		self.delay_b = True
 		self.f1 = concurrent.futures.ThreadPoolExecutor().submit(self.get_json_from_category_link, category_link,
 		                                               max_companies=max_companies, max_reviews=max_reviews)
 		#self.get_json_from_category_link(category_link, max_companies=max_companies, max_reviews=max_reviews)
@@ -74,16 +75,11 @@ class ProgressTask(object):
 		df_companies = pd.DataFrame(data=companies)
 		df_reviews = pd.DataFrame(data=reviews)
 
-		# display.display(df_reviews.head())
-
 		# apply NLP on reviews
 		df_reviews = self.senti_predict(df_reviews)
 
-		# display.display(df_reviews.head())
-
 		# make json from data
 		self.json = self.make_json(df_companies, df_reviews)
-		#print('get_json_from_category_link', self.json)
 
 		self.task_status = "complete"
 		return self.json
@@ -133,7 +129,6 @@ class ProgressTask(object):
 				sentiment_evolution_by_month[f"{year}-{month}"] = \
 				df_reviews[(df_reviews["year"] == year) & (df_reviews["month"] == month)]["sentiment"].mean()
 			month -= 1
-
 		self.task_progress += 1
 
 		json["stars_evolution_by_month"] = stars_evolution_by_month
@@ -143,20 +138,6 @@ class ProgressTask(object):
 		json["wordcloud"] = self.get_wordcloud(df_reviews, 10)
 		# stats with sentiments
 		return json
-
-
-	
-
-
-	# if __name__ == "main":
-	#     model, TOKENIZER = init_nlp()
-	#
-	#     df_categories = pd.read_csv("csv/categories.csv")
-	#
-	#     json = get_json_from_category_link(df_categories["link"][0], max_companies=2, max_reviews=2, verbose=1)
-	#
-	#     print("\n", "json".center(6, " ").center(100, "-"), "\n")
-	#     print(json)
 
 	# wordcloud
 
@@ -253,7 +234,6 @@ class ProgressTask(object):
 
 
 	def get_url_or_cache(self, url):
-
 		# Create a temporary directory if needed
 		cacheDir = 'cache'
 		if not os.path.exists(cacheDir):
@@ -276,6 +256,7 @@ class ProgressTask(object):
 			f = open(localFile, mode="w", encoding='utf-8')
 			f.write(req.text)  # Save pretty format
 			f.close()
+			self.delay_b=True
 			return req.text
 
 		else:
@@ -284,6 +265,7 @@ class ProgressTask(object):
 			f = open(localFile, mode="r", encoding='utf-8')
 			req = f.read()
 			f.close()
+			self.delay_b=False
 			return req
 
 
@@ -304,7 +286,8 @@ class ProgressTask(object):
 				nb_try += 1
 				if max_req > 0 and nb_try >= max_req:
 					raise ValueError("Connection not found.")
-				time.sleep(random.uniform(delay_min, delay_max))
+				if self.delay_b:
+					time.sleep(random.uniform(delay_min, delay_max))
 
 		return soup
 
@@ -331,7 +314,6 @@ class ProgressTask(object):
 		except:
 			addressCountry = ""
 		location = streetAddress + " " + addressLocality + " " + postalCode + " " + addressCountry
-		#	location = script["address"]["streetAddress"] + " " + script["address"]["addressLocality"] + " " + script["address"]["postalCode"] + " " + script["address"]["addressCountry"]
 
 		try:
 			d_type = script["@type"]
@@ -468,7 +450,8 @@ class ProgressTask(object):
 			if self.task_progress_max == -100 and self.task_progress >= 100:
 				self.task_progress = 0
 
-			time.sleep(random.uniform(delay_min, delay_max))
+			if self.delay_b:
+				time.sleep(random.uniform(delay_min, delay_max))
 
 		return dict_company, dict_reviews
 
@@ -581,7 +564,8 @@ class ProgressTask(object):
 
 			if company_count_on_page >= 20:
 				page += 1
-				time.sleep(random.uniform(delay_min, delay_max))
+				if self.delay_b:
+					time.sleep(random.uniform(delay_min, delay_max))
 			else:
 				done = True
 
@@ -594,7 +578,6 @@ class ProgressTask(object):
 
 	def scrap_category(self, category_link, location=False, numberofreviews=0, status="all", timeperiode=0,
 					max_companies=-1, max_reviews=-1, delay_min=0.5, delay_max=1, max_req=1):
-		#self.task_label = "Scraping"
 		self.task_label = "Scraping"
 		self.task_progress = 0
 		if (max_companies==-1 or max_reviews==-1):
@@ -606,7 +589,6 @@ class ProgressTask(object):
 													status=status,
 													timeperiode=timeperiode, max_companies=max_companies,
 													delay_min=delay_min, delay_max=delay_max, max_req=max_req)
-		print('scrap_category', len(companies['link']))
 		dict_reviews = {"date_published": [], "title_review": [], "content_review": [], "stars": [], "company_link": []}
 
 		dict_companies = {"name": [], "category_link": [], "company_link": [], "type": [], "location": [], "logo": [],
@@ -617,12 +599,6 @@ class ProgressTask(object):
 
 		i = 0
 		while i < size:
-			# try:
-			# 	new_dict_company, new_dict_reviews = scrap_company(companies["link"][i], max_reviews=max_reviews, delay_min=delay_min,
-			# 													delay_max=delay_max, max_req=max_req)
-			# except:
-			# 	i += 1
-			# 	continue
 			new_dict_company, new_dict_reviews = self.scrap_company(companies["link"][i], max_reviews=max_reviews,
 															delay_min=delay_min,
 															delay_max=delay_max, max_req=max_req)
@@ -738,11 +714,8 @@ class ProgressTask(object):
 			# predict this package
 			senti_predict = self.predict(reviews_to_predict, self.model).numpy().tolist()
 
-			# add this package to senti list
-			if len(senti_predict) == 1:
-				senti.append(senti_predict)
-			else:
-				senti += senti_predict
+			# add this list to senti list
+			senti += senti_predict
 			
 			# count number of reviews predicted
 			already_predict += len_to_predict
