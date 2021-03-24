@@ -181,3 +181,4 @@ def get_wordcloud(df_reviews: pd.DataFrame, len_wordcloud: int):
                     "count": neg_words_count[0:len_wordcloud]
                     }
             }
+    

@@ -338,7 +338,7 @@ def scrap_companies_from_category_link(category_link, location=False, numberofre
 
                     return companies
 
-        task_progress +=1
+        self.task_progress +=1
         print(task_progress)
         if task_progress_max == -100 and task_progress >= 100:
             task_progress = 0

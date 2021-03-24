@@ -21,6 +21,9 @@ from get_json_from_category_link import get_json_from_category_link
 import nlp
 from utils import remove_accents
 
+
+from progress_task import *
+
 #---------- LOADING AND CLEANING CSV -------------
 # On charge les compagnies déjà scrappées pour gagner du temps
 df_companies = pd.read_csv('companies.csv', sep=';', dtype={'name': str,
@@ -94,7 +97,6 @@ list_companies = str(df_companies['link'].values.tolist())
 list_categories = str(df_categories['link'].values.tolist())
 
 #---------- INIT NLP -------------
-nlp.init_nlp()
 
 
 #---------- TEST NLP -------------
@@ -133,7 +135,7 @@ class Job(BaseModel):
     status: str = "in_progress"
     label: str = ""
     progress: int = 0
-    progress_max: int = 0
+    progress_max: int = 100
     result: dict = None
 
 
@@ -160,12 +162,13 @@ task_progress_max = 100
 #         await asyncio.sleep(0.5)
 #         print('watching : ', task_progress, '/', task_progress_max)
 #         await queue.put(task_progress)
+#         task_progress += 1
 #     await queue.put(None)
-#
-#
+
+
 # async def monitor_watching() -> None:
 #     global task_progress
-#
+
 #     queue = asyncio.Queue()
 #     task = asyncio.create_task(task_watching(queue))
 #     while (1):
@@ -173,83 +176,87 @@ task_progress_max = 100
 #         if progress == None:
 #             break
 #         task_progress += 1
-#
+
 #     print('watching : Finished!')
+
+
+# # async def task_nlp(queue: asyncio.Queue, category_id: int):
+# #     category_link = df_categories['link'][category_id]
+# #     category_link = category_link.split("/")[-1]
+# #     json_category_npl = get_json_from_category_link(queue, category_link, max_companies=10, max_reviews=20)
+# #     await queue.put(json_category_npl)
 
 
 # async def task_nlp(queue: asyncio.Queue, category_id: int):
 #     category_link = df_categories['link'][category_id]
 #     category_link = category_link.split("/")[-1]
-#     json_category_npl = get_json_from_category_link(queue, category_link, max_companies=10, max_reviews=20)
+#     json_category_npl = get_json_from_category_link(category_link, max_companies=5, max_reviews=10)
 #     await queue.put(json_category_npl)
 
 
-async def task_nlp(queue: asyncio.Queue, category_id: int):
-    category_link = df_categories['link'][category_id]
-    category_link = category_link.split("/")[-1]
-    json_category_npl = get_json_from_category_link(category_link, max_companies=5, max_reviews=10)
-    await queue.put(json_category_npl)
+# # async def task_progress(queue: asyncio.Queue, category_id: int):
+# #     for i in range(1, 10):  # do work and return our progress
+# #         await asyncio.sleep(0.5)
+# #         print(task_progress)
 
 
-async def task_progress(queue: asyncio.Queue, category_id: int):
-    for i in range(1, 10):  # do work and return our progress
-        await asyncio.sleep(0.5)
-        print(task_progress)
-
-
-async def monitor_nlp_from_category(uid: UUID, category_id: int) -> None:
-    queue = asyncio.Queue()
-    task = asyncio.create_task(task_nlp(queue, category_id))
-    progress = await queue.get() # monitor task progress
-    jobs[uid].result = progress
-    jobs[uid].progress = 100
-    jobs[uid].progress_max = 100
-    jobs[uid].label = task_label
-
-    print("UUID:", uid, "task complete!")
-    jobs[uid].status = "complete"
-
-#Fonction de surveillance de la fonction principale complexe
 # async def monitor_nlp_from_category(uid: UUID, category_id: int) -> None:
 #     queue = asyncio.Queue()
 #     task = asyncio.create_task(task_nlp(queue, category_id))
-#     print("monitor_nlp_from_category: Start")
-#     while (1):
-#         progress = await queue.get() # monitor task progress
-#         print("monitor_nlp_from_category: ", progress)
-#         if isinstance(progress, int):
-#             # Réception de la progression
-#             jobs[uid].progress = abs(progress)
-#             jobs[uid].progress_max = abs(task_progress_max)
-#         if isinstance(progress, dict):
-#             # Cette fois on a reçu le résultat
-#             jobs[uid].result = progress
-#             jobs[uid].progress = 100
-#             jobs[uid].progress_max = 100
-#             jobs[uid].label = task_label
-#             break
-#
+#     progress = await queue.get() # monitor task progress
+#     jobs[uid].result = progress
+#     jobs[uid].progress = 100
+#     jobs[uid].progress_max = 100
+#     jobs[uid].label = task_label
+
 #     print("UUID:", uid, "task complete!")
 #     jobs[uid].status = "complete"
 
+# #Fonction de surveillance de la fonction principale complexe
+# # async def monitor_nlp_from_category(uid: UUID, category_id: int) -> None:
+# #     queue = asyncio.Queue()
+# #     task = asyncio.create_task(task_nlp(queue, category_id))
+# #     print("monitor_nlp_from_category: Start")
+# #     while (1):
+# #         progress = await queue.get() # monitor task progress
+# #         print("monitor_nlp_from_category: ", progress)
+# #         if isinstance(progress, int):
+# #             # Réception de la progression
+# #             jobs[uid].progress = abs(progress)
+# #             jobs[uid].progress_max = abs(task_progress_max)
+# #         if isinstance(progress, dict):
+# #             # Cette fois on a reçu le résultat
+# #             jobs[uid].result = progress
+# #             jobs[uid].progress = 100
+# #             jobs[uid].progress_max = 100
+# #             jobs[uid].label = task_label
+# #             break
+# #
+# #     print("UUID:", uid, "task complete!")
+# #     jobs[uid].status = "complete"
 
-@app.get(PATH_ROOT+"dashboard/summary/category/{category_id}",
-         tags=["Dashboard"],
-         response_model=Job,
-         summary="Start an NLP task to get the feelings of the category.",
-         description="Asynchronous function returning a UUID, which will allow you to follow the progress of the task. The result will be available upon completion of this task. **CAUTION, this operation can be very long!**",
-         status_code=HTTPStatus.ACCEPTED)
-async def launch_nlp_from_category(background_tasks: BackgroundTasks, category_id: int) -> Job:
-    new_task = Job() # Création d'une tâche
-    new_task.progress = 0
-    new_task.status = "in_progress"
-    new_task.result = ""
-    jobs[new_task.uid] = new_task # Sauvegarde de la tâche en cours
-    # Lancement d'une tache asynchrone, car le scraping peut être très long
-    background_tasks.add_task(monitor_nlp_from_category, new_task.uid, category_id)
-    # background_tasks.add_task(watching)
-    return new_task
 
+# @app.get(PATH_ROOT+"dashboard/summary/category/{category_id}",
+#          tags=["Dashboard"],
+#          response_model=Job,
+#          summary="Start an NLP task to get the feelings of the category.",
+#          description="Asynchronous function returning a UUID, which will allow you to follow the progress of the task. The result will be available upon completion of this task. **CAUTION, this operation can be very long!**",
+#          status_code=HTTPStatus.ACCEPTED)
+# async def launch_nlp_from_category(background_tasks: BackgroundTasks, category_id: int) -> Job:
+#     new_task = Job() # Création d'une tâche
+#     new_task.progress = 0
+#     new_task.status = "in_progress"
+#     new_task.result = ""
+#     jobs[new_task.uid] = new_task # Sauvegarde de la tâche en cours
+#     # Lancement d'une tache asynchrone, car le scraping peut être très long
+#     background_tasks.add_task(monitor_nlp_from_category, new_task.uid, category_id)
+#     # background_tasks.add_task(watching)
+#     return new_task
+
+
+    
+
+progress_task = ProgressTask()
 
 @app.get(PATH_ROOT+"dashboard/summary/status/{uid}",
          tags=["Dashboard"],
@@ -257,12 +264,34 @@ async def launch_nlp_from_category(background_tasks: BackgroundTasks, category_i
          summary="Returns the progress of the last NPL query")
 async def status_handler(uid: UUID) -> Job:
     try:
-        task = jobs[uid]
-        print(task)
-        return task
+        #task = jobs[uid]
+        jobs[uid].label = progress_task.task_label
+        jobs[uid].status = progress_task.task_status
+        jobs[uid].progress = progress_task.task_progress
+        jobs[uid].progress_max = progress_task.task_progress_max
+        jobs[uid].result = progress_task.json
+        print(jobs[uid])
+        return jobs[uid]
     except Exception as err:
         print('Status error :', err)
         raise HTTPException(status_code=404, detail=f"uid '{uid}' not found")
+
+@app.get(PATH_ROOT+"dashboard/summary/category/{category_id}",
+         tags=["Dashboard"],
+         response_model=Job,
+         summary="Start an NLP task to get the feelings of the category.",
+         description="Asynchronous function returning a UUID, which will allow you to follow the progress of the task. The result will be available upon completion of this task. **CAUTION, this operation can be very long!**",
+         status_code=HTTPStatus.ACCEPTED)
+async def launch_nlp_from_category(background_tasks: BackgroundTasks, category_id:int) -> Job:
+    new_task = Job()
+    new_task.progress = 0
+    new_task.status = "in_progress"
+    new_task.result = ""
+    jobs[new_task.uid] = new_task # Sauvegarde de la tâche en cours
+    category_link = df_categories['link'][category_id]
+    category_link = category_link.split("/")[-1]
+    progress_task.start_get_json_from_category_link(category_link,  max_companies=5, max_reviews=10)
+    return new_task
 
 
 #---------- COMPANIES -------------
