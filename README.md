@@ -4,7 +4,7 @@
 ## Context of project
 You work for a company that offers a market research service to its users. To the many existing services, you are asked to add an API offering an overview of the feelings that your users' prospects have (via Trustpilot, Google, etc.) towards competing companies.
 
-This API will be connected to a new dashboard developed in parallel by the web hub, which will be offered to your customers. The API will allow at least ** to retrieve, for a domain and a given locality, a json offering the data necessary for the establishment of an efficient dashboard.
+This API will be connected to a new dashboard developed in parallel by the web hub, which will be offered to your customers. The API will allow at least to retrieve, for a domain and a given locality, a json offering the data necessary for the establishment of an efficient dashboard.
 
 To do this, you will need to offer reflections on the presentation of the data, and the results obtained by your model and more broadly your API. Returning full reviews? Return of all the meaningful words for a given establishment and sentiment? Return of each feeling, of a proportion? Differentiation of global reviews and recent reviews to observe trends? It is up to you to lead the reflection upstream of the production of the API. You can in these reflections, request the hierarchy.
 # How to use
