@@ -17,8 +17,6 @@ from difflib import SequenceMatcher
 import re  ### regular expressions
 import numpy as np
 
-from get_json_from_category_link import get_json_from_category_link
-import nlp
 from utils import remove_accents
 
 
@@ -290,7 +288,7 @@ async def launch_nlp_from_category(background_tasks: BackgroundTasks, category_i
     jobs[new_task.uid] = new_task # Sauvegarde de la tâche en cours
     category_link = df_categories['link'][category_id]
     category_link = category_link.split("/")[-1]
-    progress_task.start_get_json_from_category_link(category_link,  max_companies=5, max_reviews=10)
+    progress_task.start_get_json_from_category_link(category_link,  max_companies=21, max_reviews=5)
     return new_task
 
 

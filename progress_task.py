@@ -28,8 +28,9 @@ class ProgressTask(object):
 		self.cacheTime = "1 day"
 		self.task_progress = 0
 		self.task_progress_max = 100
-		self.task_status = "complete"
+		self.task_status = "nothing"
 		self.task_result = ""
+		self.json = ""
 	
 	def start_get_json_from_category_link(self, category_link, max_reviews=5, max_companies=10):
 		self.task_progress = 0
@@ -49,8 +50,51 @@ class ProgressTask(object):
 
 	"""
 
+	def get_json_from_category_link(self, category_link, numberofreviews=0, status="all", timeperiode=0,
+									max_companies=-1, max_reviews=-1, delay_min=0.5, delay_max=1.5, max_req=1) -> dict:
+		"""
+		:param category_link:
+		:param numberofreviews: numberofreviews must be in [0, 25, 50, 100, 250, 500]
+								C'est le nombre de review minimum des entreprises pour qu'elles apparaissent
+		:param status:      status must be in ["all", "unclaimed", "claimed", ""]
+		:param timeperiode: timeperiod must be in [0, 6, 12, 18]
+							The last review on the site must be more recent than {timeperiod} month
+		:param max_companies:
+		:param max_reviews:
+		:param delay_min:
+		:param delay_max:
+		:param max_req: Nombre de tentatives
+		:return:
+		"""
+		# scraping category
+		companies, reviews = self.scrap_category(category_link, numberofreviews=numberofreviews, status=status,
+											timeperiode=timeperiode, max_companies=max_companies, max_reviews=max_reviews,
+											delay_min=delay_min, delay_max=delay_max, max_req=max_req)
+
+		df_companies = pd.DataFrame(data=companies)
+		df_reviews = pd.DataFrame(data=reviews)
+
+		# display.display(df_reviews.head())
+
+		# apply NLP on reviews
+		df_reviews = self.senti_predict(df_reviews)
+
+		# display.display(df_reviews.head())
+
+		# make json from data
+		self.json = self.make_json(df_companies, df_reviews)
+		#print('get_json_from_category_link', self.json)
+
+		self.task_status = "complete"
+		return self.json
+
+
 	def make_json(self, df_companies, df_reviews) -> dict:
 		json = {}
+
+		self.task_label = "Json"
+		self.task_progress = 0
+		self.task_progress_max = 4
 
 		if df_companies.shape[0] == 0:
 			return json
@@ -90,6 +134,8 @@ class ProgressTask(object):
 				df_reviews[(df_reviews["year"] == year) & (df_reviews["month"] == month)]["sentiment"].mean()
 			month -= 1
 
+		self.task_progress += 1
+
 		json["stars_evolution_by_month"] = stars_evolution_by_month
 		json["sentiment_evolution_by_month"] = sentiment_evolution_by_month
 
@@ -100,44 +146,7 @@ class ProgressTask(object):
 		return json
 
 
-	def get_json_from_category_link(self, category_link, numberofreviews=0, status="all", timeperiode=0,
-									max_companies=-1, max_reviews=-1, delay_min=0.5, delay_max=1.5, max_req=1) -> dict:
-		"""
-		:param category_link:
-		:param numberofreviews: numberofreviews must be in [0, 25, 50, 100, 250, 500]
-								C'est le nombre de review minimum des entreprises pour qu'elles apparaissent
-		:param status:      status must be in ["all", "unclaimed", "claimed", ""]
-		:param timeperiode: timeperiod must be in [0, 6, 12, 18]
-							The last review on the site must be more recent than {timeperiod} month
-		:param max_companies:
-		:param max_reviews:
-		:param delay_min:
-		:param delay_max:
-		:param max_req: Nombre de tentatives
-		:return:
-		"""
-		# scraping category
-		companies, reviews = self.scrap_category(category_link, numberofreviews=numberofreviews, status=status,
-											timeperiode=timeperiode, max_companies=max_companies, max_reviews=max_reviews,
-											delay_min=delay_min, delay_max=delay_max, max_req=max_req)
-
-		df_companies = pd.DataFrame(data=companies)
-		df_reviews = pd.DataFrame(data=reviews)
-
-		# display.display(df_reviews.head())
-
-		# apply NLP on reviews
-		df_reviews = self.senti_predict(df_reviews)
-
-		# display.display(df_reviews.head())
-
-		# make json from data
-		self.json = self.make_json(df_companies, df_reviews)
-		print('get_json_from_category_link', self.json)
-
-		self.task_label = "complete"
-		self.task_status = "complete"
-		return self.json
+	
 
 
 	# if __name__ == "main":
@@ -165,6 +174,7 @@ class ProgressTask(object):
 				if not token.is_stop and not token.is_punct and token.text != " "]
 		word_freq = Counter(words)
 		pos_common_words = word_freq.most_common(len_wordcloud * 2)
+		self.task_progress += 1
 
 		# add those words to list
 		pos_words_list = []
@@ -183,6 +193,7 @@ class ProgressTask(object):
 				if not token.is_stop and not token.is_punct and token.text != " "]
 		word_freq = Counter(words)
 		neg_common_words = word_freq.most_common(len_wordcloud * 2)
+		self.task_progress += 1
 
 		# add those words to list
 		neg_words_list = []
@@ -212,6 +223,7 @@ class ProgressTask(object):
 					len_neg_words_list -= 1
 				x += 1
 			i += 1
+		self.task_progress += 1
 
 		# wordcloud to json
 		return {
@@ -253,7 +265,7 @@ class ProgressTask(object):
 
 		if not self.cacheEnable or (self.cacheEnable and not os.path.isfile(localFile)):
 			# Download web page
-			print(f'{url} has been loaded from web. Save to cache ->', localFile)
+			#print(f'{url} has been loaded from web. Save to cache ->', localFile)
 			req = requests.get(url)
 
 			# Save web page in local file
@@ -264,7 +276,7 @@ class ProgressTask(object):
 
 		else:
 			# Read the file containing the web page
-			print(f'{url} has been loaded from cache ->', localFile)
+			#print(f'{url} has been loaded from cache ->', localFile)
 			f = open(localFile, mode="r", encoding='utf-8')
 			req = f.read()
 			f.close()
@@ -579,7 +591,7 @@ class ProgressTask(object):
 	def scrap_category(self, category_link, location=False, numberofreviews=0, status="all", timeperiode=0,
 					max_companies=-1, max_reviews=-1, delay_min=0.5, delay_max=1, max_req=1):
 		#self.task_label = "Scraping"
-		self.task_label = "Blbl"
+		self.task_label = "Scraping"
 		self.task_progress = 0
 		if (max_companies==-1 or max_reviews==-1):
 			self.task_progress_max = -100
@@ -686,13 +698,15 @@ class ProgressTask(object):
 			return torch.argmax(retour[0], dim=1)
 
 
-	def senti_predict(self, df_reviews, len_max=200):
+	def senti_predict(self, df_reviews, len_max=10):
 		"""
 		Fonction qui prend un dataframe 
 		et 
 		ajoute une colonne avec le labelle 0 --> sentiment negatif / 1 --> sentiment negatif
 		"""
 		# prepare dataframe for predict
+		self.task_label = "NLP"
+		self.task_progress = 0
 
 		df_reviews["content_review"] = df_reviews['content_review'].fillna(df_reviews['title_review'])
 		df_reviews = df_reviews.dropna(subset=['content_review'])
@@ -705,6 +719,7 @@ class ProgressTask(object):
 		already_predict = 0
 		senti = []
 
+		self.task_progress_max = int(size_dataframe / len_max) + 1
 		# predict reviews {len_max} by {len_max}, package per package
 		while already_predict < size_dataframe:
 
@@ -727,6 +742,7 @@ class ProgressTask(object):
 			
 			# count number of reviews predicted
 			already_predict += len_to_predict
+			self.task_progress += 1
 
 		# add new feature sentiment
 		df_reviews["sentiment"] = senti
