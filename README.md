@@ -9,12 +9,9 @@ Pour cela, il vous faudra proposer des réflexions sur la présentation des donn
 Renvoi des avis complets ? Renvoi de l'ensemble des mots significatifs pour un établissement et un sentiment donné ? Renvoi de chaque sentiment, d'une proportion ? Différentiation des avis globaux et et des avis récents pour observer les tendances ? C'est à vous de mener la réflexion en amont de la production de l'API. Vous pouvez dans ces réflexions, solliciter la hiérarchie.
 
 # API
-python main.py
-
-running on http://your_address_ip:8000
-
-docs on http://your_address_ip:8000/docs
-
+python main.py  
+running on http://your_address_ip:8000  
+docs on http://your_address_ip:8000/docs  
 redoc on http://your_address_ip:8000/redoc
 
 # HTML
