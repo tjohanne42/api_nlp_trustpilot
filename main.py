@@ -492,7 +492,7 @@ async def get_category_by_name(name: str):
             # On a assez de résultat à proposer
             df_result = df_categories.iloc[df_best_result.index[:NB_RESULT_TO_RETURN]]
             # print(df_result.to_json())
-            return JSONResponse(content=df_result.to_json())
+            return JSONResponse(content=df_result["name"].to_json())
         else:
             # Il nous faut un peu plus de résultats, donc on cherche des correspondances plus larges
             if nb_best_result > 0:
