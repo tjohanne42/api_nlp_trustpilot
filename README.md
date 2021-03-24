@@ -15,7 +15,7 @@ docs on http://your_address_ip:8000/docs
 redoc on http://your_address_ip:8000/redoc
 
 # HTML
-exemple for API :
+exemple for API :  
 dashboard/index.html
 
 # Google Slide Présentation:
