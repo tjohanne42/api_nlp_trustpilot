@@ -22,58 +22,8 @@ import nlp
 from utils import remove_accents
 
 #---------- LOADING AND CLEANING CSV -------------
-# # On charge les compagnies déjà scrappées pour gagner du temps
-# df_companies = pd.read_csv('companies.csv', sep=';', dtype={'name': str,
-#                                                             'link': str,
-#                                                             'stars': np.float32,
-#                                                             'review_count': np.float32,
-#                                                             'category': str,
-#                                                             'location': str,
-#                                                             'logo': str,
-#                                                             'url': str,
-#                                                             'phone': str,
-#                                                             'mail': str})
-#
-# # On remplace les accents par des lettres standards pour faciliter la recherche
-# df_companies_name = df_companies['name'].apply(remove_accents)
-#
-# # On supprime les caractères spéciaux et on passe en minuscule
-# df_companies_name = df_companies_name.str.replace('[^A-Za-z0-9 ]+', '', regex=True).str.lower()
-#
-# # Nettoyage des floats
-# df_companies['stars'].replace(np.nan, 0, inplace=True)
-# df_companies['review_count'].replace(np.nan, 0, inplace=True)
-# df_companies['stars_average'].replace(np.nan, 0, inplace=True)
-#
-# df_companies['link'].replace(np.nan, "Inconnu", inplace=True)
-# df_companies['location'].replace(np.nan, "Inconnu", inplace=True)
-# df_companies['logo'].replace(np.nan, "Inconnu", inplace=True)
-# df_companies['url'].replace(np.nan, "Inconnu", inplace=True)
-# df_companies['phone'].replace(np.nan, "Inconnu", inplace=True)
-# df_companies['mail'].replace(np.nan, "Inconnu", inplace=True)
-#
-# # On charge les catégories déjà scrappées pour gagner du temps
-# df_categories = pd.read_csv('categories.csv', sep=';', dtype={'name': str, 'link': str, 'level': str})
-#
-# # On remplace les accents par des lettres standards pour faciliter la recherche selon l'écriture
-# df_categories_name = df_categories['name'].apply(remove_accents)
-#
-# # On supprime les caractères spéciaux et on passe en minuscule
-# df_categories_name = df_categories_name.str.replace('[^A-Za-z0-9 ]+', '', regex=True).str.lower()
-#
-# # On convertit le nom de la catégorie en sa version explicite
-# df_companies['category'] = df_companies['category'].map(df_categories.set_index('link')['name'])
-
-#---------- SAVE CSV CLEANED -------------
-# df_companies['name_clean'] = df_companies_name
-# df_categories['name_clean'] = df_categories_name
-#
-# df_companies.to_csv('companies_cleaned.csv', sep=';')
-# df_categories.to_csv('categories_cleaned.csv', sep=';')
-
-#---------- LOADING CSV CLEANED -------------
-df_companies = pd.read_csv('companies_cleaned.csv', sep=';', dtype={'name': str,
-                                                            'name_clean': str,
+# On charge les compagnies déjà scrappées pour gagner du temps
+df_companies = pd.read_csv('companies.csv', sep=';', dtype={'name': str,
                                                             'link': str,
                                                             'stars': np.float32,
                                                             'review_count': np.float32,
@@ -83,10 +33,60 @@ df_companies = pd.read_csv('companies_cleaned.csv', sep=';', dtype={'name': str,
                                                             'url': str,
                                                             'phone': str,
                                                             'mail': str})
-df_categories = pd.read_csv('categories_cleaned.csv', sep=';', dtype={'name': str, 'name_clean': str, 'link': str, 'level': str})
 
-df_companies_name = df_companies['name_clean']
-df_categories_name = df_categories['name_clean']
+# On remplace les accents par des lettres standards pour faciliter la recherche
+df_companies_name = df_companies['name'].apply(remove_accents)
+
+# On supprime les caractères spéciaux et on passe en minuscule
+df_companies_name = df_companies_name.str.replace('[^A-Za-z0-9 ]+', '', regex=True).str.lower()
+
+# Nettoyage des floats
+df_companies['stars'].replace(np.nan, 0, inplace=True)
+df_companies['review_count'].replace(np.nan, 0, inplace=True)
+df_companies['stars_average'].replace(np.nan, 0, inplace=True)
+
+df_companies['link'].replace(np.nan, "Inconnu", inplace=True)
+df_companies['location'].replace(np.nan, "Inconnu", inplace=True)
+df_companies['logo'].replace(np.nan, "Inconnu", inplace=True)
+df_companies['url'].replace(np.nan, "Inconnu", inplace=True)
+df_companies['phone'].replace(np.nan, "Inconnu", inplace=True)
+df_companies['mail'].replace(np.nan, "Inconnu", inplace=True)
+
+# On charge les catégories déjà scrappées pour gagner du temps
+df_categories = pd.read_csv('categories.csv', sep=';', dtype={'name': str, 'link': str, 'level': str})
+
+# On remplace les accents par des lettres standards pour faciliter la recherche selon l'écriture
+df_categories_name = df_categories['name'].apply(remove_accents)
+
+# On supprime les caractères spéciaux et on passe en minuscule
+df_categories_name = df_categories_name.str.replace('[^A-Za-z0-9 ]+', '', regex=True).str.lower()
+
+# On convertit le nom de la catégorie en sa version explicite
+df_companies['category'] = df_companies['category'].map(df_categories.set_index('link')['name'])
+
+#---------- SAVE CSV CLEANED -------------
+# df_companies['name_clean'] = df_companies_name
+# df_categories['name_clean'] = df_categories_name
+
+# df_companies.to_csv('companies_cleaned.csv', sep=';')
+# df_categories.to_csv('categories_cleaned.csv', sep=';')
+
+#---------- LOADING CSV CLEANED -------------
+# df_companies = pd.read_csv('companies_cleaned.csv', sep=';', dtype={'name': str,
+#                                                             'name_clean': str,
+#                                                             'link': str,
+#                                                             'stars': np.float32,
+#                                                             'review_count': np.float32,
+#                                                             'category': str,
+#                                                             'location': str,
+#                                                             'logo': str,
+#                                                             'url': str,
+#                                                             'phone': str,
+#                                                             'mail': str})
+# df_categories = pd.read_csv('categories_cleaned.csv', sep=';', dtype={'name': str, 'name_clean': str, 'link': str, 'level': str})
+
+# df_companies_name = df_companies['name_clean']
+# df_categories_name = df_categories['name_clean']
 
 #--------------------------------
 
@@ -187,7 +187,7 @@ task_progress_max = 100
 async def task_nlp(queue: asyncio.Queue, category_id: int):
     category_link = df_categories['link'][category_id]
     category_link = category_link.split("/")[-1]
-    json_category_npl = get_json_from_category_link(category_link, max_companies=10, max_reviews=20)
+    json_category_npl = get_json_from_category_link(category_link, max_companies=5, max_reviews=10)
     await queue.put(json_category_npl)
 
 

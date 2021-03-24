@@ -36,7 +36,7 @@ $(document).ready(function() {
     enableNavBar(params)
 
     $("#search-box-company").keyup(function() {
-        $("#search-box-company").css("background", "#FFF url(loaderIcon.gif) no-repeat 165px");
+        $("#search-box-company").css("background", "#FFF no-repeat 165px");
         if ($(this).val().length > 2) {
             $.ajax({
                 type: "GET",
@@ -70,7 +70,7 @@ $(document).ready(function() {
     });
 
     $("#search-box-category").keyup(function() {
-        $("#search-box-category").css("background", "#FFF url(loaderIcon.gif) no-repeat 165px");
+        $("#search-box-category").css("background", "#FFF no-repeat 165px");
         if ($(this).val().length > 2) {
             $.ajax({
                 type: "GET",
@@ -117,7 +117,7 @@ $(document).ready(function() {
                 //Save uid
                 disableActiveNavBar()
                 enableNavBar("main-dashboard")
-                $("#summary").addClass("d-none");
+                $("#main-summary").addClass("d-none");
             }
         });
     });
@@ -139,7 +139,7 @@ $(document).ready(function() {
                             uid = "";
                             console.log("Task finished!", result);
                             $('#category-name-text').text(categoryName);
-                            $('#category-stars-text').text("(" + result.stars_mean);
+                            $('#category-stars-text').text("(" + result.stars_mean.toFixed(1));
                             $("#summary-star1").removeClass("fa-star");
                             $("#summary-star2").removeClass("fa-star");
                             $("#summary-star3").removeClass("fa-star");
@@ -193,7 +193,7 @@ $(document).ready(function() {
                                 //$('#current-task').addClass("d-none");
                             $('#status-task').text("Terminé");
                             $('.progress-bar').css('width', '100%').attr('aria-valuenow', 100);
-                            $("#summary").removeClass("d-none");
+                            $("#main-summary").removeClass("d-none");
                             //var wordsPos = 'édifier confiant record hypnotisé magnanime dépasse avantageux concilier réconcilier admirateur';
                             //var wordsNeg = 'surestimé diaboliser tuer impitoyable couvant plainte acerbe faible despote malfaiteur';
                             //draw_wordcloud("canvas-wcloud-neg", wordsNeg, false);
@@ -338,7 +338,8 @@ function selectCategory(key) {
             categoryLevel = data.level;
             categoryLink = data.link;
             $("#search-box-category").val(categoryName);
-            $("#category-link").attr("href", "https://fr.trustpilot.com/categories/" + categoryLink);
+            var category_link = categoryLink.split("/")
+            $("#category-link").attr("href", "https://fr.trustpilot.com/categories/" + category_link[category_link.length-1]);
             $("#category-link").text("Visiter la page...");
             $("#suggestion-box-category").hide(500);
             $('#btn-Launch-category').prop("disabled", false);
