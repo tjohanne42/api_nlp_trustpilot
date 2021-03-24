@@ -221,7 +221,7 @@ $(document).ready(function() {
                 });
             }
         }
-    }, 1000);
+    }, 500);
 
 });
 
@@ -511,7 +511,8 @@ function draw_chart_stars_evolution(evolutions) {
     */
     //Format data to : [{x:'2016-12-25', y:20}, {x:'2016-12-26', y:10}]
     var list = [];
-    for (var i = 0; i < Object.keys(evolutions).length; i++) {
+    var labels = [];
+    for (var i = Object.keys(evolutions).length - 1; i >= 0; i--) {
         var key = Object.keys(evolutions)[i];
         var name = Object.values(evolutions)[i];
         var dict = {
@@ -519,25 +520,28 @@ function draw_chart_stars_evolution(evolutions) {
             y: name
         };
         list.push(dict);
+        labels.push(key);
     }
-
-    data = {
-        datasets: [{
-            data: list,
-        }],
-    };
 
     var ctx = document.getElementById('canvas-stars-evolution').getContext('2d');
     ctx.canvas.width = 200;
     ctx.canvas.height = 100;
     var stackedLine = new Chart(ctx, {
         type: 'line',
-        data: data,
-        label: 'Evolution des notations',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Evolution des notations',
+                backgroundColor: '#00BBF9',
+                borderColor: '#00BBF9',
+                data: list,
+                fill: false,
+            }],
+        },
         options: {
             scales: {
                 yAxes: [{
-                    stacked: true
+                    stacked: false
                 }]
             }
         }
@@ -556,7 +560,8 @@ function draw_chart_sentiment_evolution(sentiments) {
     } */
     //Format data to : [{x:'2016-12-25', y:20}, {x:'2016-12-26', y:10}]
     var list = [];
-    for (var i = 0; i < Object.keys(sentiments).length; i++) {
+    var labels = [];
+    for (var i = Object.keys(sentiments).length - 1; i >= 0; i--) {
         var key = Object.keys(sentiments)[i];
         var name = Object.values(sentiments)[i];
         var dict = {
@@ -564,25 +569,28 @@ function draw_chart_sentiment_evolution(sentiments) {
             y: name
         };
         list.push(dict);
+        labels.push(key);
     }
-
-    data = {
-        datasets: [{
-            data: list,
-        }],
-    };
 
     var ctx = document.getElementById('canvas-sentiments-evolution').getContext('2d');
     ctx.canvas.width = 200;
     ctx.canvas.height = 100;
     var stackedLine = new Chart(ctx, {
         type: 'line',
-        data: data,
-        label: 'Evolution des sentiments',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Evolution des sentiments',
+                backgroundColor: '#9B5DE5',
+                borderColor: '#9B5DE5',
+                data: list,
+                fill: false,
+            }],
+        },
         options: {
             scales: {
                 yAxes: [{
-                    stacked: true
+                    stacked: false
                 }]
             }
         }
