@@ -206,6 +206,24 @@ h6 {
     text-align: center;
 }
 
+.row-stars-evolution {
+    text-align: center;
+}
+
+.row-sentiments-evolution {
+    text-align: center;
+}
+
+#canvas-stars-evolution {
+    width: 100%;
+    height: 100px;
+}
+
+#canvas-sentiments-evolution {
+    width: 100%;
+    height: 100px;
+}
+
 #current-task {
     margin: 5px;
 }

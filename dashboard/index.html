@@ -98,16 +98,26 @@
                                 <h6 class="col-4">MOTS POSITIFS</h6>
                             </div>
                             <div class="row align-items-center">
-                                <div class="col-4 row-wordcloud" style="">
+                                <div class="col-4 row-wordcloud">
                                     <span id="mask-wcloud-neg" class="d-none">Aucun mot négatif !</span>
                                     <canvas id="canvas-wcloud-neg" height="100%" width="100%" class="canvas"></canvas>
                                 </div>
                                 <div class="col-3" id="row-chart">
-                                    <canvas id="canvas-chart" class="canvas"></canvas>
+                                    <canvas id="canvas-chart-pie" class="canvas"></canvas>
                                 </div>
                                 <div class="col-4 row-wordcloud">
                                     <span id="mask-wcloud-pos" class="d-none">Aucun mot positif !</span>
                                     <canvas id="canvas-wcloud-pos" height="100%" width="100%" class="canvas"></canvas>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center" style="height: 200px;">
+                                <div class="col-4 row-stars-evolution">
+                                    <span id="mask-stars-evolution" class="d-none">Pas assez de données !</span>
+                                    <canvas id="canvas-stars-evolution" height="100%" width="100%" class="canvas"></canvas>
+                                </div>
+                                <div class="col-4 row-sentiments-evolution">
+                                    <span id="mask-sentiments-evolution" class="d-none">Pas assez de données !</span>
+                                    <canvas id="canvas-sentiments-evolution" height="100%" width="100%" class="canvas"></canvas>
                                 </div>
                             </div>
                         </div>

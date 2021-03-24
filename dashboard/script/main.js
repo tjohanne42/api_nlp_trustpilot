@@ -133,7 +133,6 @@ $(document).ready(function() {
                     url: "http://127.0.0.1:8000/api/v1/dashboard/summary/status/" + uid,
                     //data: 'name=' + $(this).val(), // POST
                     success: function(data) {
-                        let valeur = data.progress;
                         let result = data.result;
                         if (data.status == 'complete') {
                             uid = "";
@@ -200,10 +199,13 @@ $(document).ready(function() {
                             //draw_wordcloud("canvas-wcloud-pos", wordsPos, true);
                             draw_wordcloud("canvas-wcloud-neg", wordcloud, false);
                             draw_wordcloud("canvas-wcloud-pos", wordcloud, true);
-                            draw_chart(result.repartition_sentiment);
+                            draw_chart_pie(result.repartition_sentiment);
+                            draw_chart_stars_evolution(result.stars_evolution_by_month)
+                            draw_chart_sentiment_evolution(result.sentiment_evolution_by_month)
                         } else {
+                            let valeur = ((data.progress * 100) / data.progress_max).toFixed(0);
                             //$('#current-task').removeClass("d-none");
-                            $('#status-task').text("En cours... (" + valeur + "%)");
+                            $('#status-task').text(data.label + " en cours... (" + valeur + "%)");
                             $('.progress-bar').css('width', valeur + '%').attr('aria-valuenow', valeur);
                         }
                         waitResult = false;
@@ -339,7 +341,7 @@ function selectCategory(key) {
             categoryLink = data.link;
             $("#search-box-category").val(categoryName);
             var category_link = categoryLink.split("/")
-            $("#category-link").attr("href", "https://fr.trustpilot.com/categories/" + category_link[category_link.length-1]);
+            $("#category-link").attr("href", "https://fr.trustpilot.com/categories/" + category_link[category_link.length - 1]);
             $("#category-link").text("Visiter la page...");
             $("#suggestion-box-category").hide(500);
             $('#btn-Launch-category').prop("disabled", false);
@@ -467,7 +469,7 @@ function draw_wordcloud(canvasName, wordlist, positive = None) {
     WordCloud(canvasName, options);
 }
 
-function draw_chart(sentiments) {
+function draw_chart_pie(sentiments) {
     data = {
         datasets: [{
             data: [sentiments.pos, sentiments.neg],
@@ -487,11 +489,102 @@ function draw_chart(sentiments) {
         ],
     };
 
-    var ctx = document.getElementById('canvas-chart').getContext('2d');
+    var ctx = document.getElementById('canvas-chart-pie').getContext('2d');
     // For a pie chart
     var myPieChart = new Chart(ctx, {
         type: 'pie',
         data: data,
         options: { aspectRatio: 1 }
+    });
+}
+
+function draw_chart_stars_evolution(evolutions) {
+    /*
+    {
+        "stars_evolution_by_month": {
+            "2021-3": 5,
+            "2021-2": 4.9,
+            "2021-1": 4.933333333333334,
+            "2020-12": 5
+        }
+    }
+    */
+    //Format data to : [{x:'2016-12-25', y:20}, {x:'2016-12-26', y:10}]
+    var list = [];
+    for (var i = 0; i < Object.keys(evolutions).length; i++) {
+        var key = Object.keys(evolutions)[i];
+        var name = Object.values(evolutions)[i];
+        var dict = {
+            x: key,
+            y: name
+        };
+        list.push(dict);
+    }
+
+    data = {
+        datasets: [{
+            data: list,
+        }],
+    };
+
+    var ctx = document.getElementById('canvas-stars-evolution').getContext('2d');
+    ctx.canvas.width = 200;
+    ctx.canvas.height = 100;
+    var stackedLine = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        label: 'Evolution des notations',
+        options: {
+            scales: {
+                yAxes: [{
+                    stacked: true
+                }]
+            }
+        }
+    });
+}
+
+function draw_chart_sentiment_evolution(sentiments) {
+    /*
+    {
+        "sentiment_evolution_by_month": {
+            "2021-3": 0.8571428571428571,
+            "2021-2": 0.8,
+            "2021-1": 0.8666666666666667,
+            "2020-12": 1
+        }
+    } */
+    //Format data to : [{x:'2016-12-25', y:20}, {x:'2016-12-26', y:10}]
+    var list = [];
+    for (var i = 0; i < Object.keys(sentiments).length; i++) {
+        var key = Object.keys(sentiments)[i];
+        var name = Object.values(sentiments)[i];
+        var dict = {
+            x: key,
+            y: name
+        };
+        list.push(dict);
+    }
+
+    data = {
+        datasets: [{
+            data: list,
+        }],
+    };
+
+    var ctx = document.getElementById('canvas-sentiments-evolution').getContext('2d');
+    ctx.canvas.width = 200;
+    ctx.canvas.height = 100;
+    var stackedLine = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        label: 'Evolution des sentiments',
+        options: {
+            scales: {
+                yAxes: [{
+                    stacked: true
+                }]
+            }
+        }
     });
 }
