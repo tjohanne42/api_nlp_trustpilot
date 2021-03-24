@@ -99,25 +99,23 @@
                             </div>
                             <div class="row align-items-center">
                                 <div class="col-4 row-wordcloud">
-                                    <span id="mask-wcloud-neg" class="d-none">Aucun mot négatif !</span>
-                                    <canvas id="canvas-wcloud-neg" height="100%" width="100%" class="canvas"></canvas>
+                                    <canvas id="canvas-wcloud-neg" height="100%" width="100%" class="canvas-canvas-wcloud-neg"></canvas>
                                 </div>
                                 <div class="col-3" id="row-chart">
-                                    <canvas id="canvas-chart-pie" class="canvas"></canvas>
+                                    <canvas id="canvas-chart-pie"></canvas>
                                 </div>
                                 <div class="col-4 row-wordcloud">
-                                    <span id="mask-wcloud-pos" class="d-none">Aucun mot positif !</span>
-                                    <canvas id="canvas-wcloud-pos" height="100%" width="100%" class="canvas"></canvas>
+                                    <canvas id="canvas-wcloud-pos" height="100%" width="100%"></canvas>
                                 </div>
                             </div>
                             <div class="row justify-content-center" style="height: 200px;">
                                 <div class="col-4 row-stars-evolution">
                                     <span id="mask-stars-evolution" class="d-none">Pas assez de données !</span>
-                                    <canvas id="canvas-stars-evolution" height="100%" width="100%" class="canvas"></canvas>
+                                    <canvas id="canvas-stars-evolution" height="100%" width="100%"></canvas>
                                 </div>
                                 <div class="col-4 row-sentiments-evolution">
                                     <span id="mask-sentiments-evolution" class="d-none">Pas assez de données !</span>
-                                    <canvas id="canvas-sentiments-evolution" height="100%" width="100%" class="canvas"></canvas>
+                                    <canvas id="canvas-sentiments-evolution" height="100%" width="100%"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -138,7 +136,7 @@
                                         <img class="logo_simplon" src="img/simplon.png" />
                                     </div>
                                     <div class="d-flex align-self-center">
-                                        <input type=" text" class="search-box" id="search-box-company" placeholder="Saisissez un nom" />
+                                        <input type=" text" class="search-box" id="search-box-company" autocomplete="off" placeholder="Saisissez un nom" />
                                     </div>
                                     <div class="suggestion-box" id="suggestion-box-company"></div>
 
@@ -200,7 +198,7 @@
                                         <img class="logo_simplon" src="img/simplon.png" />
                                     </div>
                                     <div class="d-flex align-self-center">
-                                        <input type="text" class="search-box" id="search-box-category" placeholder="Saisissez un nom" />
+                                        <input type="text" class="search-box" id="search-box-category" autocomplete="off" placeholder="Saisissez un nom" />
                                     </div>
                                     <div class="suggestion-box" id="suggestion-box-category"></div>
                                 </div>

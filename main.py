@@ -1,26 +1,21 @@
-import time
-import asyncio
 from http import HTTPStatus
 from typing import Dict, List
 from uuid import UUID, uuid4
 import uvicorn # A installer 'Serveur uvicorn'
 from fastapi import Body, FastAPI, HTTPException, BackgroundTasks
-from typing import Optional
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
-from pydantic.schema import schema
-from fastapi.encoders import jsonable_encoder
-import pandas as pd
-from functools import partial
 from difflib import SequenceMatcher
-import re  ### regular expressions
-import numpy as np
 
 from utils import remove_accents
-
-
 from progress_task import *
+
+# Create a temporary directory if needed
+cacheDir = 'cache'
+if not os.path.exists(cacheDir):
+    os.mkdir(cacheDir)
+
 
 #---------- LOADING AND CLEANING CSV -------------
 # On charge les compagnies déjà scrappées pour gagner du temps
@@ -65,39 +60,10 @@ df_categories_name = df_categories_name.str.replace('[^A-Za-z0-9 ]+', '', regex=
 # On convertit le nom de la catégorie en sa version explicite
 df_companies['category'] = df_companies['category'].map(df_categories.set_index('link')['name'])
 
-#---------- SAVE CSV CLEANED -------------
-# df_companies['name_clean'] = df_companies_name
-# df_categories['name_clean'] = df_categories_name
-
-# df_companies.to_csv('companies_cleaned.csv', sep=';')
-# df_categories.to_csv('categories_cleaned.csv', sep=';')
-
-#---------- LOADING CSV CLEANED -------------
-# df_companies = pd.read_csv('companies_cleaned.csv', sep=';', dtype={'name': str,
-#                                                             'name_clean': str,
-#                                                             'link': str,
-#                                                             'stars': np.float32,
-#                                                             'review_count': np.float32,
-#                                                             'category': str,
-#                                                             'location': str,
-#                                                             'logo': str,
-#                                                             'url': str,
-#                                                             'phone': str,
-#                                                             'mail': str})
-# df_categories = pd.read_csv('categories_cleaned.csv', sep=';', dtype={'name': str, 'name_clean': str, 'link': str, 'level': str})
-
-# df_companies_name = df_companies['name_clean']
-# df_categories_name = df_categories['name_clean']
-
-#--------------------------------
-
 list_companies = str(df_companies['link'].values.tolist())
 list_categories = str(df_categories['link'].values.tolist())
 
-#---------- INIT NLP -------------
-
-
-#---------- TEST NLP -------------
+#---------- TEST MANUEL NLP -------------
 # json = get_json_from_category_link(df_categories["link"][0], max_companies=10, max_reviews=10)
 # print("\n", "json".center(6, " ").center(100, "-"), "\n")
 # print(json)
@@ -130,6 +96,7 @@ app.add_middleware(
 #---------- DASHBOARD -------------
 class Job(BaseModel):
     uid: UUID = Field(default_factory=uuid4)
+    category_id: int = 0
     status: str = "in_progress"
     label: str = ""
     progress: int = 0
@@ -140,139 +107,36 @@ class Job(BaseModel):
 # On crée un dictionnaire pour enregistrer les tâches un peu longues
 jobs: Dict[UUID, Job] = {}  # Dict as job storage
 
-
-# Fonction principale sous surveillance
-# async def task_nlp(queue: asyncio.Queue, category_id: int):
-#     for i in range(1, 10):  # do work and return our progress
-#         await asyncio.sleep(0.5)
-#         await queue.put(i)
-#         print(task_progress)
-#     await queue.put(None)
-
-task_label = ""
-task_progress = 0
-task_progress_max = 100
-
-# async def task_watching(queue: asyncio.Queue):
-#     global task_progress, task_progress_max
-#     print('watching : Started!')
-#     while task_progress != abs(task_progress_max):
-#         await asyncio.sleep(0.5)
-#         print('watching : ', task_progress, '/', task_progress_max)
-#         await queue.put(task_progress)
-#         task_progress += 1
-#     await queue.put(None)
-
-
-# async def monitor_watching() -> None:
-#     global task_progress
-
-#     queue = asyncio.Queue()
-#     task = asyncio.create_task(task_watching(queue))
-#     while (1):
-#         progress = await queue.get() # monitor task progress
-#         if progress == None:
-#             break
-#         task_progress += 1
-
-#     print('watching : Finished!')
-
-
-# # async def task_nlp(queue: asyncio.Queue, category_id: int):
-# #     category_link = df_categories['link'][category_id]
-# #     category_link = category_link.split("/")[-1]
-# #     json_category_npl = get_json_from_category_link(queue, category_link, max_companies=10, max_reviews=20)
-# #     await queue.put(json_category_npl)
-
-
-# async def task_nlp(queue: asyncio.Queue, category_id: int):
-#     category_link = df_categories['link'][category_id]
-#     category_link = category_link.split("/")[-1]
-#     json_category_npl = get_json_from_category_link(category_link, max_companies=5, max_reviews=10)
-#     await queue.put(json_category_npl)
-
-
-# # async def task_progress(queue: asyncio.Queue, category_id: int):
-# #     for i in range(1, 10):  # do work and return our progress
-# #         await asyncio.sleep(0.5)
-# #         print(task_progress)
-
-
-# async def monitor_nlp_from_category(uid: UUID, category_id: int) -> None:
-#     queue = asyncio.Queue()
-#     task = asyncio.create_task(task_nlp(queue, category_id))
-#     progress = await queue.get() # monitor task progress
-#     jobs[uid].result = progress
-#     jobs[uid].progress = 100
-#     jobs[uid].progress_max = 100
-#     jobs[uid].label = task_label
-
-#     print("UUID:", uid, "task complete!")
-#     jobs[uid].status = "complete"
-
-# #Fonction de surveillance de la fonction principale complexe
-# # async def monitor_nlp_from_category(uid: UUID, category_id: int) -> None:
-# #     queue = asyncio.Queue()
-# #     task = asyncio.create_task(task_nlp(queue, category_id))
-# #     print("monitor_nlp_from_category: Start")
-# #     while (1):
-# #         progress = await queue.get() # monitor task progress
-# #         print("monitor_nlp_from_category: ", progress)
-# #         if isinstance(progress, int):
-# #             # Réception de la progression
-# #             jobs[uid].progress = abs(progress)
-# #             jobs[uid].progress_max = abs(task_progress_max)
-# #         if isinstance(progress, dict):
-# #             # Cette fois on a reçu le résultat
-# #             jobs[uid].result = progress
-# #             jobs[uid].progress = 100
-# #             jobs[uid].progress_max = 100
-# #             jobs[uid].label = task_label
-# #             break
-# #
-# #     print("UUID:", uid, "task complete!")
-# #     jobs[uid].status = "complete"
-
-
-# @app.get(PATH_ROOT+"dashboard/summary/category/{category_id}",
-#          tags=["Dashboard"],
-#          response_model=Job,
-#          summary="Start an NLP task to get the feelings of the category.",
-#          description="Asynchronous function returning a UUID, which will allow you to follow the progress of the task. The result will be available upon completion of this task. **CAUTION, this operation can be very long!**",
-#          status_code=HTTPStatus.ACCEPTED)
-# async def launch_nlp_from_category(background_tasks: BackgroundTasks, category_id: int) -> Job:
-#     new_task = Job() # Création d'une tâche
-#     new_task.progress = 0
-#     new_task.status = "in_progress"
-#     new_task.result = ""
-#     jobs[new_task.uid] = new_task # Sauvegarde de la tâche en cours
-#     # Lancement d'une tache asynchrone, car le scraping peut être très long
-#     background_tasks.add_task(monitor_nlp_from_category, new_task.uid, category_id)
-#     # background_tasks.add_task(watching)
-#     return new_task
-
-
-    
-
 progress_task = ProgressTask()
 
-# # test progress_task
+#---------- TEST MANUEL ProgressTask() -------------
 # json = progress_task.start_get_json_from_category_link(df_categories[df_categories["name"] == "Animaux"]["link"][1], max_companies=21, max_reviews=21)
 # print("\n", "json".center(6, " ").center(100, "-"), "\n")
 # print(json)
 
+
+#---------- DEFINITION ROOT API -------------
 @app.get(PATH_ROOT+"dashboard/summary/status/{uid}",
          tags=["Dashboard"],
          response_model=Job,
          summary="Returns the progress of the last NPL query")
 async def status_handler(uid: UUID) -> Job:
     try:
-        #task = jobs[uid]
+        # Mise à jour du job
         jobs[uid].label = progress_task.task_label
         jobs[uid].status = progress_task.task_status
         jobs[uid].progress = progress_task.task_progress
         jobs[uid].progress_max = progress_task.task_progress_max
         jobs[uid].result = progress_task.json
+        if jobs[uid].status == "complete":
+            # task completed, so cache result from request
+            hash_file_name = cacheDir + "\\" +'summary-cat-' + str(jobs[uid].category_id)
+            # Save json in local file
+            f = open(hash_file_name, mode="w", encoding='utf-8')
+            f.write(json.dumps(progress_task.json))  # Save json file
+            f.close()
+            print(f"json '{hash_file_name}' has been saved to cache ->", hash_file_name)
+
         print(jobs[uid])
         return jobs[uid]
     except Exception as err:
@@ -286,14 +150,35 @@ async def status_handler(uid: UUID) -> Job:
          description="Asynchronous function returning a UUID, which will allow you to follow the progress of the task. The result will be available upon completion of this task. **CAUTION, this operation can be very long!**",
          status_code=HTTPStatus.ACCEPTED)
 async def launch_nlp_from_category(background_tasks: BackgroundTasks, category_id:int) -> Job:
-    new_task = Job()
+    new_task = Job() # Création d'une tâche pour suivre l'avancée
+    new_task.category_id = category_id
     new_task.progress = 0
     new_task.status = "in_progress"
     new_task.result = ""
     jobs[new_task.uid] = new_task # Sauvegarde de la tâche en cours
-    category_link = df_categories['link'][category_id]
-    category_link = category_link.split("/")[-1]
-    progress_task.start_get_json_from_category_link(category_link,  max_companies=21, max_reviews=21)
+
+    # Gestion du cache
+    hash_file_name = cacheDir + "\\" +'summary-cat-' + str(category_id)
+    if os.path.isfile(hash_file_name):
+        # the cache already exists, so we get the result from the file
+        f = open(hash_file_name, mode="r", encoding='utf-8')
+        progress_task.json = json.loads(f.read())
+        f.close()
+        print(f"json '{hash_file_name}' has been loaded from cache ->", hash_file_name)
+        progress_task.task_label = ""
+        progress_task.task_status = "complete"
+        progress_task.task_progress = 100
+        progress_task.task_progress_max = 100
+        new_task.label = progress_task.task_label
+        new_task.status = progress_task.task_status
+        new_task.progress = progress_task.task_progress
+        new_task.progress_max = progress_task.task_progress_max
+        new_task.result = progress_task.json
+    else:
+        category_link = df_categories['link'][category_id]
+        category_link = category_link.split("/")[-1]
+        progress_task.start_get_json_from_category_link(category_link,  max_companies=21, max_reviews=21)
+
     return new_task
 
 
@@ -492,7 +377,7 @@ async def get_category_by_name(name: str):
             # On a assez de résultat à proposer
             df_result = df_categories.iloc[df_best_result.index[:NB_RESULT_TO_RETURN]]
             # print(df_result.to_json())
-            return JSONResponse(content=df_result.to_json())
+            return JSONResponse(content=df_result['name'].to_json())
         else:
             # Il nous faut un peu plus de résultats, donc on cherche des correspondances plus larges
             if nb_best_result > 0:

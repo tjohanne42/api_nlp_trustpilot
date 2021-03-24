@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    if (categoryKey == -1) {
+        $('#btn-Launch-category').prop("disabled", true);
+        $("#search-box-category").val(categoryName);
+        $("#search-box-company").val(companyName);
+    }
+
     //Navbar events
     $(".nav-item .nav-link").on("click", function() {
         disableActiveNavBar()
@@ -43,6 +49,7 @@ $(document).ready(function() {
                 url: "http://127.0.0.1:8000/api/v1/company/query/" + $(this).val(),
                 //data: 'name=' + $(this).val(), // POST
                 success: function(data) {
+                    console.log(data);
                     let companies = JSON.parse(data);
                     let lines = "<ul class='suggestion-list'>";
                     for (var i = 0; i < Object.keys(companies).length; i++) {
@@ -77,6 +84,7 @@ $(document).ready(function() {
                 url: "http://127.0.0.1:8000/api/v1/category/query/" + $(this).val(),
                 //data: 'name=' + $(this).val(), // POST
                 success: function(data) {
+                    console.log(data);
                     let categories = JSON.parse(data);
                     let lines = "<ul class='suggestion-list'>";
                     for (var i = 0; i < Object.keys(categories).length; i++) {
@@ -107,19 +115,21 @@ $(document).ready(function() {
         event.preventDefault(); // To prevent following the link (optional)
         if (categoryName == "")
             categoryName = $("#search-box-category").val();
-        $.ajax({
-            type: "GET",
-            url: "http://127.0.0.1:8000/api/v1/dashboard/summary/category/" + categoryKey,
-            //data: 'name=' + $(this).val(), // POST
-            success: function(data) {
-                uid = data.uid;
-                console.log(data);
-                //Save uid
-                disableActiveNavBar()
-                enableNavBar("main-dashboard")
-                $("#main-summary").addClass("d-none");
-            }
-        });
+        if (categoryKey > -1) {
+            $.ajax({
+                type: "GET",
+                url: "http://127.0.0.1:8000/api/v1/dashboard/summary/category/" + categoryKey,
+                //data: 'name=' + $(this).val(), // POST
+                success: function(data) {
+                    uid = data.uid;
+                    console.log(data);
+                    //Save uid
+                    disableActiveNavBar()
+                    enableNavBar("main-dashboard")
+                    $("#main-summary").addClass("d-none");
+                }
+            });
+        }
     });
 
     let uid = ""
@@ -137,6 +147,7 @@ $(document).ready(function() {
                         if (data.status == 'complete') {
                             uid = "";
                             console.log("Task finished!", result);
+                            $("#main-summary").removeClass("d-none");
                             $('#category-name-text').text(categoryName);
                             $('#category-stars-text').text("(" + result.stars_mean.toFixed(1));
                             $("#summary-star1").removeClass("fa-star");
@@ -188,17 +199,17 @@ $(document).ready(function() {
                             }
                             $('#category-nb-companies-text').text(result.nb_companies + " compagnies");
                             $('#category-review-count-text').text(result.nb_reviews + " commentaires");
-                            let wordcloud = result.wordcloud
-                                //$('#current-task').addClass("d-none");
+                            let wordcloud = result.wordcloud;
+                            //$('#current-task').addClass("d-none");
                             $('#status-task').text("Terminé");
                             $('.progress-bar').css('width', '100%').attr('aria-valuenow', 100);
-                            $("#main-summary").removeClass("d-none");
-                            //var wordsPos = 'édifier confiant record hypnotisé magnanime dépasse avantageux concilier réconcilier admirateur';
-                            //var wordsNeg = 'surestimé diaboliser tuer impitoyable couvant plainte acerbe faible despote malfaiteur';
-                            //draw_wordcloud("canvas-wcloud-neg", wordsNeg, false);
-                            //draw_wordcloud("canvas-wcloud-pos", wordsPos, true);
-                            draw_wordcloud("canvas-wcloud-neg", wordcloud, false);
-                            draw_wordcloud("canvas-wcloud-pos", wordcloud, true);
+
+                            //Lancement de thread pour les wordcloud sinon l'un d'eux risque d'être vide
+                            setTimeout(function() { draw_wordcloud("canvas-wcloud-pos", wordcloud, true); }, 0);
+                            setTimeout(function() { draw_wordcloud("canvas-wcloud-neg", wordcloud, false); }, 0);
+
+                            //draw_wordcloud("canvas-wcloud-neg", wordcloud, false);
+                            //draw_wordcloud("canvas-wcloud-pos", wordcloud, true);
                             draw_chart_pie(result.repartition_sentiment);
                             draw_chart_stars_evolution(result.stars_evolution_by_month)
                             draw_chart_sentiment_evolution(result.sentiment_evolution_by_month)
@@ -248,7 +259,7 @@ function selectCompany(key) {
             companyCategory = data.category;
             companyPhone = data.phone;
             companyLocation = data.location;
-            companyStars = data.stars;
+            companyStars = data.stars.toFixed(1);
             companyReviewCount = data.review_count;
             companyLogo = data.logo;
             companyMail = data.mail;
@@ -263,13 +274,16 @@ function selectCompany(key) {
             }
             // On efface le précédent logo car il peut y avoir un temps de chargement du prochain
             $("#company-logo").attr("src", "img/photo.jpg");
-            $("#company-logo").attr("src", companyLogo);
+            console.log('selectCompany:', companyLogo);
+            if (companyLogo !== 'Inconnu') {
+                $("#company-logo").attr("src", companyLogo);
+            }
             $("#company-name-text").text(companyName);
             $("#company-category-text").text(companyCategory);
             $("#company-location-text").text(companyLocation);
             $("#company-phone-text").text(companyPhone);
             $("#company-mail-text").html(companyMail);
-            $("#company-stars-text").text(companyStars.toFixed(1));
+            $("#company-stars-text").text(companyStars);
             $("#company-review-count-text").text(companyReviewCount + " commentaires");
             $("#company-star1").removeClass("fa-star");
             $("#company-star2").removeClass("fa-star");
@@ -324,7 +338,7 @@ function selectCompany(key) {
     });
 }
 
-var categoryKey = 5;
+var categoryKey = -1;
 var categoryName = "";
 var categoryLevel = 0;
 var categoryLink = "";
@@ -354,6 +368,7 @@ function scaleBetween(unscaledNum, minAllowed, maxAllowed, min, max) {
 }
 
 function draw_wordcloud(canvasName, wordlist, positive = None) {
+
     var list;
     if (positive == true) {
         list = wordlist.pos;
@@ -361,99 +376,50 @@ function draw_wordcloud(canvasName, wordlist, positive = None) {
         list = wordlist.neg;
     }
 
-    if (list.count.length == 0) {
-        //Aucun mot, on affiche un message
-        if (positive == true) {
-            $("#mask-wcloud-pos").removeClass("d-none");
-        } else if (positive == false) {
-            $("#mask-wcloud-neg").removeClass("d-none");
-        }
-        return
-    } else {
-        //On masque le message d'erreur
-        Array.prototype.max = function() {
-            return Math.max.apply(null, this);
-        };
+    if (list.count.length > 0) {
         var maxValuePos = wordlist.pos.count.max();
         var maxValueNeg = wordlist.neg.count.max();
+        var minValuePos = wordlist.pos.count.min();
+        var minValueNeg = wordlist.neg.count.min();
 
+        var maxValue = 0;
+        var minValue = 0;
         if (positive == true) {
             $("#mask-wcloud-pos").addClass("d-none");
             maxValue = maxValuePos;
+            minValue = minValuePos;
         } else if (positive == false) {
             $("#mask-wcloud-neg").addClass("d-none");
             maxValue = maxValueNeg;
-        }
-        /*
-        maxValue = maxValuePos;
-        if (maxValueNeg > maxValuePos) {
-            maxValue = maxValueNeg;
-        }
-        */
-
-
-
-        var unscaledNums = wordlist.pos.count.concat(wordlist.neg.count);
-        var maxRange = Math.max.apply(Math, unscaledNums);
-        var minRange = Math.min.apply(Math, unscaledNums);
-
-        var scaledListPos = [];
-        var scaledListNeg = [];
-        for (var i = 0; i < unscaledNums.length; i++) {
-            var unscaled = unscaledNums[i];
-            var scaled = scaleBetween(unscaled, 0, 100, minRange, maxRange);
-            if (i < unscaledNums.length / 2) {
-                scaledListPos.push(scaled.toFixed(2));
-            } else {
-                scaledListNeg.push(scaled.toFixed(2));
-            }
-        }
-        if (positive == true) {
-            console.log(scaledListPos);
-        } else {
-            console.log(scaledListNeg);
+            minValue = minValueNeg;
         }
     }
 
-
-    //var parentWidth = jQuery('#'+canvasName).parent().outerWidth();
-    //var parentHeight =  jQuery('#'+canvasName).parent().outerHeight();
     var pixelWidth = 400;
     var pixelHeight = 300;
 
     $("#" + canvasName).attr('width', pixelWidth);
     $("#" + canvasName).attr('height', pixelHeight);
-    //$htmlCanvas.css({'width': pixelWidth + 'px', 'height': pixelHeight + 'px'});
 
     // Set the options object
     var options = {};
 
-    // the list array will be generated here.
-    //On doit normaliser les valeurs pour que max soit égale à 50
-    var ratio = 100 / maxValue;
-
     var optionslist = [];
+    var listTest = [];
+    var wordSizeMax = 50;
+    var wordSizeMin = 20;
+    console.log('wordSizeMax=' + wordSizeMax, ', wordSizeMin=' + wordSizeMin, 'maxValue=' + maxValue, ', minValue=' + minValue);
     if (list.count.length > 0) {
         for (let i = 0; i < list.count.length; i++) {
-            var size = 20 + (list.count[i] * ((60 - 20) / (maxRange - minRange)));
+            var size = wordSizeMin + ((list.count[i] - minValue) * ((wordSizeMax - wordSizeMin) / (maxValue - minValue)));
             optionslist.push([list.words[i], Math.floor(size)]);
-            //optionslist.push([list.words[i], Math.floor(list.count[i] * ratio)]);
+            listTest.push([list.words[i], list.count[i], Math.floor(size)]);
         }
+        console.log(listTest)
     } else {
         //Pas de mots
-        /*
-        var list = (function() {
-            var wordList = 'Grumpy wizards make toxic brew for the evil Queen and Jack';
-            var list = [];
-            wordList.split(' ').forEach(function(word) {
-                list.push([word, Math.floor(word.length * 5)]);
-            });
-
-            return list;
-        })();
-        */
+        optionslist.push(['Aucun mot', wordSizeMin]);
     }
-    //console.log(list)
 
     options.list = optionslist;
     options.minRotation = 0;
@@ -498,18 +464,14 @@ function draw_chart_pie(sentiments) {
     });
 }
 
+Array.prototype.max = function() {
+    return Math.max.apply(null, this);
+};
+Array.prototype.min = function() {
+    return Math.min.apply(null, this);
+};
+
 function draw_chart_stars_evolution(evolutions) {
-    /*
-    {
-        "stars_evolution_by_month": {
-            "2021-3": 5,
-            "2021-2": 4.9,
-            "2021-1": 4.933333333333334,
-            "2020-12": 5
-        }
-    }
-    */
-    //Format data to : [{x:'2016-12-25', y:20}, {x:'2016-12-26', y:10}]
     var list = [];
     var labels = [];
     for (var i = Object.keys(evolutions).length - 1; i >= 0; i--) {
@@ -549,16 +511,6 @@ function draw_chart_stars_evolution(evolutions) {
 }
 
 function draw_chart_sentiment_evolution(sentiments) {
-    /*
-    {
-        "sentiment_evolution_by_month": {
-            "2021-3": 0.8571428571428571,
-            "2021-2": 0.8,
-            "2021-1": 0.8666666666666667,
-            "2020-12": 1
-        }
-    } */
-    //Format data to : [{x:'2016-12-25', y:20}, {x:'2016-12-26', y:10}]
     var list = [];
     var labels = [];
     for (var i = Object.keys(sentiments).length - 1; i >= 0; i--) {
@@ -595,4 +547,9 @@ function draw_chart_sentiment_evolution(sentiments) {
             }
         }
     });
+}
+
+function sleep(seconds) {
+    var waitUntil = new Date().getTime() + seconds * 1000;
+    while (new Date().getTime() < waitUntil) true;
 }
