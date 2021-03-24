@@ -54,3 +54,9 @@ if not os.path.isfile("model_nlp.pt"):
     else:
         print("Exit program...")
         exit()
+
+if not os.path.isfile("categories.csv"):
+    download_file_from_google_drive("1yEvooeZ42-10TloKOR_hsbCJWofU_YnK", "categories.csv")
+
+if not os.path.isfile("companies.csv"):
+    download_file_from_google_drive("1k_D_HSspPhvX3yV9RVV8JIleDPwuFFKh", "companies.csv")

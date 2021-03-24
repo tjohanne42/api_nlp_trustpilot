@@ -1,3 +1,5 @@
 model_nlp.pt
+categories.csv
+companies.csv
 /__pycache__
 /cache
