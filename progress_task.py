@@ -141,7 +141,6 @@ class ProgressTask(object):
 
 		# add wordcloud to json
 		json["wordcloud"] = self.get_wordcloud(df_reviews, 10)
-
 		# stats with sentiments
 		return json
 
@@ -180,8 +179,9 @@ class ProgressTask(object):
 		pos_words_list = []
 		pos_words_count = []
 		for pos_words in pos_common_words:
-			pos_words_list.append(pos_words[0])
-			pos_words_count.append(pos_words[1])
+			if len(pos_words[0]) > 1:
+				pos_words_list.append(pos_words[0])
+				pos_words_count.append(pos_words[1])
 
 		# find neg words frequency
 		df_neg = df_reviews[df_reviews["sentiment"] == 0]
@@ -199,8 +199,9 @@ class ProgressTask(object):
 		neg_words_list = []
 		neg_words_count = []
 		for neg_words in neg_common_words:
-			neg_words_list.append(neg_words[0])
-			neg_words_count.append(neg_words[1])
+			if len(neg_words[0]) > 1:
+				neg_words_list.append(neg_words[0])
+				neg_words_count.append(neg_words[1])
 
 
 		# pop same words in neg and pos list
@@ -221,6 +222,9 @@ class ProgressTask(object):
 					# decrease len
 					len_pos_words_list -= 1
 					len_neg_words_list -= 1
+					# decrease counters
+					x -= 1
+					i -= 1
 				x += 1
 			i += 1
 		self.task_progress += 1
