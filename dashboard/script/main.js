@@ -205,8 +205,8 @@ $(document).ready(function() {
                             $('.progress-bar').css('width', '100%').attr('aria-valuenow', 100);
 
                             //Lancement de thread pour les wordcloud sinon l'un d'eux risque d'être vide
-                            setTimeout(function() { draw_wordcloud("canvas-wcloud-pos", wordcloud, true); }, 0);
-                            setTimeout(function() { draw_wordcloud("canvas-wcloud-neg", wordcloud, false); }, 0);
+                            setTimeout(function() { draw_wordcloud("canvas-wcloud-neg", wordcloud, false); }, 100);
+                            setTimeout(function() { draw_wordcloud("canvas-wcloud-pos", wordcloud, true); }, 300);
 
                             //draw_wordcloud("canvas-wcloud-neg", wordcloud, false);
                             //draw_wordcloud("canvas-wcloud-pos", wordcloud, true);
